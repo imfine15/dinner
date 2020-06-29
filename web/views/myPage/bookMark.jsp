@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h1>Hello World!!!</h1>
+	<%@ include file="../common/footer.jsp" %>
 </body>
 </html>
