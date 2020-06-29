@@ -4,7 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Insert title here</t
+itle>
 <style>
 /* REMOVE THIS, USE YOUR OWN  */
 html,body {
