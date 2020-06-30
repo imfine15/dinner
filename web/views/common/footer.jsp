@@ -10,11 +10,12 @@
 html,body {
   margin: 0;
   padding: 0;
+  height:100%;
   font-family: Arial, Helvetica, Sans-serif;
   background-color: #070617;
 }
 .dummy_page {
-  height: 200px;
+  min-height : 90%;
   width: 100%;
   background-color: #f0f0f0;
   text-align: center;
