@@ -113,17 +113,17 @@
 		<input type="password" name="password" id="password">
 		<br>
 		<input type="submit" value="로그인" id="submitBtn">
+		<div id="idRemember">
+			<input type="checkbox" name="rememberBtn" id="rememberBtn">&nbsp;&nbsp;
+			<label for="rememberBtn">아이디 저장</label>
+		</div>
 	</form>
-	<div id="idRemember">
-		<input type="checkbox" name="rememberBtn" id="rememberBtn">&nbsp;&nbsp;
-		<label for="rememberBtn">아이디 저장</label>
-	</div>
 	<hr>
 	<div id="find">
 		<span id="findId">아이디 찾기</span> | 
 		<span id="findPassword">비밀번호 찾기</span> | 
 		<span id="signUp">회원 가입</span>
 	</div>
-	<%-- <%@ include file="/views/common/footer.jsp" %> --%>
+	<%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>
