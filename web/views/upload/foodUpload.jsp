@@ -5,12 +5,141 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+	.area{
+		resize: none;
+	}
+	.food{
+		display: inline-block;
+	}
+	input[type=submit]{
+		background: #5BB8B4;
+		color: #FFFFFF;
+		border: 0;
+		outline: 0;
+		width: 130px;
+		height: 35px;
+		font-size: 24px;
+	}
+	input[type=reset]{
+		background: #666666;
+		color: #FFFFFF;
+		border: 0;
+		outline: 0;
+		width: 130px;
+		height: 35px;
+		font-size: 24px;
+	}
+
+</style>
 </head>
 <body>
-	<%@ include file="/views/common/footer.jsp" %>
+	<%-- <%@ include file="/views/common/footer.jsp" %> --%>
 	<h1>식당 등록</h1>
-	<form action="" method="post">
-		<label>식당명</label><p>*</p><input type="text" name="" value="">
-	</form>
+		<form action="" method="post">
+	<div class="food" align="left">
+		<table>
+			<tr>
+				<td><label>식당명</label><label>* </label></td>
+				<td><input type="text" name="" value=""></td>
+				
+			</tr>
+			<tr>
+				<td><label>주소</label><label>* </label></td>
+				<td><input type="text" name="" value=""></td>
+				
+			</tr>
+			<tr>
+				<td><label>전화번호</label><label>* </label></td>
+				<td><input type="text" name="" value=""></td>
+				
+			</tr>
+			<tr>
+				<td><label>메뉴</label><label>* </label></td>
+				<td><textarea rows="5px" cols="22px" class="area"></textarea></td>
+			
+			</tr>
+			<tr>
+				<td><label>가격대</label><label>* </label></td>
+				<td>
+					<select name="money">
+						<option value="10000">~1만원대</option>
+						<option value="20000">1만원 ~ 2만원</option>
+						<option value="30000">2만원 ~ 3만원</option>
+						<option value="50000">3만원 ~ 5만원</option>
+						<option value="60000">5만원 ~ 7만원</option>
+						<option value="70000">7만원대~</option>
+					</select>
+					</td>
+				
+			</tr>
+			<tr>
+				<td><label>영업시간</label></td>
+				<td><input type="text" name="" value=""></td>
+			</tr>
+			<tr>
+			<td><label>휴무일</label></td>
+			<td><input type="text" name="" value=""></td>
+			</tr>
+			<tr>
+			<td><label>웹사이트</label></td>
+			<td><input type="text" name="" value=""></td>
+			</tr>
+			<tr align="right">
+		         <td colspan="2">
+		             <input type="submit" value="추 가">
+		         </td>
+		      </tr>
+		</table>
+		
+		</div>
+		<div class="food" align="right">
+		
+		<table>
+		<tr>
+				
+				<td><label>해시태그</label><label>* </label></td>
+				<td><input type="text" name="" value="" placeholder="#을 이용하여 태그를 사용해보세요."></td>
+			</tr>
+			<tr>
+				
+				<td><label>소개문구</label></td>
+				<td><textarea rows="5px" cols="22px" class="area" placeholder="가게에 대한 간단한 소개글을 작성해주세요."></textarea></td>
+			</tr>
+			<tr>
+				
+				<td><label>주차공간</label></td>
+				<td><input type="text" name="" value=""></td>
+			</tr>
+			<tr>
+				
+				<td><label>카테고리</label><label>* </label></td>
+				<td><select name="category">
+					<option value="korea">한식</option>
+					<option value="chinese">중식</option>
+					<option value="japan">일식</option>
+					<option value="fast">패스트푸드</option>
+					<option value="western">양식</option>
+					<option value="cafe">카페</option>
+					<option value="school">분식</option>
+					<option value="asia">아시아</option>
+				</select></td>
+			</tr>
+			<tr>
+				
+				<td><label>이미지</label><label>* </label></td>
+				<td><input type="file"></td>
+				
+			</tr>
+			 <tr align="left">
+         <td colspan="2">
+          <input type="reset" value="취 소">
+           
+         </td>
+      </tr>
+		</table>
+	</div>
+	
+		</form>
 </body>
 </html>
