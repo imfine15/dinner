@@ -31,7 +31,7 @@ html,body {
 }
 .footer .col {
   width: 250px;
-  height: auto;
+  height: 100%;
   float: left;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
