@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@ include file="/views/common/footer.jsp" %>
+
 	<h1>일정 및 맛집 등록</h1>
 	<hr>
 	<label>ID</label><label>고객명</label>
@@ -44,5 +44,6 @@
 			<button>취소</button>
 		</form>
 	</div>
+	<%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>

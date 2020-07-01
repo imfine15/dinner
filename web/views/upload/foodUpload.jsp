@@ -35,7 +35,9 @@
 </head>
 <body>
 	<h1>식당 등록</h1>
+		<div class="box" align="center">
 		<form action="" method="post">
+		
 	<div class="food" align="left">
 		<table>
 			<tr>
@@ -84,11 +86,7 @@
 			<td><label>웹사이트</label></td>
 			<td><input type="text" name="" value=""></td>
 			</tr>
-			<tr align="right">
-		         <td colspan="2">
-		             <input type="submit" value="추 가">
-		         </td>
-		      </tr>
+			
 		</table>
 		
 		</div>
@@ -130,16 +128,16 @@
 				<td><input type="file"></td>
 				
 			</tr>
-			 <tr align="left">
-         <td colspan="2">
-          <input type="reset" value="취 소">
-           
-         </td>
-      </tr>
+			 
 		</table>
 	</div>
 	
+		<br><br><br>
+		             <input type="submit" value="추 가">
+		
+          <input type="reset" value="취 소">
 		</form>
+		</div>
 <%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>
