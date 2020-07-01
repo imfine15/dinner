@@ -36,10 +36,6 @@ h3 {
 		<h3>제휴 서비스 종류</h3>
 	</div>
 
-	<div>
-		
-	</div>
-
 	<%@ include file="../common/footer.jsp"%>
 </body>
 </html>
