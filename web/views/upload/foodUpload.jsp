@@ -11,6 +11,7 @@
 	}
 	.food{
 		display: inline-block;
+		
 	}
 	input[type=submit]{
 		background: #5BB8B4;
@@ -20,6 +21,9 @@
 		width: 130px;
 		height: 35px;
 		font-size: 24px;
+		
+		
+		
 	}
 	input[type=reset]{
 		background: #666666;
@@ -29,6 +33,23 @@
 		width: 130px;
 		height: 35px;
 		font-size: 24px;
+		
+		
+		
+	}
+	label, input, select, textarea{
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	table{
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+	#box2{
+		margin-bottom: 134px;
+	}
+	.star{
+		color: red;
 	}
 
 </style>
@@ -38,30 +59,30 @@
 		<div class="box" align="center">
 		<form action="" method="post">
 		
-	<div class="food" align="left">
+	<div class="food" align="center">
 		<table>
 			<tr>
-				<td><label>식당명</label><label>* </label></td>
+				<td><label>식당명</label><label class="star">* </label></td>
 				<td><input type="text" name="" value=""></td>
 				
 			</tr>
 			<tr>
-				<td><label>주소</label><label>* </label></td>
+				<td><label>주소</label><label class="star">* </label></td>
 				<td><input type="text" name="" value=""></td>
 				
 			</tr>
 			<tr>
-				<td><label>전화번호</label><label>* </label></td>
+				<td><label>전화번호</label><label class="star">* </label></td>
 				<td><input type="text" name="" value=""></td>
 				
 			</tr>
 			<tr>
-				<td><label>메뉴</label><label>* </label></td>
+				<td><label>메뉴</label><label class="star">* </label></td>
 				<td><textarea rows="5px" cols="22px" class="area"></textarea></td>
 			
 			</tr>
 			<tr>
-				<td><label>가격대</label><label>* </label></td>
+				<td><label>가격대</label><label class="star">* </label></td>
 				<td>
 					<select name="money">
 						<option value="10000">~1만원대</option>
@@ -90,12 +111,15 @@
 		</table>
 		
 		</div>
-		<div class="food" align="right">
+		<div class="food" align="center">
+		<hr width="1px" size="420" style="background-color: gray; border: gray;">
+		</div>
+		<div class="food" id="box2" align="center">
 		
 		<table>
 		<tr>
 				
-				<td><label>해시태그</label><label>* </label></td>
+				<td><label>해시태그</label><label class="star">* </label></td>
 				<td><input type="text" name="" value="" placeholder="#을 이용하여 태그를 사용해보세요."></td>
 			</tr>
 			<tr>
@@ -110,7 +134,7 @@
 			</tr>
 			<tr>
 				
-				<td><label>카테고리</label><label>* </label></td>
+				<td><label>카테고리</label><label class="star">* </label></td>
 				<td><select name="category">
 					<option value="korea">한식</option>
 					<option value="chinese">중식</option>
@@ -124,18 +148,19 @@
 			</tr>
 			<tr>
 				
-				<td><label>이미지</label><label>* </label></td>
+				<td><label>이미지</label><label class="star">* </label></td>
 				<td><input type="file"></td>
 				
 			</tr>
 			 
 		</table>
 	</div>
-	
+	<div align="center">
 		<br><br><br>
 		             <input type="submit" value="추 가">
 		
           <input type="reset" value="취 소">
+	</div>
 		</form>
 		</div>
 <%@ include file="/views/common/footer.jsp" %>
