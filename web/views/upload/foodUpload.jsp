@@ -34,7 +34,6 @@
 </style>
 </head>
 <body>
-<%@ include file="/views/common/footer.jsp" %>
 	<h1>식당 등록</h1>
 		<form action="" method="post">
 	<div class="food" align="left">
@@ -141,5 +140,6 @@
 	</div>
 	
 		</form>
+<%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>
