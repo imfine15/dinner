@@ -14,26 +14,31 @@
 	top: 144px;
 }
 
-#text {
+h3 {
 	position: absolute;
 	width: 219px;
 	height: 38px;
 	left: 276px;
 	top: 275px;
-	font-family: Roboto;
+	font-family: 나눔스퀘어라운드;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 35px;
+	color: #E07370;
 }
 </style>
 </head>
 <body>
 	<img src="/semiproject/images/YUMEET LOGO WITH REST.png" id="logo"
 		alt="yumeet logo">
-	<div id="text">제휴 서비스 종류</div>
+	<div>
+		<h3>제휴 서비스 종류</h3>
+	</div>
 
-	<div></div>
+	<div>
+		
+	</div>
 
 	<%@ include file="../common/footer.jsp"%>
 </body>
