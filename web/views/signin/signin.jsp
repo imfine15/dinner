@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <meta charset="UTF-8">
 <style>
 	#logo {
@@ -56,11 +57,11 @@
 		border-radius:3px;
 	}
 	
-	input[type=checkbox] {  
+	#rememberBtn {  
     	display: none;  
 	}
 
-	input[type=checkbox]+ label:before {     
+	#rememberBtn+ label:before {     
 	    content:"";
 	    display:inline-block;  
 	    width:20px;  
@@ -71,7 +72,7 @@
 	    border-radius:10px;
 	}
 	
-	input[type=checkbox]:checked + label:before { 
+	#rememberBtn:checked + label:before { 
 	    content:"\2713";  /* 체크모양 */
 	    font-size:18px; 
 	    color:#565656; 
@@ -100,6 +101,11 @@
 		color:#B4B4B4;
 		font-size:12px;
 	}
+	
+	#pwdShowHide {
+		width:15px;
+		height:15px;
+	}
 </style>
 <title>YUMEET 로그인</title>
 </head>
@@ -111,6 +117,9 @@
 		<input type="text" name="id" id="id">
 		<br>
 		<input type="password" name="password" id="password">
+		<br>
+		<input type="checkbox" id="pwdShowHide">
+		<label id="pwdLabel" for="pwdShowHide">비밀번호 보이기</label>
 		<br>
 		<input type="submit" value="로그인" id="submitBtn">
 		<div id="idRemember">
@@ -124,6 +133,21 @@
 		<span id="findPassword">비밀번호 찾기</span> | 
 		<span id="signUp">회원 가입</span>
 	</div>
+	<script>
+		$(function(){
+		    $('#pwdShowHide').on('click', function(){
+		        $('input').toggleClass('active');
+		        
+		        if($('input').hasClass('active')){
+		            $("#password").attr('type',"text");
+		            $("#pwdLabel").html("비밀번호 숨기기");
+		        }else{
+		            $("#password").attr('type',"password");
+		            $("#pwdLabel").html("비밀번호 보이기");
+		        }
+		    });
+		});
+	</script>
 	<%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>
