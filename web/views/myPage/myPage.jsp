@@ -98,6 +98,8 @@ position: absolute;
 background: #F8F8F8;
 border: 2px solid #A3A3A3;
 box-sizing: border-box;
+
+
 }
 </style>
 </head>
