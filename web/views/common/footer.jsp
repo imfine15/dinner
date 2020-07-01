@@ -12,7 +12,7 @@ html,body {
   padding: 0;
   height:100%;
   font-family: Arial, Helvetica, Sans-serif;
-  background-color: #070617;
+
 }
 .dummy_page {
   min-height : 90%;
@@ -198,8 +198,7 @@ html,body {
 </head>
 <body>
 	<header></header>
-	<div class="dummy_page">
-</div>
+
 <!-- FOOTER START -->
 <div class="footer">
   <div class="contain">
