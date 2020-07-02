@@ -61,6 +61,13 @@
  input[type=checkbox]{
  	margin-right: 10px;
  }
+ .area{
+ 	resize: none;
+ }
+ label, input, textarea{
+ margin-bottom: 10px;
+		margin-top: 10px;
+ }
  
 </style>
 </head>
@@ -82,13 +89,17 @@
 				<table>
 					<tr>
 						<td width="70px;">제목</td>
-						<td><input type="text" size="98px;"></td>
+						<td><input type="text" size="98px;" placeholder="제목을 입력하세요."></td>
 						
 					</tr>
 					
 					<tr>
 						<td width="70px;">내용</td>
-						<td><textarea cols="100px" rows="20px"></textarea></td>
+						<td><textarea cols="100px" rows="20px" class="area" 
+						placeholder="
+※ 업로드시 내용은 200글자 이상, 사진은 3장 이상이여야 업로드 가능합니다.
+
+※ 게시 후 1주일 이내에는 삭제 및 수정 불가."></textarea></td>
 					</tr>
 				</table>
 				
@@ -98,7 +109,7 @@
 				<table>
 					<tr>
 						<td width="70px;">해시태그</td>
-						<td><textarea rows="7px" cols="100px"></textarea></td>
+						<td><textarea rows="7px" cols="100px" class="area" placeholder="#을 이용하여 태그를 사용해보세요(최대 30개)"></textarea></td>
 					</tr>
 				</table>
 				<hr class="line">
