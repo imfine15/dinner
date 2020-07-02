@@ -9,9 +9,9 @@
 <body>
 <header>
 	<ul>
-		<li><img src="/semiproject/images/YUMEET LOGO.png"></li>
-		<li></li>
-		<li></li>
+		<li><a><img src="/semiproject/images/YUMEET LOGO.png"></a></li>
+		<li><a><img src="/semiproject/images/my.png"></a></li>
+		<li><a><img src="/semiproject/images/map.png"></a></li>
 	</ul>
 </header>
 </body>
