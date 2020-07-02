@@ -21,7 +21,7 @@
 		width: 130px;
 		height: 35px;
 		font-size: 24px;
-		
+		margin: 10px;
 		
 		
 	}
@@ -33,7 +33,7 @@
 		width: 130px;
 		height: 35px;
 		font-size: 24px;
-		
+		margin: 10px;
 		
 		
 	}
@@ -42,14 +42,18 @@
 		margin-top: 10px;
 	}
 	table{
-		margin-right: 50px;
+		margin-right: 10px;
 		margin-left: 50px;
 	}
 	#box2{
-		margin-bottom: 134px;
+		margin-bottom: 132px;
 	}
 	.star{
 		color: red;
+	}
+	hr{
+		margin-left: 70px;
+		
 	}
 
 </style>
@@ -157,8 +161,7 @@
 	</div>
 	<div align="center">
 		<br><br><br>
-		             <input type="submit" value="추 가">
-		
+		  <input type="submit" value="추 가">
           <input type="reset" value="취 소">
 	</div>
 		</form>
