@@ -28,19 +28,23 @@
 	
 	input {
 		width:520px;
-		height:70px;
+		height:40px;
 		margin:10px 0px 10px 0px;
 	}
 	
 	select {
 		width:528px;
-		height:70px;
+		height:40px;
 		margin:10px 0px 10px 0px;
 	}
 	
-	td, option, select, p {
+	td, select, p {
 		font-size:25px;
 		color:#2F2F2F;
+	}
+	
+	option {
+		font-size:15px;
 	}
 	
 	table {
@@ -49,23 +53,23 @@
 	
 	select[name=phone1] {
 		width:118px;
-		height:70px;
+		height:46px;
 		margin:10px 0px 10px 0px;
 	}
 	
 	input[name^=phone] {
 		width:165px;
-		height:70px;
+		height:40px;
 		margin:10px 0px 10px 0px;
 	}
 	
 	#admit1 {
-		font-size:10px;
+		font-size:15px;
 		color:#A01C1C;
 	}
 	
 	#admit2 {
-		font-size:10px;
+		font-size:15px;
 		color:#2F2F2F;
 	}
 	
@@ -85,6 +89,10 @@
 		color:white;
 		font-size:30px;
 		border:0px;
+	}
+	
+	#submit:hover {
+		cursor:pointer;
 	}
 </style>
 <title>회원가입</title>
@@ -178,6 +186,7 @@
 			</tr>
 		</table>
 	</form>
+	<br>
 <%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>

@@ -20,7 +20,7 @@
 		margin:0px;
 	}
 	
-	hr {
+	.hr {
 		width:287px;
 		border:1px solid lightgray;
 	}
@@ -97,14 +97,19 @@
 		font-size:12px;
 	}
 	
-	#find span {
+	#find a {
 		color:#B4B4B4;
 		font-size:12px;
+		text-decoration:none;
 	}
 	
 	#pwdShowHide {
 		width:15px;
 		height:15px;
+	}
+	
+	#submitBtn:hover {
+		cursor:pointer;
 	}
 </style>
 <title>YUMEET 로그인</title>
@@ -112,7 +117,7 @@
 <body>
 	<img alt="여밋 로고" src="/semiproject/images/YUMEET LOGO WITH REST.png" id="logo">
 	<p id="login">로그인</p>
-	<hr>
+	<hr class="hr">
 	<form action="" method="post">
 		<input type="text" name="id" id="id">
 		<br>
@@ -127,21 +132,21 @@
 			<label for="rememberBtn">아이디 저장</label>
 		</div>
 	</form>
-	<hr>
+	<hr class="hr">
 	<div id="find">
-		<span id="findId">아이디 찾기</span> | 
-		<span id="findPassword">비밀번호 찾기</span> | 
-		<span id="signUp">회원 가입</span>
+		<a id="findId" href="http://www.naver.com">아이디 찾기</a> | 
+		<a id="findPassword">비밀번호 찾기</a> | 
+		<a id="signUp">회원 가입</a>
 	</div>
 	<script>
 		$(function(){
 		    $('#pwdShowHide').on('click', function(){
 		        $('input').toggleClass('active');
 		        
-		        if($('input').hasClass('active')){
+		        if($('input').hasClass('active')) {
 		            $("#password").attr('type',"text");
 		            $("#pwdLabel").html("비밀번호 숨기기");
-		        }else{
+		        } else {
 		            $("#password").attr('type',"password");
 		            $("#pwdLabel").html("비밀번호 보이기");
 		        }
