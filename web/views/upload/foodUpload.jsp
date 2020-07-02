@@ -51,10 +51,7 @@
 	.star{
 		color: red;
 	}
-	hr{
-		margin-left: 70px;
-		
-	}
+
 
 </style>
 </head>
@@ -117,7 +114,7 @@
 		
 		</div>
 		<div class="food" align="center">
-		<hr width="1px" size="420" style="background-color: gray; border: gray;">
+		<hr width="1px" size="420" style="background-color: gray; border: gray; margin-left: 70px;">
 		</div>
 		<div class="food" id="box2" align="center">
 		
