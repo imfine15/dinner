@@ -59,6 +59,7 @@
 </style>
 </head>
 <body>
+<%@ include file="/views/common/header.jsp" %>
 	<h1>식당 등록</h1>
 		<div class="box" align="center">
 		<form action="" method="post">
