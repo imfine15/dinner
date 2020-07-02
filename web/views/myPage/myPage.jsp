@@ -26,6 +26,7 @@
 </style>
 </head>
 <body>
+	<%@include file="../common/header.jsp" %>
 	<div id="daumWrap" class="userinfo_type1 ">
 		<div id="daumIndex">
 			<!-- 웹접근성용 바로가기 링크 모음 -->
