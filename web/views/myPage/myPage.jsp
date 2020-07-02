@@ -230,27 +230,15 @@
 							</ul>
 						</div>
 						<div class="section_info section_faq">
-							<h4 class="txt_comm txt_help">자주 찾는 도움말</h4>
+							<h2 class="">최근본 게시물</h2>
 							<ul class="list_faq">
-								<li><span class="ico_comm ico_dot"></span> <a
-									href="https://cs.daum.net/faq/59/5217.html#31026"
-									target="_blank" class="link_faq"
-									data-tiara-action-name="비밀번호를_잊어버렸어요_안내_링크">비밀번호를 잊어버렸어요.
-										어떻게 하나요?</a></li>
-								<li><span class="ico_comm ico_dot"></span> <a
-									href="https://cs.daum.net/faq/59/14970.html?faqId=29096"
-									target="_blank" class="link_faq"
-									data-tiara-action-name="로그인이_자꾸_풀려요_안내_링크">로그인이 자꾸 풀려요.</a></li>
-								<li><span class="ico_comm ico_dot"></span> <a
-									href="https://cs.daum.net/faq/59/15645.html#31041"
-									target="_blank" class="link_faq"
-									data-tiara-action-name="2단계_인증이란_무엇인가요_안내_링크">2단계 인증이란
-										무엇인가요?</a></li>
-								<li><span class="ico_comm ico_dot"></span> <a
-									href="https://cs.daum.net/faq/59/15645.html#31037"
-									target="_blank" class="link_faq"
-									data-tiara-action-name="국가별_로그인_허용이_무엇인가요_안내_링크">국가별 로그인
-										허용이 무엇인가요?</a></li>
+								<br>
+								<li><span class="ico_comm ico_dot"></span>
+								<a><img src="../../images/blog.png" style="width:60px;"></a>
+								<a><img src="../../images/blog.png" style="width:60px;"></a>
+								<a><img src="../../images/blog.png" style="width:60px;"></a>
+								</li>
+								
 
 							</ul>
 							<a href="https://cs.daum.net/faq/59.html" target="_blank"
@@ -264,23 +252,7 @@
 
 		</div>
 		<!-- // daumContent -->
-
-		<hr class="hide">
-		<div id="daumFoot" class="footer_comm" role="contentinfo">
-			<h2 class="screen_out">서비스 이용정보</h2>
-			<a href="http://policy.daum.net/info/info" target="_blank"
-				class="link_info" data-tiara-action-name="서비스_약관_정책">서비스 약관/정책</a> |
-			<a href="http://policy.daum.net/info_protection/info_protection"
-				target="_blank" class="link_info">개인정보처리방침</a> | <a
-				href="https://cs.daum.net/redbell/top.html" target="_blank"
-				class="link_info">권리침해신고</a> | <a
-				href="https://cs.daum.net/faq/59.html" target="_blank"
-				class="link_info">고객센터</a> <small class="txt_copyright">Copyright
-				&#169; <a href="http://www.kakaocorp.com" class="link_daum"
-				style="font-weight: bold" data-tiara-action-name="카카오_회사소개_링크">Kakao
-					Corp.</a> All rights reserved.
-			</small>
-		</div>
+		<%@include file="../common/footer.jsp" %>
 		<!-- // daumFoot -->
 
 		<div id="wrapMinidaum"></div>
