@@ -37,13 +37,11 @@
 
 		<!-- Banner -->
 			<section id="banner">
-				<div class="inner">
+				<div class="inner" style="margin-left:80px">
 					<form action="" class="test0">
-							<input type="search" class="test2">
 						<fieldset class="test1">
-							<button type="submit" class="test3">
-								<i class="fa fa-search"></i>
-							</button>
+							<input type="search" class="test2" style="color:black;">
+								<i class="fa fa-search" style="float:right;margin-right:60%; margin-top:-7%;"></i>
 						</fieldset>
 					</form>
 					<!-- <form class="test0">
