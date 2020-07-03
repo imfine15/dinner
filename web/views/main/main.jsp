@@ -38,9 +38,22 @@
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
-					<h1>Industrious</h1>
+					<!-- <h1>Industrious</h1>
 					<p>A responsive business oriented template with a video background<br />
-					designed by <a href="https://templated.co/">TEMPLATED</a> and released under the Creative Commons License.</p>
+					designed by <a href="https://templated.co/">TEMPLATED</a> and released under the Creative Commons License.</p> -->
+					<form method="post" action="#">
+										<div class="row gtr-uniform" align="center">
+											<div class="col-6 col-12-xsmall">
+												<input type="search" name="name" id="name" value="" placeholder="Name" />
+					</div></div></form>
+					<form class="test0">
+					<fieldset class="test1">
+					<input type="search" class="test2"/>
+					<button type="submit" class="test3">
+					<i class="fa fa-search"></i>
+					</button>
+					</fieldset>
+					</form>
 				</div>
 				<img src = "../../images/mainBanner.jpg">
 			</section>
