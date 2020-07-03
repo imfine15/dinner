@@ -11,6 +11,9 @@
 body {
 	background: white;
 }
+.container {
+  box-shadow:0px 5px 10px 5px #DE6B6B;
+}
 </style>
 <body>
 	<div class="navbar navbar-inverse navbar-static-top"
@@ -22,7 +25,6 @@ body {
 				href="" style="float: right"><img
 				src="../../images/location.png" style="width: 100px;"></a>
 		</div>
-	<hr style="border:1px solid #DE6B6B; width:100%">
 	</div>
 </body>
 </html>

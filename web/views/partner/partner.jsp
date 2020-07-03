@@ -16,6 +16,7 @@ padding:10px;
 #wrapper {
 	width: 100%;
 	height: 1700px;
+	margin-top:50px;
 }
 
 #membership {
@@ -67,13 +68,17 @@ textarea {
 	height: 100px;
 }
 
-#sub_click {
+#sub_click_ {
+	background: url( "/semiproject/images/mintbutton.png" ) no-repeat;
+	border: none;
 	width: 212px;
 	height: 49px;
-	outline: 0;
-	background: #5BB8B4;
-	font-size: 18px;
-	font-family: 나눔스퀘어라운드;
+	cursor: pointer;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	font-family:나눔스퀘어라운드;
+	color: #FFFFFF;
 }
 
 #spacer {
@@ -91,6 +96,7 @@ textarea {
 </style>
 </head>
 <body>
+	<%@ include file="../common/header.jsp"%>
 	<!-- wrapper div start -->
 	<div id="wrapper" align="center">
 		<!-- 상단 이미지 start -->
@@ -164,12 +170,13 @@ textarea {
 				</table>
 				<div align="center"></div>
 				<div style="height:50px"></div>
-				<button id="sub_click" type="submit" style="color: white;">상담
+				<button id="sub_click_" type="submit" style="color: white;">상담
 					신청하기</button>
 			</form>
 		</div>
 		<!-- partner form end -->
 	</div>
+	<div style="height:50px;"></div>
 	<!-- wrapper div end -->
 	<%@ include file="../common/footer.jsp"%>
 </body>

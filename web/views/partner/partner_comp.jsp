@@ -29,6 +29,7 @@ p {
 </style>
 </head>
 <body>
+	<%@ include file="../common/header.jsp"%>
 	<div class="wrapper" align="center">
 		<img src="/semiproject/images/YUMEET LOGO WITH REST.png" id="logo"
 			alt="yumeet logo">
