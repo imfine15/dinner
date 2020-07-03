@@ -83,14 +83,14 @@
 	</div>
 
 	<div
-		style="width: 500px; height: 500px; margin-left: auto; margin-right: auto;">
+		style="width: 650px; height: 900px; margin-left: auto; margin-right: auto;">
 		<table>
 			<tr>
 				<td><img src=images/changeMyProfile.PNG; style="width: 600px"></td>
 			<tr>
 			<tr>
 				<td>
-					<hr style="background: #EFECE8;"> <br> <br>
+					<hr style="background: #EFECE8;"> <br>
 				</td>
 			</tr>
 			<tr>
@@ -98,8 +98,10 @@
 					style="margin-left: 100px;">YUMEET 아이디 </label> <label
 					class="text2" style="margin-left: 100px;">paducks </label> <br>
 				<br>
+				<hr>
 				<br></td>
 			</tr>
+			
 			<tr>
 				<td><label class="text">닉네임/연락처</label> <label class="text2"
 					style="margin-left: 27px;">닉네임 </label> <label class="text2"
@@ -107,19 +109,34 @@
 					<button class="box2">변경</button> <br><br> 
 					
 					<label class="text2" style="margin-left: 178px;">연락처</label>
-					<label class="text2" style="margin-left: 173px;">파덕이악사</label>
+					<img src="images/phone.png.png" width=20px; style="margin-left: 175px;" >
+					<label class="text2">010-4444-3333</label>
 					<button class="box2">변경</button> <br><br> 
 					
-					<label class="text2" style="margin-left: 400px;">파덕이악사</label>
+					<img src="images/homePage.png.png" width=20px; style="margin-left: 411px;" >
+					<label class="text2">서울 서초구 양재동</label>
 					<button class="box2">변경</button> <br><br> 
 					
-					<label class="text2" style="margin-left: 351px;">파덕이악사</label>
+					<img src="images/email.png.png" width=20px; style="margin-left: 411px;" >
+					<label class="text2">ddddd@naver.com</label>
+					<button class="box2">변경</button> <br>
+					
+					<label class="text2" style="margin-left: 411px; font-size:13px">연락처 1개는 필수 항목 입니다.</label>
+					<br><br><hr><br>
+					</td>
+			</tr>
+			<tr>
+				<td><label class="text">이름/연령확인</label> <label class="text2"
+					style="margin-left: 27px;">이름 </label> <label class="text2"
+					style="margin-left: 191px;">파덕이악사</label>
 					<button class="box2">변경</button> <br><br> 
 					
+					<label class="text2" style="margin-left: 178px;">나이</label>
+					<label class="text2" style="margin-left: 195px;">33살</label>
+					<button class="box2">변경</button> <br><br> 
 					
 					</td>
 			</tr>
-
 		</table>
 
 	</div>
