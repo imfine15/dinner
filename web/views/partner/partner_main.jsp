@@ -6,6 +6,9 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
+p {
+font-family: 나눔스퀘어_AC;
+}
 #wrapper {
 	width:100%;
 	height:1500px;
@@ -47,6 +50,10 @@ td {
 	align:center;
 	padding:50px;
 }
+#table_ali {
+	text-align:center;
+	margin-left:-70px;
+}
 </style>
 </head>
 <body>
@@ -65,7 +72,7 @@ td {
 		<div style="height:50px"></div>
 		<hr style="width:1000px">
 		<form>
-			<table>
+			<table id="table_ali">
 				<tr>
 					<td></td>
 					<td>베이직</td>
@@ -82,7 +89,7 @@ td {
 					<td>지원종류</td>
 					<td>커뮤니티 지원</td>
 					<td></td>
-					<td style="align:center;">커뮤니티, 이메일 지원</td>
+					<td>커뮤니티, 이메일 지원</td>
 				</tr>
 				<tr>
 					<td>방문 서비스</td>
@@ -93,6 +100,8 @@ td {
 			</table>
 		</form>
 		<div style="height:50px;"></div>
+		<p style="color:gray; font-size:14px;">※ 단, 계약 해지 후 예약 리뷰는 2년간 보관 후 파기합니다. </p>
+		<div style="height:70px;"></div>
 		<button id="partner_click_">상담신청하기</button>
 	</div>
 	<%@ include file="../common/footer.jsp"%>

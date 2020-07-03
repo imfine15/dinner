@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 <style>
 p {
-	font-family: 나눔스퀘어라운드;
+	font-family: 나눔스퀘어_AC;
 }
 td {
 padding:10px;
