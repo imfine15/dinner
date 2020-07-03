@@ -15,20 +15,20 @@
 	<form action="<%= request.getContextPath() %>/signUp.me" method="post" onsubmit="return check();">
 		<table>
 			<tr>
-				<td colspan="3">아이디</td>
+				<td colspan="3">아이디<br><span class="notice">아이디는 4 ~ 20글자 영어 대소문자와 숫자만 가능합니다.</span></td>
 			</tr>
 			<tr>
-				<td colspan="3"><input type="text" name="id" id="id"></td>
+				<td colspan="3"><input type="text" name="id" id="id" size="20"></td>
 				<td colspan="1"><p id="idCheck">아이디<br>중복확인</p></td>
 			</tr>
 			<tr>
 				<td colspan="3"><label id="idResult"></label></td>
 			</tr>
 			<tr>
-				<td colspan="4">비밀번호</td>
+				<td colspan="4">비밀번호<br><span class="notice">비밀번호는 8 ~ 16글자 영어 대소문자와 숫자만 가능합니다.</span></td>
 			</tr>
 			<tr>
-				<td colspan="4"><input type="password" name="password1" id="pwd1"></td>
+				<td colspan="4"><input type="password" name="password" id="pwd1" size="16"></td>
 			</tr>
 			<tr>
 				<td colspan="3">비밀번호 확인</td>
@@ -40,7 +40,7 @@
 				<td colspan="3"><label id="pwdResult"></label></td>
 			</tr>
 			<tr>
-				<td colspan="3">별명</td>
+				<td colspan="3">별명<br><span class="notice">별명은 1 ~ 10글자 한글만 가능합니다.</span></td>
 			</tr>
 			<tr>
 				<td colspan="3"><input type="text" name="nickName" id="nickName"></td>
@@ -49,7 +49,7 @@
 				<td colspan="3"><label id="nickNameResult"></label></td>
 			</tr>
 			<tr>
-				<td colspan="3">이름</td>
+				<td colspan="3">이름<br><span class="notice">이름은 2 ~ 5글자 한글만 가능합니다.</span></td>
 			</tr>
 			<tr>
 				<td colspan="3"><input type="text" name="name" id="name"></td>
@@ -64,8 +64,8 @@
 				<td colspan="3">
 					<select name="gender" id="gender">
 						<option value="" disabled selected hidden="hidden">성별</option>
-						<option value="male">남성</option>
-						<option value="female">여성</option>
+						<option value="M">남성</option>
+						<option value="F">여성</option>
 					</select>
 				</td>
 			</tr>
