@@ -28,6 +28,7 @@
 		height: 35px;
 		font-size: 24px;
 		margin: 30px;
+		margin-left:25%;
 	}
 	#title{
 		color : #DE7270;
