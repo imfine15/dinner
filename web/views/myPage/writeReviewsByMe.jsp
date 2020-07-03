@@ -85,11 +85,11 @@
 					</div>
 					<table>
 						<tr>
-							<td style="margin-left: 30px;"class="text">kh_r_03</td>
-							<td style="margin-left: 80px;"class="text">kh_r_03</td>
-							<td style="margin-left: 80px;"class="text">kh_r_03</td>
-							<td style="margin-left: 80px;"class="text">kh_r_03</td>
-							<td style="margin-left: 80px;"class="text">kh_r_03</td>
+							<td><div style="width:72px; margin-left:30px;"><label class="text">ym_r_01</label></div></td>
+							<td><div style="width:60px; margin-left:80px;"><label class="text">ym_r_01</label></div></td>
+							<td><div style="width:100px; margin-left:50px;"><label class="text">2020-05-11</label></div></td>
+							<td><div style="width:80px; margin-left:80px;"><label class="text">4.5</label></div></td>
+							<td><div style="width:80px; margin-left:50px;"><label class="text">450</label></div></td>
 						</tr>
 					
 					</table>
