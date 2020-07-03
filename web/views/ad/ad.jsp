@@ -58,6 +58,26 @@ input {
 	line-height: 35px;
 	color: #000000;
 }
+#sub_click_ {
+	background: url( "/semiproject/images/mintbutton.png" ) no-repeat;
+	border: none;
+	width: 212px;
+	height: 49px;
+	cursor: pointer;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	font-family:나눔스퀘어라운드;
+	color: #FFFFFF;
+}
+#anno {
+font-size: 14px;
+line-height: 16px;
+
+text-align: center;
+
+color: #000000;
+}
 </style>
 </head>
 <body>
@@ -91,44 +111,47 @@ input {
 							placeholder="이름"></td>
 					</tr>
 					<tr>
-						<td><input size="40" style="line-height: 30px;"
+						<td><input size="50" style="line-height: 30px;"
 							placeholder="전화번호"></td>
 					</tr>
 					<tr>
-						<td><input size="40" style="line-height: 30px;"
+						<td><input size="50" style="line-height: 30px;"
 							placeholder="이메일"></td>
 					</tr>
 					<tr>
-						<td><input size="40" style="line-height: 30px;"
+						<td><input size="50" style="line-height: 30px;"
 							placeholder="업체명"></td>
 					</tr>
 					<tr>
-						<td><input size="40" style="line-height: 30px;"
+						<td><input size="50" style="line-height: 30px;"
 							placeholder="업체주소"></td>
 					</tr>
 					<tr>
-						<td><input size="40" style="line-height: 30px;"
+						<td><input size="50" style="line-height: 30px;"
 							placeholder="업체종류"></td>
 					</tr>
 					<tr>
-						<td><input size="40" style="line-height: 30px;"
+						<td><input size="50" style="line-height: 30px;"
 							placeholder="어떤 경로를 통해 알게 되셨나요?"></td>
 					</tr>
 					<tr>
 						<td><select
-							style="font-size: 18px; width: 100%; height: 40px;"><option>메인
+							style="font-size: 18px; width: 100%; height: 40px;font-family: 나눔스퀘어_AC;"><option>메인
 									페이지 배너 광고</option>
 								<option>기타 페이지 배너 광고</option></select></td>
 					</tr>
 					<tr>
 						<td><textarea placeholder="상담내용"
-								style="font-size: 20px; width: 100%; height: 200px;"></textarea></td>
+								style="font-size: 20px; width: 100%; height: 200px; font-family: 나눔스퀘어_AC;"></textarea></td>
 					</tr>
 				</table>
 			</form>
 		</div>
 		<div>
-			<button>상담 신청하기</button>
+			<p id="anno">Phone : 02 6537 7772<br>
+			E mail : dydxkr113@naver.com</p>
+			<div style="height:30px;"></div>
+			<button id="sub_click_" type="submit" style="color: white;">상담 신청하기</button>
 		</div>
 	</div>
 	<div style="height: 100px;"></div>

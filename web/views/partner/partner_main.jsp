@@ -57,6 +57,7 @@ td {
 </style>
 </head>
 <body>
+	<%@ include file="../common/header.jsp"%>
 	<div id="wrapper" align="center">
 		<div class="top box">
 			<img src="/semiproject/images/YUMEET LOGO WITH REST.png" id="logo"
@@ -104,6 +105,7 @@ td {
 		<div style="height:70px;"></div>
 		<button id="partner_click_">상담신청하기</button>
 	</div>
+		<div style="height:100px;"></div>
 	<%@ include file="../common/footer.jsp"%>
 </body>
 </html>
