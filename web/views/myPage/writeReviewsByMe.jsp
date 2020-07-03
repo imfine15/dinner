@@ -7,6 +7,21 @@
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css"
 	href="/semiproject/views/myPage/css/myPage.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+   $(function(){
+	  	$("#listArea td").mouseenter(function(){
+	  		$(this).parent().css({"background":"darkgray","cursor":"pointer"});
+	  	}).mouseout(function(){
+	  		$(this).parent().css({"background":"white"});
+	  	}).click(function(){
+	  		var num = $(this).parent().children().eq(0).text();
+	  		
+	  		console.log(num);
+	  		location.href="<%=request.getContextPath()%>/selectOne.no?num=" + num;
+	  	})
+   });
+   </script>
 <style>
 .info {
 	font-family: Roboto;
@@ -19,8 +34,16 @@
 .text {
 	font-family: Roboto;
 	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 18px;
+	color: #343434;
+}
+.text2 {
+	font-family: Roboto;
+	font-style: normal;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 18px;
 	color: #343434;
 }
@@ -29,11 +52,6 @@
 <body>
 	<%@include file="../common/header.jsp"%>
 	<div id="daumWrap" class="userinfo_type1 ">
-		<div id="daumIndex">
-			<!-- 웹접근성용 바로가기 링크 모음 -->
-			<a href="#daumBody" data-tiara-action-name="본문_바로가기">본문 바로가기</a> <a
-				href="#daumGnb" data-tiara-action-name="메뉴_바로가기">메뉴 바로가기</a>
-		</div>
 
 		<div id="daumHead" role="banner">
 			<div class="inner_head">
@@ -83,13 +101,13 @@
 						<label style="margin-left: 80px;"class="text">평점</label>
 						<label style="margin-left: 80px;"class="text">좋아요 수</label>
 					</div>
-					<table>
+					<table style="border-bottom: 1px solid pink" id="listArea">
 						<tr>
-							<td><div style="width:72px; margin-left:30px;"><label class="text">ym_r_01</label></div></td>
-							<td><div style="width:60px; margin-left:80px;"><label class="text">ym_r_01</label></div></td>
-							<td><div style="width:100px; margin-left:50px;"><label class="text">2020-05-11</label></div></td>
-							<td><div style="width:80px; margin-left:80px;"><label class="text">4.5</label></div></td>
-							<td><div style="width:80px; margin-left:50px;"><label class="text">450</label></div></td>
+							<td><div style="width:72px; margin-left:30px;"><label class="text2">ym_r_01</label></div></td>
+							<td><div style="width:60px; margin-left:80px;"><label class="text2">ym_r_01</label></div></td>
+							<td><div style="width:100px; margin-left:50px;"><label class="text2">2020-05-11</label></div></td>
+							<td><div style="width:80px; margin-left:80px;"><label class="text2">4.5</label></div></td>
+							<td><div style="width:80px; margin-left:50px;"><label class="text2">450</label></div></td>
 						</tr>
 					
 					</table>
@@ -231,25 +249,6 @@
         enableShield: false
     }
 </script>
-	<script src="https://go.daum.net/minidaum_pc.daum" charset="utf-8"
-		type="text/javascript"></script>
-	<script type="text/javascript"
-		src="https://t1.daumcdn.net/id/statics/common/js-lib/jquery-1.12.1.min.js"></script>
-
-	<script type="text/javascript"
-		src="/content/js/jquery.form.validate.js?v=200630065607"></script>
-	<script type="text/javascript"
-		src="/content/js/jquery.form.validate.ext.js?v=200630065607"></script>
-	<script type="text/javascript"
-		src="/content/js/jquery.form.my.init.js?v=200630065607"></script>
-	<script type="text/javascript"
-		src="/content/js/jquery.api.js?v=200630065607"></script>
-	<script type="text/javascript"
-		src="/content/js/messages.js?v=200630065607"></script>
-	<script type="text/javascript"
-		src="/content/js/image_urls.js?v=200630065607"></script>
-	<script type="text/javascript"
-		src="/content/js/profile.image.js?v=200630065607"></script>
 
 	<script type="text/javascript">
     $(document).ready(function(){
