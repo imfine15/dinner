@@ -7,14 +7,6 @@
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css"
 	href="/semiproject/views/myPage/css/myPage.css" />
-
-<meta property="og:title" content="내정보 홈 | Daum 내정보">
-<meta property="og:type" content="website">
-<meta property="og:image"
-	content="http://m1.daumcdn.net/svc/image/U03/common_icon/5587C4E4012FCD0001">
-<meta property="og:image:secure_url"
-	content="https://m1.daumcdn.net/svc/image/U03/common_icon/5587C4E4012FCD0001">
-<meta property="og:description" content="여기를 눌러 링크를 확인하세요.">
 <style>
 .info {
 	font-family: Roboto;
@@ -152,7 +144,7 @@
 							</a> <a href="/my/basic.daum" class="link_user"
 								data-tiara-action-name="내_정보">dydxkr님<br>
 							</a>
-							<label class="">포인트 : 300</label>	
+							<label class="" >    포인트 : 300</label>	
 							<div id="profileImageAgreeDialog" class="layer_manage"
 								style="display: none">
 								<p class="txt_desc">[선택] 회원식별 목적으로 프로필 이미지를 수집하며, 삭제 시 지체없이
