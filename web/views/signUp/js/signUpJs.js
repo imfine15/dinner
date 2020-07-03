@@ -22,7 +22,7 @@ function check() {
 		$("#idResult").html("아이디는 비어있을 수 없습니다.").css({"backgroundColor" : "red", "color" : "white"});
 		$("#id").focus();
 		return false;
-	} else if(idCheck.test(id.val())) {
+	} else if(!idCheck.test(id.val())) {
 		$("#idResult").html("아이디를 4 ~ 20자 영어 대소문자와 숫자로 입력하세요.").css({"backgroundColor" : "red", "color" : "white"});
 		$("#id").focus();
 		return false;
@@ -36,7 +36,7 @@ function check() {
 		$("#pwdResult").html("비밀번호는 비어있을 수 없습니다.").css({"backgroundColor" : "red", "color" : "white"});
 		$("#pwd1").focus();
 		return false;
-	} else if(passwordCheck.test(pwd1.val()) || passwordCheck.test(pwd2.val())) {
+	} else if(!passwordCheck.test(pwd1.val()) || !passwordCheck.test(pwd2.val())) {
 		$("#pwdResult").html("비밀번호를 8 ~ 16자리 숫자와 영어 대소문자로 입력하세요.").css({"backgroundColor" : "red", "color" : "white"});
 		$("#pwd1").focus();
 		return false;
@@ -46,7 +46,7 @@ function check() {
 		$("#nameResult").html("이름은 비어있을 수 없습니다.").css({"backgroundColor" : "red", "color" : "white"});
 		$("#name").focus();
 		return false;
-	} else if(nameCheck.test(name.val())) {
+	} else if(!nameCheck.test(name.val())) {
 		$("#nameResult").html("이름을 한글 2 ~ 5글자로만 입력하세요.").css({"backgroundColor" : "red", "color" : "white"});
 		$("#name").focus();
 		return false;
@@ -56,7 +56,7 @@ function check() {
 		$("#nickNameResult").html("별명은 비어있을 수 없습니다.").css({"backgroundColor" : "red", "color" : "white"});
 		$("#nickName").focus();
 		return false;
-	} else if(nickNameCheck.test(nickName.val())) {
+	} else if(!nickNameCheck.test(nickName.val())) {
 		$("#nickNameResult").html("별명을 한글 1 ~ 10글자로만 입력하세요.").css({"backgroundColor" : "red", "color" : "white"});
 		$("#nickName").focus();
 		return false;
