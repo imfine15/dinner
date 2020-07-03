@@ -29,13 +29,19 @@
 		font-size: 24px;
 		margin: 30px;
 	}
+		#title{
+		color : #DE7270;
+	font-size: 36px;
+	}
 </style>
 </head>
 <body>
 <%@ include file="/views/common/header.jsp" %>
 <div align="center" class="outer">
-<pre id="text">
+<p id="title" align="left">
 YUMEET 이용약관
+</p>
+<pre id="text">
 
  
 
