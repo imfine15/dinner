@@ -8,6 +8,9 @@
 
 
 /* 테스트  */
+.aaa{
+	width: 100px;
+}
  .test0{
 	width:500px;
 	align-content: center;
@@ -31,7 +34,7 @@
 
 .test2 , .test3 {  
 	position: relative;  
-	width: 200px;  
+	width: 0px;  
 	height: 50px;  
 	padding: 0;  
 	display: inline-block;  

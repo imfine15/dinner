@@ -39,8 +39,8 @@
 			<section id="banner">
 				<div class="inner">
 					<form action="" class="test0">
-						<fieldset class="test1">
 							<input type="search" class="test2">
+						<fieldset class="test1">
 							<button type="submit" class="test3">
 								<i class="fa fa-search"></i>
 							</button>
