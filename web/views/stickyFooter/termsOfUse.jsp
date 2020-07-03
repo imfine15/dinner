@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET 이용약관</title>
 <style>
 
 	.outer{
@@ -28,6 +28,7 @@
 		height: 35px;
 		font-size: 24px;
 		margin: 30px;
+		margin-left:25%;
 	}
 		#title{
 		color : #DE7270;
