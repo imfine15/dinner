@@ -168,54 +168,6 @@ html, body {
 	padding: 0px 20px 20px 20px;
 }
 
-@media only screen and (min-width: 1280px) {
-	.contain {
-		width: 100%;
-		margin: 0 auto;
-		margin-left: 200px;
-	}
-}
-
-@media only screen and (max-width: 1139px) {
-	.contain .social {
-		width: 1000px;
-		display: block;
-	}
-	.social h1 {
-		margin: 0px;
-	}
-}
-
-@media only screen and (max-width: 950px) {
-	.footer .col {
-		width: 33%;
-	}
-	.footer .col h1 {
-		font-size: 14px;
-	}
-	.footer .col ul li {
-		font-size: 13px;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-	.footer .col {
-		width: 50%;
-	}
-	.footer .col h1 {
-		font-size: 14px;
-	}
-	.footer .col ul li {
-		font-size: 13px;
-	}
-}
-
-@media only screen and (max-width: 340px) {
-	.footer .col {
-		width: 100%;
-	}
-}
-
 .footer {
 	box-shadow: 0px -2px 10px 2px #DE6B6B;
 }
@@ -236,7 +188,7 @@ body {
 	<!-- FOOTER START -->
 	<div class="footer">
 		<div class="contain">
-			<div class="col" style="margin-top:20px; margin-left:-150px; ">
+			<div class="col" style="margin-top:20px; margin-left:100px; ">
 				<img src="/semiproject/images/YUMEET LOGO.png" id="ylogo"
 					alt="yumeetlogo">
 			</div>
