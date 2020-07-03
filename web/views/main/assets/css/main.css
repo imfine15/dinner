@@ -8,22 +8,42 @@
 
 
 /* 테스트  */
-.test0{
+ .test0{
 	width:500px;
 	align-content: center;
 	margin-left: 500px;
 	position: relative;
+
 }
 
-.test1 {  /* position: relative; */  display: inline-block;  padding: 0 0 0 40px;  background: #fff;  border: none;  border-radius: 5px; width:350px; height:50px;} 
+.test1 {  
+	position: relative;  
+	display: inline-block;  
+	padding: 0 0 0 40px;  
+	background: #fff;  
+	border: none;  
+	border-radius: 5px; 
+	width:350px; 
+	height:50px;
+	} 
 
 
 
-.test2 , .test3 {  position: relative;  width: 200px;  height: 50px;  padding: 0;  display: inline-block;  float: left; } // 검색창과 버튼 너비 크기 설정
+.test2 , .test3 {  
+	position: relative;  
+	width: 200px;  
+	height: 50px;  
+	padding: 0;  
+	display: inline-block;  
+	float: left; 
+	} // 검색창과 버튼 너비 크기 설정
 
 
 
-.test2 {  color: #666;  z-index: 2;  border: 0 none; }
+.test2 {  
+	color: #666;  
+	z-index: 2;  
+	border: 0 none; }
 
 
 
@@ -63,7 +83,7 @@
 
 .test3 {  z-index: 1;  width: 50px;  border: 0 none;  background: #ceb980;  cursor: pointer;  border-radius: 0 5px 5px 0;  
 
-  -webkit-transform: translate(-50px, 0);
+   -webkit-transform: translate(-50px, 0);
 
       -ms-transform: translate(-50px, 0);
 
