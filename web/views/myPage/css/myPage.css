@@ -22,7 +22,7 @@ address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
 .clear_g:after{display:block;visibility:hidden;clear:both;height:0;font-size:0;content:''}
 #daumWrap{position:relative;width:100%;height:100%}
 #mArticle{min-height:574px}
-#daumHead{width:100%;padding-top:51px;border-bottom:2px solid #424447}
+#daumHead{width:100%;}
 #daumHead .inner_head{width:978px;height:58px;margin:0 auto}
 #daumHead:after{display:block;visibility:hidden;height:0;content:'';font-size:0;clear:both}
 #daumHead h1{display:inline;float:left;margin-left:4px;font-size:24px;font-weight:bold;line-height:28px;letter-spacing:-1px}
