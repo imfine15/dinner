@@ -43,8 +43,8 @@
 	<%-- <%@ include file="/views/common/footer.jsp" %> --%>
 
 	<div class="outer">
-		<br>
-		<!-- table area start -->
+<!-- 		<br>
+		table area start
 		<div class="tableArea">
 			<table align="center" id="listArea">
 				<tr>
@@ -66,7 +66,13 @@
 				</tr>
 			</table>
 		</div>
-		<!-- table area end -->
+		table area end -->
+		
+		<ul>
+			<li>
+				<h3>공지사항!</h3><span class="ico_ar"></span>
+			</li>
+		</ul>
 		<!-- search area start -->
 		<div class="searchArea" align="center">
 			<select id="searchCondition" name="searchCondition">
