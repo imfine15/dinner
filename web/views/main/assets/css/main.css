@@ -929,8 +929,7 @@ table.alt tbody tr td {
   padding: 20px;
   margin: 20px; }
  .content img{
-  	padding: 50px;
-  	
+  	margin-right: 0px;
   }
 
 /* Testimonials */
