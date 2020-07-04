@@ -37,7 +37,7 @@
 
 		<!-- Banner -->
 			<section id="banner">
-				<div class="inner" style="margin-left:80px">
+				<div class="inner" style="margin-left:90px">
 					<form action="" class="test0">
 						<fieldset class="test1">
 							<input type="search" class="test2" style="color:black;">
@@ -65,23 +65,23 @@
 					</header>
 					<div class="highlights">
 						<section>
-							<div class="content">
-								<header>
-									<img alt="" src="../../images/forAboutYum.jpg" width="400px" height="auto">
+							<div class="content" style="width:360px; height:320px; margin:0;">
+								<header style="width:320px; align:center;">
+									<img alt="" src="../../images/forAboutYum.jpg" width="300px" height="auto">
 								</header>
 							</div>
 						</section>
 						<section>
-							<div class="content">
-								<header>
-									<img alt="" src="../../images/forAboutYum.jpg" width="400px" height="auto">
+							<div class="content" style="width:360px; height:320px; margin:0;">
+								<header style="width:320px; align:center;">
+									<img alt="" src="../../images/forAboutYum.jpg" width="300px" height="auto">
 								</header>
 							</div>
 						</section>
 						<section>
-							<div class="content">
-								<header>
-									<img alt="" src="../../images/forAboutYum.jpg" width="400px" height="auto">
+							<div class="content" style="width:360px; height:320px; margin:0;">
+								<header style="width:320px; align:center;">
+									<img alt="" src="../../images/forAboutYum.jpg" width="300px" height="auto">
 								</header>
 							</div>
 						</section>
