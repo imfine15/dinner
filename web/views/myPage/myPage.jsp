@@ -84,20 +84,20 @@
 							</div>
 						</div>
 						<strong class="screen_out">내정보 보호 서비스 링크 목록</strong> <a
-							class="bg_box  box_off"> <!-- 미사용시 class 'box_off', 사용시 class 'box_on' -->
+							class="bg_box box_on"> <!-- 미사용시 class 'box_off', 사용시 class 'box_on' -->
 							<h2>즐겨찾기</h2>
 							<ul>
 								<li>· 장터식당</li>
 								<li>· 뢰벤돈까스</li>
 								<li>· 청목</li>
 							</ul>
-						</a> <a class="bg_box  box_off "> <!-- 미사용시 class 'box_off', 사용시 class 'box_on' -->
+						</a> <a class="bg_box  box_on "> <!-- 미사용시 class 'box_off', 사용시 class 'box_on' -->
 							<h2>내가쓴 게시글</h2> <span class="txt_desc">"내가쓴 게시글이 한눈에!" </span> <span
 							class="screen_out">현재상태 </span> <em class="ir_pm"> 사용중 </em>
-						</a> <a class="bg_box  box_off4 ">
+						</a> <a class="bg_box  box_on4 ">
 							<h2>내가쓴 리뷰</h2> <span class="txt_desc">"리뷰들을 모아서 보자!" </span> <span
 							class="screen_out">현재상태 </span> <em class="ir_pm"> 미참여 </em>
-						</a> <a class="bg_box  box_off  "> <!-- 미사용시 class 'box_off2', 사용시 class 'box_on2' -->
+						</a> <a class="bg_box  box_on  "> <!-- 미사용시 class 'box_off2', 사용시 class 'box_on2' -->
 							<h2>좋아요한 글</h2>
 
 							<ul>
@@ -262,26 +262,6 @@
         enableShield: false
     }
 </script>
-	<script src="https://go.daum.net/minidaum_pc.daum" charset="utf-8"
-		type="text/javascript"></script>
-	<script type="text/javascript"
-		src="https://t1.daumcdn.net/id/statics/common/js-lib/jquery-1.12.1.min.js"></script>
-
-	<script type="text/javascript"
-		src="/content/js/jquery.form.validate.js?v=200630065607"></script>
-	<script type="text/javascript"
-		src="/content/js/jquery.form.validate.ext.js?v=200630065607"></script>
-	<script type="text/javascript"
-		src="/content/js/jquery.form.my.init.js?v=200630065607"></script>
-	<script type="text/javascript"
-		src="/content/js/jquery.api.js?v=200630065607"></script>
-	<script type="text/javascript"
-		src="/content/js/messages.js?v=200630065607"></script>
-	<script type="text/javascript"
-		src="/content/js/image_urls.js?v=200630065607"></script>
-	<script type="text/javascript"
-		src="/content/js/profile.image.js?v=200630065607"></script>
-
 	<script type="text/javascript">
     $(document).ready(function(){
         Home.init();

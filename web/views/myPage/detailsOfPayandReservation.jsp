@@ -79,8 +79,23 @@
 	border-radius: 5px;
 	width: 70px;
 	height: 30px;
-	background: #E4E4E4;
+	background: #B7E1E1;
 	margin-left:5px;
+	color: white;
+}
+.text6 {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 550;
+	font-size: 16px;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 5px;
+	width: 70px;
+	height: 30px;
+	background: #DE6B6B;
+	margin-left:5px;
+	color: white;
 }
 </style>
 </head>
@@ -130,40 +145,41 @@
 					<h1 style="color: #DA817F;">리뷰</h1>
 					<div style="width:400px; display: inline-block;!important">
 					<button class="text3">1개월</button><button class="text3">2개월</button><button class="text4">3개월이상</button>
+					<button class="text6">예약</button><button class="text6">결제</button>
 					</div>
 					<div style="width:295px; display: inline-block;!important;" align="right">
-					<button class="text5">전체</button><button class="text5">지급</button><button class="text5" style="margin-right:5px;">사용</button>
+					<button class="text5">전체</button><button class="text5">결제완료</button><button class="text5" style="margin-right:5px;">결제취소</button>
 					</div>
 					<br><br>
 					
 					<div style="width: 100%; background-color: pink; height: 30px; margin-top:-10px">
 						<label style="margin-left: 30px;"class="text">번호</label>
-						<label style="margin-left: 80px;"class="text">포인트</label>
-						<label style="margin-left: 80px;"class="text">일자</label>
-						<label style="margin-left: 80px;"class="text">용도</label>
-						<label style="margin-left: 100px;"class="text">내용</label>
+						<label style="margin-left: 50px;"class="text">가게명</label>
+						<label style="margin-left: 50px;"class="text">결제 완료 일자</label>
+						<label style="margin-left: 80px;"class="text">상태</label>
+						<label style="margin-left: 100px;"class="text">방문예정일자</label>
 					</div>
 					<table style="border-bottom: 1px solid pink" id="listArea">
-						<tr>
+						<tr> 
 							<td><div style="width:72px; margin-left:40px;"><label class="text2">3</label></div></td>
-							<td><div style="width:60px; margin-left:40px;"><label class="text2">300</label></div></td>
-							<td><div style="width:100px; margin-left:40px;"><label class="text2">2020-05-11</label></div></td>
-							<td><div style="width:40px; margin-left:35px;"><label class="text2">지급</label></div></td>
-							<td><div style="width:230px; margin-left:30px;"><label class="text2">예약서비스 이용에 대한 지급</label></div></td>
+							<td><div style="width:60px; margin-left:0px;"><label class="text2">돼지되지</label></div></td>
+							<td><div style="width:130px; margin-left:40px;"><label class="text2">2020-05-11 11:01</label></div></td>
+							<td><div style="width:80px; margin-left:50px;"><label class="text2">결제취소</label></div></td>
+							<td><div style="width:130px; margin-left:30px;"><label class="text2">20/09/18 12:00</label></div></td>
 						</tr>
 						<tr>
 							<td><div style="width:72px; margin-left:40px;"><label class="text2">2</label></div></td>
-							<td><div style="width:60px; margin-left:40px;"><label class="text2">200</label></div></td>
-							<td><div style="width:100px; margin-left:40px;"><label class="text2">2020-05-11</label></div></td>
-							<td><div style="width:40px; margin-left:35px;"><label class="text2">사용</label></div></td>
-							<td><div style="width:230px; margin-left:30px;"><label class="text2">예약서비스 이용에 대한 사용</label></div></td>
+							<td><div style="width:60px; margin-left:0px;"><label class="text2">갈비천왕</label></div></td>
+							<td><div style="width:130px; margin-left:40px;"><label class="text2">2020-05-10 14:09</label></div></td>
+							<td><div style="width:80px; margin-left:50px;"><label class="text2">결제완료</label></div></td>
+							<td><div style="width:130px; margin-left:30px;"><label class="text2">20/09/18 12:00</label></div></td>
 						</tr>
 						<tr>
 							<td><div style="width:72px; margin-left:40px;"><label class="text2">1</label></div></td>
-							<td><div style="width:60px; margin-left:40px;"><label class="text2">300</label></div></td>
-							<td><div style="width:100px; margin-left:40px;"><label class="text2">2020-05-11</label></div></td>
-							<td><div style="width:40px; margin-left:35px;"><label class="text2">지급</label></div></td>
-							<td><div style="width:230px; margin-left:30px;"><label class="text2">예약서비스 이용에 대한 지급</label></div></td>
+							<td><div style="width:60px; margin-left:0px;"><label class="text2">숯불갈비</label></div></td>
+							<td><div style="width:130px; margin-left:40px;"><label class="text2">2020-05-11</label></div></td>
+							<td><div style="width:80px; margin-left:50px;"><label class="text2">결제완료</label></div></td>
+							<td><div style="width:130px; margin-left:30px;"><label class="text2">20/09/18 12:00</label></div></td>
 						</tr>
 					</table>
 
