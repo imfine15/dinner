@@ -71,10 +71,37 @@
 		height: auto;
 	}
 	#side{
-		width:100px;
-		height: 400px;
+		width:300px;
+		height: 800px;
 		background-color: #EFEFEF;
+		border-radius: 30px 0 0 0;
+		display: inline-block;
 	}
+	section{
+		display: inline-block;
+		text-align: left;
+	}
+	aside{
+		display: inline-block;
+	}
+	.maintext{
+		font-size: 16px;
+	}
+	.rating{
+		margin-left: 200px;
+		font-size: 18px;
+		color: #E15756;
+	}
+	.small{
+		font-size: 12px;
+		color: #6F6F6F;
+	}
+	.foodImg{
+		width: 300px;
+		height: 150px;
+		border-radius: 30px;
+	}
+	
 	
 </style>
 </head>
@@ -97,10 +124,19 @@
 		
 		</div>
 		</nav>
-		
+		<section>
+			<div class="inner">
+					<div id="foodArea1">
+						<img src="/semiproject/images/죠떡.jpg" class="foodImg"><br>
+						<label class="maintext">떡볶이</label><label class="rating">4.2</label><br>
+						<p class="small">역삼/선릉</p>
+						<p class="small">떡볶이</p>
+					</div>
+			</div>
+		</section>
 		<!-- 사이드 -->
 		<aside>
-			<label id="side"></label>
+			<div id="side"></div>
 		</aside>
 	</div>
 	
