@@ -23,12 +23,6 @@ html, body {
 	padding: 60px 0px;
 }
 /* STYLES SPECIFIC TO FOOTER  */
-.footer {
-	width: 100%;
-	position: relative;
-	height: auto;
-	background-color: white;
-}
 
 .footer .col {
 	width: 250px;
@@ -176,8 +170,13 @@ html, body {
 	width: 250px;
 	height: auto;
 }
-body {
+
+.footer {
+	width: 100%;
+	height: auto;
+	background-color: white;
 	font-family:-윤고딕310;
+}
 }
 </style>
 </head>

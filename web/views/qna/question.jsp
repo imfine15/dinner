@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 <style>
 .wrapper {
-	height: 1000px;
+	height: auto;
 	font-family:나눔스퀘어;
 }
 
@@ -23,16 +23,52 @@ tr {
 .first {
 	text-align:center;
 }
+#content {
+	width:100%;
+	height:300px;
+	resize:none;
+}
+.question-form {
+	font-size:16px;
+	margin-top:50px;
+}
+
+#question-submit {
+	background: url( "/semiproject/images/submitmb.png" repeat;);
+	border: none;
+	width: 180px;
+	height: 50px;
+	cursor: pointer;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	font-family:나눔스퀘어라운드;
+	color: #FFFFFF;
+		margin-right:30px;
+}
+#question-reset {
+	background: url( "/semiproject/images/resetb.png" repeat;);
+	border: none;
+	width: 180px;
+	height: 50px;
+	cursor: pointer;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	font-family:나눔스퀘어라운드;
+	color: #FFFFFF;
+	margin-left:30px;
+}
 </style>
 </head>
 <body>
 	<%@ include file="../common/header.jsp"%>
 	<div class="wrapper" align="center">
 		<div>
-			<p style="margin-top: 100px; margin-right: 100px;">문의하기</p>
+			<p style="margin-top: 100px; margin-right:800px;">문의하기</p>
 		</div>
 		<div>
-			<form>
+			<form class="question-form">
 				<table style="width:1000px">
 					<tr>
 						<td class="first" style="width:100px;">ID</td>
@@ -54,11 +90,15 @@ tr {
 					</tr>
 					<tr>
 						<td class="first" >제목</td>
-						<td colspan="3"></td>
+						<td colspan="3">
+							<input type="text" style="width:100%;" id="">
+						</td>
 					</tr>
 					<tr>
-						<td class="first" >내용</td>
-						<td colspan="3"></td>
+						<td class="first">내용</td>
+						<td colspan="3">
+							<textarea id="content"></textarea>
+						</td>
 					</tr>
 					<tr>
 						<td class="first" ></td>
@@ -67,7 +107,9 @@ tr {
 					</tr>
 					<tr>
 						<td class="first" >첨부파일</td>
-						<td colspan="2"></td>
+						<td colspan="2">
+							<input type="file">
+						</td>
 						<td></td>
 					</tr>
 					<tr>
@@ -80,25 +122,14 @@ tr {
 						<td></td>
 					</tr>
 				</table>
+				<button type="submit" id="question-submit">접수</button>
+				<button type="reset" id="question-reset">취소</button>
 			</form>
 		</div>
 	</div>
+	<div style="height:200px;"></div>
 	<%@ include file="../common/footer.jsp"%>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
