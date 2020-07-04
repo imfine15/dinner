@@ -185,6 +185,10 @@ address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
 .info_servicelist .bg_box:hover{text-decoration:none}
 .info_servicelist .box_tit{width:313px;height:223px}
 .info_servicelist 
+.info_servicelist .my_box{
+	display:block;overflow:hidden;
+	float:left;width:277px;height:95px;margin:0 8px 7px 0;padding:27px 0 0 25px
+}
 .box_off{background-position:0 -1075px}
 .info_servicelist .box_on{background-position:0 -400px}
 .info_servicelist .box_off2{width:140px;background-position:0 -540px}
