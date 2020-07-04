@@ -178,7 +178,6 @@ html, body {
 }
 body {
 	font-family:-윤고딕310;
-	font-weight:bold;
 }
 </style>
 </head>
