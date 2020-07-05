@@ -42,10 +42,14 @@
 	
 	/* 여기까지가 스위치버튼css */
 	.outer{
-		width: 1000px;
+		width: 1200px;
+		height: 1500px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 50px;
+	}
+	.inner{
+		width: 900px;
 	}
 	#text1{
 		font-family: 나눔손글씨체;
@@ -73,11 +77,12 @@
         top: 12px;
 	}
 	#side{
-		width:300px;
-		height: 800px;
+		width:350px;
+		height: 1300px;
 		background-color: #EFEFEF;
 		border-radius: 30px 0 0 0;
 		display: inline-block;
+		float: right;
 	}
 	section{
 		width:650px;
@@ -88,7 +93,8 @@
 	}
 	aside{
 		display: inline-block;
-		float: left;
+		float: right;
+		
 		
 	}
 	.maintext{
@@ -109,13 +115,13 @@
 		color: #6F6F6F;
 	}
 	.foodImg{
-		width: 300px;
-		height: 150px;
+		width: 350px;
+		height: 170px;
 		border-radius: 30px;
 	}
 	.foodArea{
 		display: inline-block;
-		margin: 10px;
+		margin: 30px;
 	}
 	footer{
 		clear: both;
@@ -125,6 +131,8 @@
 		color: #E15756;
 		float: left;
 		margin-left: 30px;
+		margin-bottom: 0px;
+		font-weight: bold;
 	}
 	#keywordArea{
 		width: 280px;
@@ -132,6 +140,9 @@
 		background: #EAD9D5;
 		margin-top: 10px;
 		border-radius: 30px;
+		text-align: left;
+		padding-top: 15px;
+		padding-left: 8px;
 	}
 	.keybtn{
 		background: #F7F6F6;
@@ -142,8 +153,67 @@
 		height: 20px;
 		border: 1px solid #DD6664;
 		border-radius: 5px;
+		margin: 2px;
+		margin-top: 5px;
 	}
 	
+	#ad {
+		margin-top: 30px;
+	}
+	#adImg{
+		 width: 270px;
+		 height: auto;
+		 border: 1px solid black;
+	}
+	#review{
+		font-size: 24px;
+		color: #E15756;
+		float: left;
+		margin-left: 20px;
+		margin-bottom: 0px;
+		font-weight: bold;
+	}
+	
+
+	 .img{
+        position: relative;
+        background-image: url(/semiproject/images/장어구이.jpg);                                                               
+        width: 290px;
+		height: 150px;
+		margin: 10px;
+		margin-top:50px;
+        background-size: cover;
+    }
+
+    .img-cover{
+       position: absolute;
+       height: 100%;
+       width: 100%;
+       background-color: rgba(0, 0, 0, 0.5);                                                                 
+       z-index:1;
+    }
+
+    .img .content{
+         position: absolute;
+         top:50%;
+         left:50%;
+         transform: translate(-50%, -50%);                                                                   
+         color: white;
+         font-size: 18px;
+         z-index: 2;
+         text-align: center;
+         
+    }
+    .reviewArea{
+    	width: 300px;
+    	height: 50px;
+    	margin: 10px;
+    }
+	#reviewsmall{
+		font-size: 12px;
+		margin: 0;
+	}
+
 	
 </style>
 </head>
@@ -205,6 +275,25 @@
 					<button class="keybtn">육류</button>
 					<button class="keybtn">밥 포함</button>
 					<button class="keybtn">캐쥬얼</button>
+				</div>
+				<!-- 배너광고 -->
+				<div id="ad">
+					<a href="www.naver.com" target="_blank"><img src="/semiproject/images/groupmoa.PNG" id="adImg"></a>
+				</div>
+				<!-- 코스추천 -->
+				<div>
+				<div class="reviewArea">
+					<p id="review">코스 리뷰</p>
+				</div>
+				 <div class="img">
+			        <div class="content">
+			           <p style="margin: 3px">장어구이핵꿀맛</p>
+			           <p id="reviewsmall">장어구이맛집추천!</p>
+			        </div>
+			        <div class="img-cover"></div>
+			    </div><br>
+			    <hr width="250px">
+
 				</div>
 			</div>
 		</aside>
