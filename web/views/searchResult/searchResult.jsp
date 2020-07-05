@@ -42,7 +42,7 @@
 	
 	/* 여기까지가 스위치버튼css */
 	.outer{
-		width: 900px;
+		width: 1000px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 50px;
@@ -69,6 +69,8 @@
 	#filterImg{
 		width: 40px;
 		height: auto;
+		position: relative;
+        top: 12px;
 	}
 	#side{
 		width:300px;
@@ -78,21 +80,31 @@
 		display: inline-block;
 	}
 	section{
+		width:650px;
 		display: inline-block;
 		text-align: left;
+		position: relative;
+		float: left;
 	}
 	aside{
 		display: inline-block;
+		float: left;
+		
 	}
 	.maintext{
-		font-size: 16px;
+		padding-left: 5px;
+		font-size: 18px;
+		float: left;
 	}
 	.rating{
-		margin-left: 200px;
+		float: right;
 		font-size: 18px;
 		color: #E15756;
+		padding-right: 5px;
+		
 	}
 	.small{
+		padding-left: 5px;
 		font-size: 12px;
 		color: #6F6F6F;
 	}
@@ -100,6 +112,36 @@
 		width: 300px;
 		height: 150px;
 		border-radius: 30px;
+	}
+	.foodArea{
+		display: inline-block;
+		margin: 10px;
+	}
+	footer{
+		clear: both;
+	}
+	#keyword{
+		font-size: 24px;
+		color: #E15756;
+		float: left;
+		margin-left: 30px;
+	}
+	#keywordArea{
+		width: 280px;
+		height: 150px;
+		background: #EAD9D5;
+		margin-top: 10px;
+		border-radius: 30px;
+	}
+	.keybtn{
+		background: #F7F6F6;
+ 		color: #DD6664;
+		border: 0;
+		outline: 0;
+		width: 85px;
+		height: 20px;
+		border: 1px solid #DD6664;
+		border-radius: 5px;
 	}
 	
 	
@@ -125,18 +167,46 @@
 		</div>
 		</nav>
 		<section>
-			<div class="inner">
-					<div id="foodArea1">
-						<img src="/semiproject/images/죠떡.jpg" class="foodImg"><br>
-						<label class="maintext">떡볶이</label><label class="rating">4.2</label><br>
-						<p class="small">역삼/선릉</p>
-						<p class="small">떡볶이</p>
-					</div>
-			</div>
+			<article>
+				<div class="inner">
+						<div id="foodArea1" class="foodArea">
+							<img src="/semiproject/images/죠떡.jpg" class="foodImg"><br>
+							<label class="maintext">떡볶이</label><label class="rating">4.2</label><br>
+							<p class="small">역삼/선릉</p>
+							<p class="small">떡볶이</p>
+						</div>
+						<div id="foodArea2"  class="foodArea">
+							<img src="/semiproject/images/규카츠.jpg" class="foodImg"><br>
+							<label class="maintext">규카츠냠</label><label class="rating">4.5</label><br>
+							<p class="small">강남역</p>
+							<p class="small">규카츠</p>
+						</div>
+						<div id="foodArea3"  class="foodArea">
+							<img src="/semiproject/images/연어.jpg" class="foodImg"><br>
+							<label class="maintext">이거시연어</label><label class="rating">4.0</label><br>
+							<p class="small">강남역</p>
+							<p class="small">연어/초밥</p>
+						</div>
+				</div>
+			</article>
 		</section>
 		<!-- 사이드 -->
 		<aside>
-			<div id="side"></div>
+			<div id="side">
+				<p id="keyword">키워드</p><br><br><br>
+				<div id="keywordArea">
+					<button class="keybtn">한식</button>
+					<button class="keybtn">일식</button>
+					<button class="keybtn">중식</button>
+					<button class="keybtn">양식</button>
+					<button class="keybtn">비건</button>
+					<button class="keybtn">데이트</button>
+					<button class="keybtn">패스트푸드</button>
+					<button class="keybtn">육류</button>
+					<button class="keybtn">밥 포함</button>
+					<button class="keybtn">캐쥬얼</button>
+				</div>
+			</div>
 		</aside>
 	</div>
 	
@@ -157,7 +227,8 @@
 			}
 		}, false);
 	</script>
-	
+	<footer>
 	<%@ include file="/views/common/footer.jsp" %>
+	</footer>
 </body>
 </html>
