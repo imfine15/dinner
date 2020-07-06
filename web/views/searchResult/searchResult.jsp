@@ -286,6 +286,39 @@
 		display: inline-block;
 		width: 1200px;
 	}
+	.report{
+		background: #FFFFFF;
+ 		color: red;
+		border: 0;
+		outline: 0;
+		width: 40px;
+		height: 30px;
+		font-size: 14px;
+		
+	}
+	.profileArea{
+    	margin-top: 50%;
+		display: inline-block; 
+		width: 110px; 
+		height: 150px;
+	}
+	
+	.profileBox{
+		width: 100px;
+   		height: 100px; 
+    	border-radius: 70%;
+    	overflow: hidden;
+    	display: inline-block;
+    	background: gray;
+	}
+	.profile{
+		width: 100px;
+		height: 100px;
+		border-radius: 70%;
+		object-fit: cover;
+		z-index: 1;
+	}
+	
 </style>
 </head>
 <body>
@@ -302,7 +335,7 @@
 			<label class="btntext">맛집</label>
 			<input type="checkbox" id="switch1" onclick="chk_food();">
 			<label for="switch1" class="round"></label>
-			<label class="btntext">일정</label>
+			<label class="btntext">리뷰</label>
 			<img src="/semiproject/images/filter.png" id="filterImg">
 		
 		</div>
@@ -399,7 +432,31 @@
 			</div>
 			<hr>
 			<div>
-				
+			
+				<span>
+					<label>0001</label>
+					<img src="/semiproject/images/닭갈비.jpg" width="200px" height="150px">
+					<div style="display: inline-block;" align="left">
+						<span>울부짖어라, '닭갈비'</span><br>
+						<span>오늘 배가 너무 고픈데 덥기까지 해...</span>
+					</div>
+					<span>
+						<img src="/semiproject/images/heartblack.png" width="25px">
+						<div style="display: inline-block;" align="right">
+							<span>2020.07.06</span><br>
+							<span>조회수 : 10</span><br>
+							<button class="report">신고</button>
+						</div>
+					</span>
+					<div class="profileArea" align="center" style="margin: auto;">
+					<div class="profileBox" align="center">
+						<img class="profile" src="/semiproject/images/imfine.png">
+					</div>
+						<span>임피네</span>
+					</div>
+					
+					
+				</span>
 			</div>
 		</div>
 		<!-- 리뷰게시판끝 -->
