@@ -3,322 +3,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--  --><link rel="stylesheet" type="text/css" href="/semiproject/views/restaurantInfo/css/restaurantInfoStyle.css"/>
+<link rel="stylesheet" type="text/css" href="/semiproject/views/restaurantInfo/css/restaurantInfoStyle.css"/>
 <meta charset="UTF-8">
-<!-- 나중에 음식점 이름 알아와서 타이틀에 넣는것도 좋을 것 같아요 -->
+<%-- 나중에 음식점 이름 알아와서 타이틀에 넣는것도 좋을 것 같아요 --%>
 <title>돼지되지 음식점 정보</title>
 <style>
-	@charset "UTF-8";
-#infoTop {
-		margin:50px auto 0px auto;
-		width:68.5%;
-		height:120px;
-	}
-	
-	#top1 {
-		display:inline-block;
-		width:50%;
-		height:100%;
-		float:left;
-	}
-	
-	#top2 {
-		display:inline-block;
-		width:50%;
-		height:100%;
-		float:right;
-		text-align:right;
-	}
-	
-	#title, #score {
-		font-size:35px;
-		color:#565656;
-		font-weight:bold;
-	}
-	
-	#title {
-		margin-right:150px;
-	}
-	
-	#star {
-		width:35px;
-		height:35px;
-	}
-	
-	#heart {
-		width:20px;
-		height:20px;
-		margin:30px 0px 0px 10px;
-	}
-	
-	#likeCount {
-		display:inline-block;
-		font-size:12px;
-		color:#565656;
-		margin-right:30px;
-	}
-	
-	#comment {
-		width:20px;
-		height:20px;
-	}
-	
-	#commentCount {
-		display:inline-block;
-		font-size:12px;
-		color:#565656;
-	}
-	
-	#commentDiv, #likeDiv {
-		width:50px;
-		height:65px;
-		text-align:center;
-		float:right;
-		margin:0px 20px;
-	}
-	
-	#likeImg, #commentImg {
-		width:50px;
-		height:50px;
-	}
-	
-	.commentAndLike {
-		font-size:12px;
-		color:#565656;
-	}
-	
-	.hr {
-		border:1px solid #9F9F9F;
-		width:1040px;
-	}
-	
-	#info {
-		width:1040px;
-		height:500px;
-		margin:0px auto;
-	}
-	
-	#infoLeft {
-		width:50%;
-		height:100%;
-		float:left;
-	}
-	
-	#infoRight {
-		width:50%;
-		height:100%;
-		float:right;
-	}
-	
-	#infoTable {
-		margin:40px 0px 0px 50px;
-		border-collapse:separate;
-  		border-spacing:0 15px;
-	}
-	
-	.infoTitle {
-		font-size:12px;
-		color:#686868;
-		text-align:left;
-		padding-right:40px;
-		width:65px;
-	}
-	
-	.infoContent {
-		font-size:15px;
-		text-align:left;
-		width:270px;
-	}
-	
-	#oldAddress {
-		padding:1px 7px;
-		border:1px solid #8F8F8F;
-		text-align:center;
-		margin-right:5px;
-	}
-	
-	#dishPic {
-		width:100%;
-		height:90%;
-		margin-top:40px;
-	}
-	
-	#reservationDiv {
-		display:table;
-		width:1019px;
-		height:142px;
-		margin:0 auto;
-	}
-	
-	#reservationBtn {
-		display:table-cell;
-		color:white;
-		font-size:16px;
-		text-align:center;
-		vertical-align:middle;
-	}
-	
-	#reservation:hover {
-		cursor:pointer;
-	}
-	
-	#reservation {
-		display:inline-block;
-		background-color:#5BB8B4;
-		width:100px;
-		height:30px;
-		border:1px solid lightgray;
-	}
-	
-	#reservation span {
-		vertical-align:middle;
-	}
-	
-	#adDiv {
-		width:1019px;
-		height:106px;
-		margin:0 auto;
-	}
-	
-	#adPic {
-		display:inline-block;
-		width:424px;
-		height:106px;
-		float:right;
-	}
-	
-	#adContent {
-		width:595px;
-		height:106px;
-		float:left;
-	}
-	
-	#adContent > span {
-		font-size:34px;
-		font-weight:bold;
-		padding-left:59px;
-	}
-	
-	#adBtn {
-		width:595px;
-		height:15px;
-		margin-bottom:15px;
-	}
-	
-	#adCloseBtn, #adInfoBtn {
-		width:15px;
-		height:15px;
-		display:inline-block;
-	}
-	
-	#adCloseBtn:hover, #adInfoBtn:hover {
-		cursor:pointer;
-	}
-	
-	#adCloseBtn {
-		margin-left:20px;
-	}
-	
-	#visitorReviewDiv {
-		width:1019px;
-		height:76px;
-		margin:0 auto;
-	}
-	
-	#visitorReviewCount {
-		margin:25px 0px 30px 30px;
-		font-size:16px;
-		float:left;
-	}
-	
-	#visitorReviewWrite {
-		margin:22.5px 0px 27.5px 30px;
-		float:right;
-		font-size:12px;
-	}
-	
-	#writeReviewBtn {
-		width:30px;
-		height:30px;
-	}
-	
-	#writeReviewBtn:hover {
-		cursor:pointer;
-	}
-	
-	.visitorReview {
-		width:1039px;
-		height:292px;
-		margin:0 auto;
-	}
-	
-	.visitorInfo {
-		width:138px;
-		height:292px;
-		display:inline-block;
-		float:left;
-	}
-	
-	.visitorReviewContent{
-		width:746px;
-		height:171px;
-		margin:43px 0px 78px 0px;
-		background-color:red;
-		display:inline-block;
-	}
-	
-	.likeAndReport {
-		width:155px;
-		height:292px;
-		display:inline-block;
-		float:right;
-	}
-	
-	.reviewLike, .reviewReport {
-		display:flex;
-		width:100%;
-		height:50%;
-		justify-content:center;
-		align-items:center;
-	}
-	
-	.reviewLikeBtn {
-		width:30px;
-		height:30px;
-	}
-	
-	.reviewReportBtn {
-		width:75px;
-		height:30px;
-		background-color:white;
-		border:1px solid red;
-		color:red;
-	}
-	
-	.reviewLike > table {
-		text-align:center;
-	}
-	
-	.visitorInfo > table {
-		width:100%;
-		margin-top:43px;
-		text-align:center;
-	}
-	
-	.visitorInfo > table tr td {
-		font-size:12px;
-		color:#666666;
-	}
-	
-	.visitorReviewArticle, .visitorReviewPic {
-		display:inline-block;
-		width:100%;
-		height:50%;
-	}
+
 </style>
 </head>
 <body>
-	<%@ include file="/views/common/header.jsp" %>
+	<%@ include file="/views/common/header.jsp" --%>
 	<div id="infoTop">
 		<div id="top1">
 			<span id="title">돼지되지</span>
@@ -415,11 +109,12 @@
 		</div>
 	</div>
 	<hr class="hr">
-	<div id="visitorReviewDiv">
-		<div id="visitorReviewCount">방문자 리뷰 (32)</div>
-		<div id="visitorReviewWrite">작성하기 <img alt="리뷰 작성 버튼" src="/semiproject/images/writeReview.png" id="writeReviewBtn"></div>
+	<div class="ReviewDiv">
+		<div class="ReviewCount">방문자 리뷰 (32)</div>
+		<div class="ReviewWrite">작성하기 <img alt="리뷰 작성 버튼" src="/semiproject/images/writeReview.png" class="writeReviewBtn"></div>
 	</div>
 	<hr class="hr">
+	<!-- visitorReview Div start -->
 	<div class="visitorReview">
 		<div class="visitorInfo">
 			<table>
@@ -436,8 +131,14 @@
 		</div>
 		<div class="visitorReviewContent">
 			<div class="visitorReviewArticle">
+				<span class="reviewDate">2020-06-18</span>
+				<img alt="리뷰 별점" src="/semiproject/images/Star.png" class="reviewRateStar">
+				<span class="reviewRate">4.5</span>
+				<p>서비스가 맛있고 돈까스가 친절해요. 다섯이 가서 넷이 죽어도 모를 맛입니다. 최고입니다.</p>
 			</div>
 			<div class="visitorReviewPic">
+				<img alt="음식 사진" src="/semiproject/images/규카츠.jpg">
+				<img alt="음식 사진" src="/semiproject/images/dishPic.png">
 			</div>
 		</div>
 		<div class="likeAndReport">
@@ -456,6 +157,116 @@
 			</div>
 		</div>
 	</div>
-	<%-- <%@ include file="/views/common/footer.jsp" %> --%>
+	<!-- visitorReview Div end -->
+	<hr class="hr">
+	<!-- visitorReview Div start -->
+	<div class="visitorReview">
+		<div class="visitorInfo">
+			<table>
+				<tr>
+					<td><img alt="사용자 프로필 사진" src="/semiproject/images/userPic2.png"></td>
+				</tr>
+				<tr>
+					<td>효근짱123</td>
+				</tr>
+				<tr>
+					<td>방문일 : 2020-06-07</td>
+				</tr>
+			</table>
+		</div>
+		<div class="visitorReviewContent">
+			<div class="visitorReviewArticle">
+				<span class="reviewDate">2020-06-09</span>
+				<img alt="리뷰 별점" src="/semiproject/images/Star.png" class="reviewRateStar">
+				<span class="reviewRate">4.0</span>
+				<p>스물셋 제 생에 최고의 규카츠였습니다....오래오래 장사해주세요 뚜뚜사장님^^</p>
+			</div>
+			<div class="visitorReviewPic">
+				<img alt="음식 사진" src="/semiproject/images/규카츠.jpg">
+				<img alt="음식 사진" src="/semiproject/images/dishPic.png">
+			</div>
+		</div>
+		<div class="likeAndReport">
+			<div class="reviewLike">
+				<table>
+					<tr>
+						<td><img alt="리뷰 추천 버튼" src="/semiproject/images/reviewLike.png" class="reviewLikeBtn"></td>
+					</tr>
+					<tr>
+						<td>추천하기</td>
+					</tr>
+				</table>
+			</div>
+			<div class="reviewReport">
+				<button class="reviewReportBtn">신고하기</button>
+			</div>
+		</div>
+	</div>
+	<!-- visitorReview Div end -->
+	<div id="showMore">
+		<button>더보기 ▼</button>
+	</div>
+	<br>
+	<hr class="hr">
+	<div class="ReviewDiv">
+		<div class="ReviewCount">일반 리뷰 (51)</div>
+		<div class="ReviewWrite">작성하기 <img alt="리뷰 작성 버튼" src="/semiproject/images/writeReview.png" class="writeReviewBtn"></div>
+	</div>
+	<hr class="hr">
+	<div class="visitorReview">
+		<div class="visitorInfo">
+			<p>IMFINE</p>
+		</div>
+		<div class="visitorReviewContent">
+			<div class="visitorReviewArticle">
+				<span class="reviewDate">2019-09-15</span>
+				<p>규카츠가 장관이네요..절경이고요..신이 주신 선물이네요.</p>
+			</div>
+		</div>
+		<div class="likeAndReport">
+			<div class="reviewLike">
+				<table>
+					<tr>
+						<td><img alt="리뷰 추천 버튼" src="/semiproject/images/reviewLike.png" class="reviewLikeBtn"></td>
+					</tr>
+					<tr>
+						<td>추천하기</td>
+					</tr>
+				</table>
+			</div>
+			<div class="reviewReport">
+				<button class="reviewReportBtn">신고하기</button>
+			</div>
+		</div>
+	</div>
+	<div id="showMore">
+		<button>더보기 ▼</button>
+	</div>
+	<hr class="hr">
+	<div id="restaurantCloseReport">
+		<button>폐업신고</button>
+	</div>
+	<hr class="hr">
+	<div id="yumeetRecommend">
+		<img alt="여밋 로고" src="/semiproject/images/YUMEET LOGO WITH REST.png">
+		추천 다음 코스
+	</div>
+	<hr class="hr">
+	<div id="recommendDiv">
+		<div id="recommendDiv1">
+			<img alt="추천 맛집 첫번째" src="/semiproject/images/연어.jpg">
+			<p>내 뱃살보다 두툼한 연어</p>			
+			<span></span>
+		</div>
+		<div id="recommendDiv2">
+			<img alt="추천 맛집 두번째" src="/semiproject/images/장어구이.jpg">
+			<p>하나먹다 셋이죽는 장어 맛집</p>
+		</div>
+		<div id="recommendDiv3">
+			<img alt="추천 맛집 두번째" src="/semiproject/images/죠떡.jpg">
+			<p>죠스떡볶이는 전설이다...</p>
+		</div>
+	</div>
+	<%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>
