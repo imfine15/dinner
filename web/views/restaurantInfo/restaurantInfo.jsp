@@ -12,7 +12,7 @@
 </style>
 </head>
 <body>
-	<%@ include file="/views/common/header.jsp" --%>
+	<%@ include file="/views/common/header.jsp" %>
 	<div id="infoTop">
 		<div id="top1">
 			<span id="title">돼지되지</span>
