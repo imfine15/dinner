@@ -90,11 +90,7 @@
 		</div>
 	</div>
 	<div id="reservationDiv">
-		<div id="reservationBtn">
-			<div id="reservation">
-				<span>예약하기</span>
-			</div>
-		</div>
+		<button>예약하기</button>
 	</div>
 	<div id="adDiv">
 		<div id="adContent">

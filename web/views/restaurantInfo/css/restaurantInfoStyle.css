@@ -133,34 +133,24 @@
 	}
 	
 	#reservationDiv {
-		display:table;
 		width:1019px;
 		height:142px;
 		margin:0 auto;
-	}
-	
-	#reservationBtn {
-		display:table-cell;
-		color:white;
-		font-size:16px;
 		text-align:center;
-		vertical-align:middle;
 	}
 	
-	#reservation:hover {
-		cursor:pointer;
-	}
-	
-	#reservation {
-		display:inline-block;
-		background-color:#5BB8B4;
+	#reservationDiv button {
 		width:100px;
 		height:30px;
-		border:1px solid lightgray;
+		background-color:#5BB8B4;
+		color:white;
+		font-size:16px;
+		border:0;
+		margin:56px 0px;
 	}
 	
-	#reservation span {
-		vertical-align:middle;
+	#reservationDiv button:hover {
+		cursor:pointer;
 	}
 	
 	#adDiv {
