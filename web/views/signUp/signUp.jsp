@@ -82,25 +82,10 @@
 				<td colspan="3"><label id="emailResult"></label></td>
 			</tr>
 			<tr>
-				<td colspan="3">휴대전화번호</td>
+				<td colspan="3">휴대전화번호<br><span class="notice">휴대전화번호는 10 ~ 12글자 숫자만 가능합니다.</span></td>
 			</tr>
 			<tr>
-				<td colspan="1">
-					<select name="phone1" id="phone1">
-						<option value="010" selected>010</option>
-						<option value="011">011</option>
-						<option value="016">016</option>
-						<option value="017">017</option>
-					</select>
-					-&nbsp;
-				</td>
-				<td class="phone" colspan="1">
-					<input type="text" name="phone2" id="phone2">
-					-&nbsp;
-				</td>
-				<td class="phone" colspan="1">
-					<input type="text" name="phone3" id="phone3">
-				</td>
+				<td colspan="3"><input type="text" name="phone" id="phone"></td>
 			</tr>
 			<tr>
 				<td colspan="3"><label id="phoneResult"></label></td>

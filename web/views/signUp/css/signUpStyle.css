@@ -46,18 +46,6 @@
 		margin:auto;
 	}
 	
-	select[name=phone1] {
-		width:118px;
-		height:46px;
-		margin:10px 0px 10px 0px;
-	}
-	
-	input[name^=phone] {
-		width:165px;
-		height:40px;
-		margin:10px 0px 10px 0px;
-	}
-	
 	#admit1 {
 		font-size:15px;
 		color:#A01C1C;

@@ -5,17 +5,14 @@ var name = $("#name");
 var nickName = $("#nickName");
 var email = $("#email");
 var gender = $("#gender option:selected");
-var phone1 = $("#phone1 option:selected");
-var phone2 = $("#phone2");
-var phone3 = $("#phone3");
+var phone = $("#phone");
 var admit = $("#admit").prop("checked");
 
 var idCheck = /[a-zA-Z0-9]{4,20}/;
 var passwordCheck = /[a-zA-Z0-9]{8,16}/;
 var nameCheck = /[가-힣]{2,5}/;
 var nickNameCheck = /[가-힣]{1,10}/;
-var phone2Check = /\d{3,4}/;
-var phone3Check = /\d{4}/;
+var phoneCheck = /\d{10,12}/;
 
 function check() {
 	if(id.val() === null || id.val() === "") {
@@ -74,23 +71,13 @@ function check() {
 		return false;
 	}
 	
-	if(phone2.val() === null || phone2.val() === "") {
-		$("#phoneResult").html("휴대전화 두 번째 자리를 입력해주세요.").css({"backgroundColor" : "red", "color" : "white"});
-		$("#phone2").focus();
+	if(phone.val() === null || phone.val() === "") {
+		$("#phoneResult").html("휴대전화 번호는 비어있을 수 없습니다.").css({"backgroundColor" : "red", "color" : "white"});
+		$("#phone").focus();
 		return false;
-	} else if(!phone2Check.test(phone2.val())) {
-		$("#phoneResult").html("휴대전화 두 번째 자리는 3, 4자리의 숫자만 입력 할 수 있습니다.").css({"backgroundColor" : "red", "color" : "white"});
-		$("#phone2").focus();
-		return false;
-	}
-	
-	if(phone3.val() === null || phone3.val() === "") {
-		$("#phoneResult").html("휴대전화 세 번째 자리를 입력해주세요.").css({"backgroundColor" : "red", "color" : "white"});
-		$("#phone3").focus();
-		return false;
-	} else if(!phone3Check.test(phone3.val())) {
-		$("#phoneResult").html("휴대전화 세 번째 자리는 4자리의 숫자만 입력 할 수 있습니다.").css({"backgroundColor" : "red", "color" : "white"});
-		$("#phone3").focus();
+	} else if(!phoneCheck.test(phone.val())) {
+		$("#phoneResult").html("휴대전화 번호를 10 ~ 12자리의 숫자로만 입력하세요.").css({"backgroundColor" : "red", "color" : "white"});
+		$("#phone").focus();
 		return false;
 	}
 	
@@ -117,7 +104,7 @@ $(function() {
 	});
 
 	$("#name").bind("input", function() {
-		if(name.val() !== "" || name.val() !== null) {
+		if($("#name").val() !== "" || $("#name").val() !== null) {
 			$("#nameResult").html("").css({"backgroundColor" : "white"});
 		}
 	});
@@ -139,19 +126,17 @@ $(function() {
 			$("#genderResult").html("").css({"backgroundColor" : "white"});
 		}
 	});
-
-	$("#phone2").bind("input", function() {
-		if(phone2Check.test(phone2.val()) && phone2.val() !== null && phone2.val() !== "") {
-			$("#phoneResult").html("").css({"backgroundColor" : "white"});
-		}
-	});
-
-	$("#phone3").bind("input", function() {
-		if(phone3Check.test(phone3.val()) && phone3.val() !== null && phone3.val() !== "") {
-			$("#phoneResult").html("").css({"backgroundColor" : "white"});
-		}
-	});
 	
+	$("input:text[name='phone']").on("keyup", function() {
+	    $(this).val($(this).val().replace(/[^0-9]/g,""));
+	});
+
+	$("#phone").bind("input", function() {
+		if(phoneCheck.test(phone.val()) && phone.val() !== null && phone.val() !== "") {
+			$("#phoneResult").html("").css({"backgroundColor" : "white"});
+		}
+	});
+
 	$("#admit").change(function() {
 		if(admit === true) {
 			$("#admitResult").html("").css({"backgroundColor" : "white"});
