@@ -11,14 +11,14 @@
 body {
 	background: white;
 }
-.container {
+.container2 {
   box-shadow:0px 5px 10px 5px #DE6B6B;
 }
 </style>
 <body>
 	<div class="navbar navbar-inverse navbar-static-top"
 		style="background: white; border-color: pink;">
-		<div class="container" style="background: white;">
+		<div class="container2" style="background: white;">
 			<a href=""><img src="../../images/YUMEET LOGO.png"
 				style="width: 200px;"></a> <a href="" style="float: right"><img
 				src="../../images/myicon.png" style="width: 100px;"></a> <a
