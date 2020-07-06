@@ -213,8 +213,79 @@
 		font-size: 12px;
 		margin: 0;
 	}
-
-	
+	#schedule {
+		width: 1200px;
+		height: 1500px;
+		border: 1px solid black;
+		position: relative;
+		top: -1420px;
+		left: 100px;
+		z-index: 1;
+		bottom: 0px;
+	}
+	#text2{
+		font-size: 24px;
+		color: #58AAA4;
+		float: left;
+		display: inline-block;
+		width: 1100px;
+		margin-left: 80px;
+		
+	}
+	.best{
+		margin-left: 100px;
+		position: static;
+		display: inline-block;
+		
+	}
+	.bestBig{
+		font-size: 24px;
+		margin: 5px;
+		margin-top: 10px;
+	}
+	.bestSmall{
+		font-size: 18px;
+		margin: 5px;
+	}
+	.check{
+		background: white;
+ 		color: #7D7D7D;
+		border: 0;
+		outline: 0;
+		width: 60px;
+		height: 30px;
+		font-size: 14px;
+		margin-left: 5px;
+	}
+	.check:hover {
+		color: #D5706D;
+	}
+	#text3{
+		font-size: 24px;
+		color: #535353;
+		float: left;
+		display: inline-block;
+		
+	}
+	#write{
+		background: #59AAA4;
+ 		color: #FFFFFF;
+		border: 0;
+		outline: 0;
+		width: 100px;
+		height: 30px;
+		font-size: 14px;
+		margin-left: 40px;
+	}
+	.inner2{
+		margin-top: 50px;
+		width: 1000px;
+		text-align: center;
+	}
+	.btnArea{
+		display: inline-block;
+		width: 1200px;
+	}
 </style>
 </head>
 <body>
@@ -229,13 +300,15 @@
 		</div>
 		<div class="topbtn" align="right">
 			<label class="btntext">맛집</label>
-			<input type="checkbox" id="switch1">
+			<input type="checkbox" id="switch1" onclick="chk_food();">
 			<label for="switch1" class="round"></label>
 			<label class="btntext">일정</label>
 			<img src="/semiproject/images/filter.png" id="filterImg">
 		
 		</div>
 		</nav>
+		<!-- 맛집일때보일창 -->
+		<div id="food">
 		<section>
 			<article>
 				<div class="inner">
@@ -297,8 +370,40 @@
 				</div>
 			</div>
 		</aside>
+		</div>
 	</div>
 	<!-- 맛집끝 ...-->
+	<!-- 일정검색창시작 -->
+	<div id="schedule" align="center" style="display: none;">
+		<p id="text2" align="left">베스트 코스리뷰</p><br>
+		<div class="best" align="left">
+			<img src="/semiproject/images/장어구이.jpg" style="width: 450px; height: 200px;">
+			<p class="bestBig">"튀김과 함께 밤하늘의 나는 오열한다."</p>
+			<p class="bestSmall">당일치기 튀김 완벽 정복</p>
+		</div>
+		<div class="best" align="left">
+			<img src="/semiproject/images/연어.jpg" style="width: 450px; height: 200px;">
+			<p class="bestBig">"아침의 Breakfast"</p>
+			<p class="bestSmall">베이컨에 쌈을 싸서 드셔보세요!</p>
+		</div>
+		<!-- 리뷰게시판시작 -->
+		<div class="inner2" align="center">
+			<div align="left">
+				<label id="text3">리뷰 게시판</label>
+			</div>
+			<div align="right" id="btnArea">
+				<button class="check">조회순</button>
+				<button class="check">추천순</button>
+				<button class="check">최신순</button>
+				<button id="write">글쓰기</button>
+			</div>
+			<hr>
+			<div>
+				
+			</div>
+		</div>
+		<!-- 리뷰게시판끝 -->
+	</div><!-- 일정끝 -->
 	
 	
 	<script>
@@ -313,9 +418,25 @@
 				
 			} else {
 				selector.classList.remove('on');
+				
 			}
 		}, false);
-	</script>
+		</script>
+		<script>
+			function chk_food() {
+				var food = document.getElementById("food");
+				var btn = document.getElementById("switch1");
+				var schedule = document.getElementById("schedule");
+				
+				if(btn.checked == false){
+					food.style.display = "block";
+					schedule.style.display = "none";
+				} else {
+					food.style.display = "none";
+					schedule.style.display = "block";
+				}
+			}
+		</script>
 	<footer>
 	<%@ include file="/views/common/footer.jsp" %>
 	</footer>
