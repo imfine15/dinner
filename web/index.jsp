@@ -3,12 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <meta charset="UTF-8">
-<title>Insert title here</t
-itle>
+<title>인덱스입니다</title>
 <style>
 /* REMOVE THIS, USE YOUR OWN  */
-html,body {
+/*html,body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, Sans-serif;
@@ -21,8 +21,9 @@ html,body {
   text-align: center;
   box-sizing: border-box;
   padding: 60px 0px;
-}
+}*/
 /* STYLES SPECIFIC TO FOOTER  */
+/*
 .footer {
   width: 100%;
   position: relative;
@@ -121,17 +122,59 @@ html,body {
   .footer .col {
     width: 100%;
   }
-}
+}*/
+	#outer {
+		text-align:center;
+	}
+	
+	ul {
+		list-style:none;
+		line-height:170%;
+	}
 </style>
 </head>
 <body>
+<div id="outer">
+	<h1>이동할 jsp페이지 이름을 입력해주세요</h1>
+	<br>
+	<h3>views 하위 폴더명과 jsp파일명이 같아야만 이동이 가능합니다</h3>
+	<br>
+	<label>이동하실 jsp 파일명 : </label><input type="text" id="url"><button id="go" onclick="goJsp();">이동하기</button>
+	<br>
+	<h3>현재(2020.07.07) 가능한 목록</h3>
+	<br>
+	<h3>목록을 눌러주세요</h3>
+	<ul>
+		<li>ad</li>
+		<li>main2</li>
+		<li>mapSearch</li>
+		<li>myPage</li>
+		<li>notice</li>
+		<li>partner</li>
+		<li>restaurantInfo</li>
+		<li>searchResult</li>
+		<li>signIn</li>
+		<li>signUp</li>
+	</ul>
+	<script>
+		$(function() {
+			$("ul li").click(function() {
+				$("#url").val($(this).html());
+			})
+		});
+	
+		function goJsp() {
+			location.href = "/semiproject/views/" + $("#url").val() + "/" + $("#url").val() + ".jsp";
+		}
+	</script>
+</div>
+<!--
 	<h1> Hello World!!</h1>
 	<header></header>
 	<div class="dummy_page">
- 
-</div>
+</div>   -->
 <!-- FOOTER START -->
-<div class="footer">
+<!--<div class="footer">
   <div class="contain">
   <div class="col">
     <h1>Company</h1>
@@ -192,7 +235,7 @@ html,body {
   </div>
 <div class="clearfix"></div>
 </div>
-</div>
+</div>  -->
 <!-- END OF FOOTER -->
 </body>
 </html>

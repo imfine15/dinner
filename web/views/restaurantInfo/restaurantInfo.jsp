@@ -7,9 +7,6 @@
 <meta charset="UTF-8">
 <%-- 나중에 음식점 이름 알아와서 타이틀에 넣는것도 좋을 것 같아요 --%>
 <title>돼지되지 음식점 정보</title>
-<style>
-
-</style>
 </head>
 <body>
 	<%@ include file="/views/common/header.jsp" %>
@@ -28,7 +25,7 @@
 			<div id="likeDiv">
 				<img alt="즐겨찾기 이미지" src="/semiproject/images/like.png" id="likeImg">
 				<br>
-				<p class="commentAndLike">좋아요</p>
+				<span class="commentAndLike">좋아요</span>
 			</div>
 			<div id="commentDiv">
 				<img alt="즐겨찾기 이미지" src="/semiproject/images/comment.png" id="commentImg">
