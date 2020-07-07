@@ -4,16 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-<title>간단한 지도 표시하기</title>
-<script type="text/javascript"
-	src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=o6cr1le65u"></script>
-<script type="text/javascript"
-	src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=o6cr1le65u&submodules=geocoder"></script>
+<title>Insert title here</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
+
 *[data-animation="ripple"] {
     height: 35px;
     width: 55px;;
@@ -47,11 +41,24 @@
     background: transparent;
     pointer-events: none;
 }
-input[type=text]:focus{
+input[type=search]:focus{
 	outline:none;
 }
-</style>
-<script>
+</style> 
+</head>
+<body>
+	<div style="width: 400px; height: 50px; padding-left:30px; border:1px white;">
+	<a data-animation="ripple" style="margin-left:5px;margin-top:10px;" align="center"><img src="images/searchicon.png" style="width:20px; height:20px; padding-bottom:5px;"></a>
+	<input onkeyup="enterkey(this.value);" id="11" type="search"style="display: inline; width: 70%; border-radius: 5em; height: 100%; padding-left: 60px; border:1px solid gray;"placeholder="YUMEET 맛집 검색"></div>
+	<script>
+		function enterkey(){
+			if (window.event.keyCode == 13) {
+				var value = $("#11").val();
+				console.log(value);
+	        }
+		}
+	</script>
+	<script>
 	window["tmripple"] =
 		/******/ (function(modules) { // webpackBootstrap
 		/******/    // The module cache
@@ -282,107 +289,6 @@ input[type=text]:focus{
 
 		tmripple.init()
 	</script>
-</head>
-<body>
-	<div id="map"
-		style="width: 100%; height: 700px; display: inline; position: absolute; z-index: 10;"></div>
 
-
-<script>
-var pointx;
-var pointy;
-var realaddress = "테헤란로14길 6";
-function enterkey(){
-	if (window.event.keyCode == 13) {
-		realaddress = $("#11").val();
-		console.log(realaddress);
-		console.log($("#11").val());
-		reserve(realaddress);
-    }
-}
-function reserve(realaddress){
-	naver.maps.Service.geocode({
-	    address: realaddress
-	}, function(status, response) {
-	    if (status !== naver.maps.Service.Status.OK) {
-	        return alert('Something wrong!');
-	    }
-
-	    var result = response.result; // 검색 결과의 컨테이너
-	    var items = result.items; // 검색 결과의 배열
-		pointx = result['items'][0]['point']['x'];
-	    pointy = result['items'][0]['point']['y'];
-	    var mapOptions = {
-	    	   center: new naver.maps.LatLng(pointy, pointx),
-	    	    zoom: 10
-	    	};
-
-	    var map = new naver.maps.Map('map', {
-	    	   center: new naver.maps.LatLng(pointy, pointx),
-	    	    zoom: 15
-	    	});
-
-	    var marker = new naver.maps.Marker({
-	    	   position: new naver.maps.LatLng(pointy, pointx),
-	    	    map: map
-	    	});
-		
-	    var locationBtnHtml2 = '<div style="width: 400px; height: 50px; padding-left:30px;"><a data-animation="ripple" style="margin-left:5px;margin-top:10px;" align="center"><img src="images/searchicon.png" style="width:20px; height:20px; padding-bottom:5px;"></a><input onkeyup="enterkey();" id="11" type="text"style="display: inline; width: 70%; border-radius: 5em; border:1px solid gray;height: 100%; padding-left: 60px;"placeholder="YUMEET 맛집 검색"></div>';
-
-
-	    naver.maps.Event.once(map, 'init_stylemap', function() {
-	        //customControl 객체 이용하기
-	        var customControl2 = new naver.maps.CustomControl(locationBtnHtml2, {
-	            position: naver.maps.Position.TOP_LEFT
-	        });
-	        customControl2.setMap(map);
-			naver.maps.Event.addDOMListener(customControl2.getElement(),'click', function(){
-				console.log("클릭잘됨22!");
-			});
-	    });
-	});
-}
-naver.maps.Service.geocode({
-    address: realaddress
-}, function(status, response) {
-    if (status !== naver.maps.Service.Status.OK) {
-        return alert('Something wrong!');
-    }
-
-    var result = response.result; // 검색 결과의 컨테이너
-    var items = result.items; // 검색 결과의 배열
-	pointx = result['items'][0]['point']['x'];
-    pointy = result['items'][0]['point']['y'];
-    var mapOptions = {
-    	   center: new naver.maps.LatLng(pointy, pointx),
-    	    zoom: 10
-    	};
-
-    var map = new naver.maps.Map('map', {
-    	   center: new naver.maps.LatLng(pointy, pointx),
-    	    zoom: 15
-    	});
-
-    var marker = new naver.maps.Marker({
-    	   position: new naver.maps.LatLng(pointy, pointx),
-    	    map: map
-    	});
-	
-    var locationBtnHtml2 = '<div style="width: 400px; height: 50px; padding-left:30px;"><a data-animation="ripple" style="margin-left:5px;margin-top:10px;" align="center"><img src="images/searchicon.png" style="width:20px; height:20px; padding-bottom:5px;"></a><input onkeyup="enterkey(this.value);" id="11" type="text"style="display: inline; width: 70%; border-radius: 5em; border:1px solid gray;height: 100%; padding-left: 60px;"placeholder="YUMEET 맛집 검색"></div>';
-
-
-    naver.maps.Event.once(map, 'init_stylemap', function() {
-        //customControl 객체 이용하기
-        var customControl2 = new naver.maps.CustomControl(locationBtnHtml2, {
-            position: naver.maps.Position.TOP_LEFT
-        });
-        customControl2.setMap(map);
-		naver.maps.Event.addDOMListener(customControl2.getElement(),'click', function(){
-			console.log("클릭잘됨22!");
-		});
-    });
-});
-
-</script>
 </body>
 </html>
