@@ -289,10 +289,8 @@ input[type=text]:focus{
 
 
 <script>
-var pointx;
-var pointy;
-var realaddress = "테헤란로14길 6, 양재동 16-12";
-function enterkey(value){
+/*
+	function enterkey(value){
 	if (window.event.keyCode == 13) {
 		realaddress = $("#11").val();
 		if(value == "양재역"){
@@ -343,53 +341,145 @@ function reserve(realaddress){
 			});
 	    });
 	});
+} */
+
+var pointxs = [];
+var pointys = [];
+var realaddress = ["테헤란로14길 6", "역삼동 735-1"];
+
+for(var i = 0; i < realaddress.length; i ++){
+	naver.maps.Service.geocode({
+	    address: realaddress[i]
+	}, function(status, response) {
+	    if (status !== naver.maps.Service.Status.OK) {
+	        return alert('Something wrong!');
+	    }
+	    var result = response.result; // 검색 결과의 컨테이너
+	    var items = result.items; // 검색 결과의 배열
+		var pointx = result['items'][0]['point']['x'];
+	    var pointy = result['items'][0]['point']['y'];
+	    pointxs.push(pointx);
+	    pointys.push(pointy);
+	    console.log(pointxs);
+	    console.log(pointys);
+	});
 }
-naver.maps.Service.geocode({
-    address: realaddress
-}, function(status, response) {
-    if (status !== naver.maps.Service.Status.OK) {
-        return alert('Something wrong!');
-    }
-    var result = response.result; // 검색 결과의 컨테이너
-    var items = result.items; // 검색 결과의 배열
-    console.log(result);
-    console.log(items);
-	pointx = result['items'][0]['point']['x'];
-    pointy = result['items'][0]['point']['y'];
-    var mapOptions = {
-    	   center: new naver.maps.LatLng(pointy+900, pointx),
-    	    zoom: 10
-    	};
 
-    var map = new naver.maps.Map('map', {
-    	   center: new naver.maps.LatLng(pointy+ 30, pointx + 30),
-    	    zoom: 15
-    	});
-    
-	var marker = new naver.maps.Marker({
- 	   position: new naver.maps.LatLng(pointy, pointx),
- 	    map: map
- 	});	
-	var marker2 = new naver.maps.Marker({
-	 	   position: new naver.maps.LatLng(),
-	 	    map: map
-	 	});	
-	
-    var locationBtnHtml2 = '<div style="width: 400px; height: 50px; padding-left:30px;"><a data-animation="ripple" style="margin-left:5px;margin-top:10px;" align="center"><img src="images/searchicon.png" style="width:20px; height:20px; padding-bottom:5px;"></a><input onkeyup="enterkey(this.value);" id="11" type="text"style="display: inline; width: 70%; border-radius: 5em; border:1px solid gray;height: 100%; padding-left: 60px;"placeholder="YUMEET 맛집 검색"></div>';
+var HOME_PATH = window.HOME_PATH || '.';
+var MARKER_SPRITE_X_OFFSET = 29,
+    MARKER_SPRITE_Y_OFFSET = 50,
+    MARKER_SPRITE_POSITION = {
+        "A0": [pointys[1], pointxs[1]],
+        "B0": [MARKER_SPRITE_X_OFFSET, 0],
+        "C0": [MARKER_SPRITE_X_OFFSET*2, 0],
+        "D0": [MARKER_SPRITE_X_OFFSET*3, 0],
+        "E0": [MARKER_SPRITE_X_OFFSET*4, 0],
+        "F0": [MARKER_SPRITE_X_OFFSET*5, 0],
+        "G0": [MARKER_SPRITE_X_OFFSET*6, 0],
+        "H0": [MARKER_SPRITE_X_OFFSET*7, 0],
+        "I0": [MARKER_SPRITE_X_OFFSET*8, 0],
 
+        "A1": [0, MARKER_SPRITE_Y_OFFSET],
+        "B1": [MARKER_SPRITE_X_OFFSET, MARKER_SPRITE_Y_OFFSET],
+        "C1": [MARKER_SPRITE_X_OFFSET*2, MARKER_SPRITE_Y_OFFSET],
+        "D1": [MARKER_SPRITE_X_OFFSET*3, MARKER_SPRITE_Y_OFFSET],
+        "E1": [MARKER_SPRITE_X_OFFSET*4, MARKER_SPRITE_Y_OFFSET],
+        "F1": [MARKER_SPRITE_X_OFFSET*5, MARKER_SPRITE_Y_OFFSET],
+        "G1": [MARKER_SPRITE_X_OFFSET*6, MARKER_SPRITE_Y_OFFSET],
+        "H1": [MARKER_SPRITE_X_OFFSET*7, MARKER_SPRITE_Y_OFFSET],
+        "I1": [MARKER_SPRITE_X_OFFSET*8, MARKER_SPRITE_Y_OFFSET],
 
-    naver.maps.Event.once(map, 'init_stylemap', function() {
-        //customControl 객체 이용하기
-        var customControl2 = new naver.maps.CustomControl(locationBtnHtml2, {
-            position: naver.maps.Position.TOP_LEFT
-        });
-        customControl2.setMap(map);
-		naver.maps.Event.addDOMListener(customControl2.getElement(),'click', function(){
-			
-		});
+        "A2": [0, MARKER_SPRITE_Y_OFFSET*2],
+        "B2": [MARKER_SPRITE_X_OFFSET, MARKER_SPRITE_Y_OFFSET*2],
+        "C2": [MARKER_SPRITE_X_OFFSET*2, MARKER_SPRITE_Y_OFFSET*2],
+        "D2": [MARKER_SPRITE_X_OFFSET*3, MARKER_SPRITE_Y_OFFSET*2],
+        "E2": [MARKER_SPRITE_X_OFFSET*4, MARKER_SPRITE_Y_OFFSET*2],
+        "F2": [MARKER_SPRITE_X_OFFSET*5, MARKER_SPRITE_Y_OFFSET*2],
+        "G2": [MARKER_SPRITE_X_OFFSET*6, MARKER_SPRITE_Y_OFFSET*2],
+        "H2": [MARKER_SPRITE_X_OFFSET*7, MARKER_SPRITE_Y_OFFSET*2],
+        "I2": [MARKER_SPRITE_X_OFFSET*8, MARKER_SPRITE_Y_OFFSET*2]
+    };
+
+var map = new naver.maps.Map('map', {
+    center: new naver.maps.LatLng("37.4990054", "127.0328691"),
+    zoom: 15
+});
+var bounds = map.getBounds(),
+    southWest = bounds.getSW(),
+    northEast = bounds.getNE(),
+    lngSpan = northEast.lng() - southWest.lng(),
+    latSpan = northEast.lat() - southWest.lat();
+	console.log(lngSpan);
+	console.log(latSpan)
+var markers = [];
+
+for (var key in MARKER_SPRITE_POSITION) {
+
+    var position = new naver.maps.LatLng(
+        southWest.lat() + latSpan * Math.random(),
+        southWest.lng() + lngSpan * Math.random());
+
+    var marker = new naver.maps.Marker({
+        map: map,
+        position: position,
+        title: key,
+        icon: {
+            url: HOME_PATH +'/img/example/sp_pins_spot_v3.png',
+            size: new naver.maps.Size(24, 37),
+            anchor: new naver.maps.Point(12, 37),
+            origin: new naver.maps.Point(MARKER_SPRITE_POSITION[key][0], MARKER_SPRITE_POSITION[key][1])
+        },
+        zIndex: 100
     });
+
+    markers.push(marker);
+    console.log(pointxs[0]);
+};
+naver.maps.Event.addListener(map, 'idle', function() {
+    updateMarkers(map, markers);
 });
 
+function updateMarkers(map, markers) {
+
+    var mapBounds = map.getBounds();
+    var marker, position;
+
+    for (var i = 0; i < markers.length; i++) {
+
+        marker = markers[i]
+        position = marker.getPosition();
+
+        if (mapBounds.hasLatLng(position)) {
+            showMarker(map, marker);
+        } else {
+            hideMarker(map, marker);
+        }
+    }
+}
+
+function showMarker(map, marker) {
+
+    if (marker.getMap()) return;
+    marker.setMap(map);
+}
+
+function hideMarker(map, marker) {
+
+    if (!marker.getMap()) return;
+    marker.setMap(null);
+}
+var locationBtnHtml2 = '<div style="width: 400px; height: 50px; padding-left:30px;"><a data-animation="ripple" style="margin-left:5px;margin-top:10px;" align="center"><img src="images/searchicon.png" style="width:20px; height:20px; padding-bottom:5px;"></a><input onkeyup="enterkey(this.value);" id="11" type="text"style="display: inline; width: 70%; border-radius: 5em; border:1px solid gray;height: 100%; padding-left: 60px;"placeholder="YUMEET 맛집 검색"></div>';
+
+
+naver.maps.Event.once(map, 'init_stylemap', function() {
+    var customControl2 = new naver.maps.CustomControl(locationBtnHtml2, {
+        position: naver.maps.Position.TOP_LEFT
+    });
+    customControl2.setMap(map);
+	naver.maps.Event.addDOMListener(customControl2.getElement(),'click', function(){
+		
+	});
+});
 </script>
 </body>
 </html>
