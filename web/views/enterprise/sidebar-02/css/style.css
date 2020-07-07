@@ -8333,8 +8333,21 @@ a[data-toggle="collapse"] {
   .form-control:-moz-placeholder {
     /* Firefox 18- */
     color: rgba(0, 0, 0, 0.3); }
+    
 #sidebarTitle {
 	color:white;
  	font-weight: bolder;
  	font-size: 20pt;	
+}
+
+#sidebarTop {
+	height:400px;
+}
+
+#sidebarBottom {
+	width:250px;
+	height:300px;
+	background-color:#FAFAFA;
+	position:absolute;
+  	bottom:0;
 }

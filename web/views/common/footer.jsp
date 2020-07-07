@@ -236,15 +236,15 @@ html, body {
 					<li>여밋소개</li>
 					<br>
 					<li style="display: inline-block;"><img
-						src="../../images/blog.png" style="width: 60px;"></li>
+						src="/semiproject/images/blog.png" style="width: 60px;"></li>
 					<li style="display: inline-block;"><img
-						src="../../images/facebook.png" style="width: 60px;"></li>
+						src="/semiproject/images/facebook.png" style="width: 60px;"></li>
 					<li style="display: inline-block;"><img
-						src="../../images/kakao.png" style="width: 60px;"></li>
+						src="/semiproject/images/kakao.png" style="width: 60px;"></li>
 					<li style="display: inline-block;"><img
-						src="../../images/picture.png"style="width: 60px;"></li>
+						src="/semiproject/images/picture.png"style="width: 60px;"></li>
 					<li style="display: inline-block;"><img
-						src="../../images/youtube.png" style="width: 60px;"></li>
+						src="/semiproject/images/youtube.png" style="width: 60px;"></li>
 				</ul>
 			</div>
 
