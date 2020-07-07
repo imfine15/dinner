@@ -12,7 +12,7 @@ padding:10px;
 
 #wrapper {
 	width: 100%;
-	height: 1700px;
+	height: auto;
 	font-family: 나눔스퀘어_AC;
 }
 
@@ -63,6 +63,7 @@ input {
 textarea {
 	width: 381px;
 	height: 200px;
+	margin-top:2px;
 }
 
 #sub_click_ {
@@ -96,6 +97,7 @@ textarea {
 #pro-choice {
 	width:387px; 
 	height:40px;
+	font-size:16px;
 }
 </style>
 </head>
@@ -104,6 +106,7 @@ textarea {
 	<!-- wrapper div start -->
 	<div id="wrapper" align="center">
 		<!-- 상단 이미지 start -->
+		<div style="height:50px;"></div>
 		<div id="logo_image">
 			<img src="/semiproject/images/YUMEET LOGO WITH REST.png" id="logo"
 				alt="yumeet logo">
@@ -180,7 +183,7 @@ textarea {
 		</div>
 		<!-- partner form end -->
 	</div>
-	<div style="height:50px;"></div>
+	<div style="height:200px;"></div>
 	<!-- wrapper div end -->
 	<%@ include file="../common/footer.jsp"%>
 </body>
