@@ -291,13 +291,16 @@ input[type=text]:focus{
 <script>
 var pointx;
 var pointy;
-var realaddress = "테헤란로14길 6";
-function enterkey(){
+var realaddress = "테헤란로14길 6, 양재동 16-12";
+function enterkey(value){
 	if (window.event.keyCode == 13) {
 		realaddress = $("#11").val();
-		console.log(realaddress);
-		console.log($("#11").val());
-		reserve(realaddress);
+		if(value == "양재역"){
+			console.log(value);
+			console.log(realaddress);
+			value = "남부순환로 2585";
+		}
+		reserve(value);
     }
 }
 function reserve(realaddress){
@@ -307,14 +310,13 @@ function reserve(realaddress){
 	    if (status !== naver.maps.Service.Status.OK) {
 	        return alert('Something wrong!');
 	    }
-
 	    var result = response.result; // 검색 결과의 컨테이너
 	    var items = result.items; // 검색 결과의 배열
 		pointx = result['items'][0]['point']['x'];
 	    pointy = result['items'][0]['point']['y'];
 	    var mapOptions = {
 	    	   center: new naver.maps.LatLng(pointy, pointx),
-	    	    zoom: 10
+	    	    zoom: 15
 	    	};
 
 	    var map = new naver.maps.Map('map', {
@@ -327,7 +329,7 @@ function reserve(realaddress){
 	    	    map: map
 	    	});
 		
-	    var locationBtnHtml2 = '<div style="width: 400px; height: 50px; padding-left:30px;"><a data-animation="ripple" style="margin-left:5px;margin-top:10px;" align="center"><img src="images/searchicon.png" style="width:20px; height:20px; padding-bottom:5px;"></a><input onkeyup="enterkey();" id="11" type="text"style="display: inline; width: 70%; border-radius: 5em; border:1px solid gray;height: 100%; padding-left: 60px;"placeholder="YUMEET 맛집 검색"></div>';
+	    var locationBtnHtml2 = '<div style="width: 400px; height: 50px; padding-left:30px;"><a data-animation="ripple" style="margin-left:5px;margin-top:10px;" align="center"><img src="images/searchicon.png" style="width:20px; height:20px; padding-bottom:5px;"></a><input onkeyup="enterkey(this.value);" id="11" type="text"style="display: inline; width: 70%; border-radius: 5em; border:1px solid gray;height: 100%; padding-left: 60px;"placeholder="YUMEET 맛집 검색"></div>';
 
 
 	    naver.maps.Event.once(map, 'init_stylemap', function() {
@@ -337,7 +339,7 @@ function reserve(realaddress){
 	        });
 	        customControl2.setMap(map);
 			naver.maps.Event.addDOMListener(customControl2.getElement(),'click', function(){
-				console.log("클릭잘됨22!");
+				
 			});
 	    });
 	});
@@ -348,25 +350,30 @@ naver.maps.Service.geocode({
     if (status !== naver.maps.Service.Status.OK) {
         return alert('Something wrong!');
     }
-
     var result = response.result; // 검색 결과의 컨테이너
     var items = result.items; // 검색 결과의 배열
+    console.log(result);
+    console.log(items);
 	pointx = result['items'][0]['point']['x'];
     pointy = result['items'][0]['point']['y'];
     var mapOptions = {
-    	   center: new naver.maps.LatLng(pointy, pointx),
+    	   center: new naver.maps.LatLng(pointy+900, pointx),
     	    zoom: 10
     	};
 
     var map = new naver.maps.Map('map', {
-    	   center: new naver.maps.LatLng(pointy, pointx),
+    	   center: new naver.maps.LatLng(pointy+ 30, pointx + 30),
     	    zoom: 15
     	});
-
-    var marker = new naver.maps.Marker({
-    	   position: new naver.maps.LatLng(pointy, pointx),
-    	    map: map
-    	});
+    
+	var marker = new naver.maps.Marker({
+ 	   position: new naver.maps.LatLng(pointy, pointx),
+ 	    map: map
+ 	});	
+	var marker2 = new naver.maps.Marker({
+	 	   position: new naver.maps.LatLng(),
+	 	    map: map
+	 	});	
 	
     var locationBtnHtml2 = '<div style="width: 400px; height: 50px; padding-left:30px;"><a data-animation="ripple" style="margin-left:5px;margin-top:10px;" align="center"><img src="images/searchicon.png" style="width:20px; height:20px; padding-bottom:5px;"></a><input onkeyup="enterkey(this.value);" id="11" type="text"style="display: inline; width: 70%; border-radius: 5em; border:1px solid gray;height: 100%; padding-left: 60px;"placeholder="YUMEET 맛집 검색"></div>';
 
@@ -378,7 +385,7 @@ naver.maps.Service.geocode({
         });
         customControl2.setMap(map);
 		naver.maps.Event.addDOMListener(customControl2.getElement(),'click', function(){
-			console.log("클릭잘됨22!");
+			
 		});
     });
 });
