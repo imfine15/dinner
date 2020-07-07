@@ -4,15 +4,6 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
- #asd123{
- 
- 	color:white;
- 	font-weight: bolder;
- 	font-size: 20pt;
- }
- 
- 
- 
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -8174,8 +8165,7 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: "Poppins", Arial, sans-serif;
-  color: white; }
+  font-family: "Poppins", Arial, sans-serif; }
 
 .ftco-section {
   padding: 7em 0; }
@@ -8343,3 +8333,8 @@ a[data-toggle="collapse"] {
   .form-control:-moz-placeholder {
     /* Firefox 18- */
     color: rgba(0, 0, 0, 0.3); }
+#sidebarTitle {
+	color:white;
+ 	font-weight: bolder;
+ 	font-size: 20pt;	
+}
