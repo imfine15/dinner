@@ -142,7 +142,7 @@ color: #000000;
 					</tr>
 					<tr>
 						<td><textarea placeholder="상담내용"
-								style="font-size: 20px; width: 100%; height: 200px; font-family: 나눔스퀘어_AC;"></textarea></td>
+								style="resize:none;font-size: 20px; width: 100%; height: 200px; font-family: 나눔스퀘어_AC;"></textarea></td>
 					</tr>
 				</table>
 			</form>

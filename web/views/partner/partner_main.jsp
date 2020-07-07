@@ -6,12 +6,10 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-p {
-font-family: 나눔스퀘어_AC;
-}
 #wrapper {
 	width:100%;
 	height:1500px;
+	font-family: 나눔스퀘어_AC;
 }
 #logo {
 	width: 287px;
@@ -42,7 +40,7 @@ h3 {
 	cursor: pointer;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 21px;
 	font-family:나눔스퀘어라운드;
 	color: #FFFFFF;
 }
@@ -53,6 +51,7 @@ td {
 #table_ali {
 	text-align:center;
 	margin-left:-70px;
+	font-size:20px;
 }
 </style>
 </head>

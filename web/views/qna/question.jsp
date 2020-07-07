@@ -91,8 +91,63 @@ tr {
 	width:200px;
 	font-size:30px;
 }
-#phoen_agree {
-	margin-left:400px;
+#agree-div {
+	display:inline-block; 
+	margin-right:300px;
+}
+.phone-div {
+	display:inline-block;
+}
+#agree-div2 {
+	display:inline-block; 
+	margin-right:280px;
+}
+.btn-agree {
+	background-color:#666666;
+	color:white;
+	border:0;
+	outline:0;
+}
+#file-div {
+	font-size: 12px;
+	font-family: dotum, '돋움';
+}
+
+
+input.upload_text {/*읽기전용 인풋텍스트*/
+	float:left;
+	width:230px;/* 버튼 포함 전체 가로 길이*/
+	height:19px;
+	line-height:19px;
+	padding:0 3px;
+	border:1px solid #bbb;
+}
+
+div.upload-btn_wrap input.input_file {/*파일찾기 폼 투명하게*/
+	position:absolute;
+	top:0;
+	right:0;
+	cursor:pointer;
+	opacity:0;
+	filter:alpha(opacity=0);
+	-ms-filter:"alpha(opacity=0)";
+	-moz-opacity:0;
+}
+div.upload-btn_wrap {/*버튼테두리 감싼 div*/
+	overflow:hidden;
+	position:relative;
+	float:left;
+	width:70px;/*width, height 값은 button(찾아보기)값과 같아야함 */
+	height:21px;
+	padding-left:3px;
+}
+div.upload-btn_wrap button {/*버튼 div*/
+	width:70px;
+	height:21px;
+	font-weight:bold;
+	background:#333;
+	border:1px solid #333;
+	color:#fff;
 }
 </style>
 </head>
@@ -131,25 +186,30 @@ tr {
 						<td colspan="3"><textarea id="content"></textarea></td>
 					</tr>
 					<tr>
-						<td class="first"></td>
-						<td colspan="2"></td>
-						<td></td>
-					</tr>
-					<tr>
 						<td class="first">첨부파일</td>
-						<td colspan="2"><input type="file"></td>
+						<td colspan="3">
+						<div id="file-div">
+						<input type="text" class="upload_text" readonly="readonly"
+												style="width:700px; height:26px;">
+							<div class="upload-btn_wrap">
+								<button type="button" title="파일찾기" id="btn-file">
+									<span>파일찾기</span>
+								</button>
+								<input type="file" class="input_file" title="파일찾기">
+							</div>
+						  </div>
+						</td>
 						<td></td>
 					</tr>
 					<tr>
 						<td class="first" rowspan="2">답변 <br>알림받기</td>
 						<td colspan="3">
 							<p style="line-height: 40px;">※ 답변 등록 시 이메일로 보내드립니다.</p> 
-							<input type="checkbox" id=""> <label style="line-height: 40px;">
-							(선택)이메일 수집 및 이용 동의</label><br> <input type="text"> @ <select id="mail-choice">
-								<option value="">gmail.com</option>
-								<option value="">naver.com</option>
-								<option value="">daum.net</option>
-						</select>
+							<input type="checkbox" id=""> 
+							<div id="agree-div"><label style="line-height: 40px;">
+							(선택)이메일 수집 및 이용 동의</label></div><div class="phone-div"><button class="btn-agree" id="mail-agree">전문보기</button></div>
+							<br><br>
+							<input type="email" placeholder="이메일 주소 입력" style="width:500px; height:26px; font-size:16px;"> 
 						<br>
 						<br>
 						</td>
@@ -157,14 +217,11 @@ tr {
 					<tr>
 						<td colspan="3">
 						<p style="line-height: 40px;">※ 답변 등록 시 알림문자를 보내드립니다.</p>
-						<input type="checkbox" id=""> <label style="line-height: 40px;">
-						(선택) 휴대폰번호 수집 및 이용 동의</label><button id="phone_agree">전문보기</button>
-						<br>
-						<select id="phone-choice" style="width:100px; height:40px;">
-							<option>010</option>
-							<option>011</option>
-							<option>017</option>
-						</select>
+						<input type="checkbox" id=""> 
+						<div id="agree-div2"><label style="line-height: 40px;">
+						(선택)휴대폰번호 수집 및 이용 동의</label></div><div class="phone-div"><button class="btn-agree" id="phone-agree">전문보기</button></div>
+						<br> <br>
+							<input type="number" placeholder="전화번호 입력" style="width:500px; height:26px; font-size:16px;"> 
 						<br>
 						<br>
 						</td>
@@ -183,6 +240,13 @@ tr {
 	    placeholder: "선택하세요"
 	});
 
+	$(function(){
+		$('.upload_text').val('');
+		$('.input_file').change(function(){
+			var i = $(this).val();
+			$('.upload_text').val(i);
+		});
+	});
 	</script>
 	<%@ include file="../common/footer.jsp"%>
 </body>
