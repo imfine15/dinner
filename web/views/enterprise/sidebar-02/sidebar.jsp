@@ -12,93 +12,65 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div style="background: white;">
+		<div class="container2" style="background: white; box-shadow:0px 5px 10px 5px #DE6B6B;">
+			<a href="">
+				<img src="/semiproject/images/YUMEET LOGO.png" style="width: 200px; background:white;">
+			</a>
+				
+			<a href="" style="float: right">
+				<img src="/semiproject/images/myicon.png" style="height:66.63px; width: 95px; background:white;">
+			</a>
+				
+			<a href="" style="float: right">
+				<img src="/semiproject/images/location.png" style="height:66.63px; width: 95px; background:white;">
+			</a>
+		</div>
+	</div>
 <div class="wrapper d-flex align-items-stretch">
 	<nav id="sidebar">
-	<div class="custom-menu">
-		<button type="button" id="sidebarCollapse" class="btn btn-primary">
-		<i class="fa fa-bars"></i>
-		</button>
-	</div>
-	<div class="p-4 pt-5">
-		<h2 id="sidebarTitle"><a href="index.html" class="logo">예약 확인</a></h2>
-		<ul class="list-unstyled components mb-5">
-	          <!-- <li class="active">
-	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">예약 요청 확인</a>
-	            <ul class="collapse list-unstyled" id="homeSubmenu">
-                <li>
-                    <a href="#">하잉</a>
-                </li>
-                <li>
-                    <a href="#">Home 2</a>
-                </li>
-                <li>
-                    <a href="#">Home 3</a>
-                </li>
-	            </ul>
-	          </li> -->
-			<li>
-				<a href="#">예약 요청 확인</a>
-			</li>
-			<li>
-				<a href="#">전체 예약 일정</a>
-			</li>
-			<li>
-				<a href="#">댓글 관리</a>
-			</li>
-			<li>
-				<a href="#">정산 내역</a>
-			</li>
-			<li>
-				<a href="#">결제 내역</a>
-			</li>
-			<li>
-				<a href="#">보고서</a>
-			</li>
-	          <!-- <li>
-              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-              <ul class="collapse list-unstyled" id="pageSubmenu">
-                <li>
-                    <a href="#">Page 1</a>
-                </li>
-                <li>
-                    <a href="#">Page 2</a>
-                </li>
-                <li>
-                    <a href="#">Page 3</a>
-                </li>
-              </ul>
-	          </li>
-	          <li>
-              <a href="#">Portfolio</a>
-	          </li>
-	          <li>
-              <a href="#">Contact</a>
-	          </li> -->
-		</ul>
-	        <!-- <div class="mb-5">
-						<h3 class="h6">Subscribe for newsletter</h3>
-						<form action="#" class="colorlib-subscribe-form">
-	            <div class="form-group d-flex">
-	            	<div class="icon"><span class="icon-paper-plane"></span></div>
-	              <input type="text" class="form-control" placeholder="Enter Email Address">
-	            </div>
-	          </form>
-					</div> -->
-
-	       <!--  <div class="footer">
-	        	<p>Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
-						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-						  Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.</p>
-	        </div> -->
-
-	</div>
+		<div class="custom-menu">
+			<button type="button" id="sidebarCollapse" class="btn btn-primary">
+			<i class="fa fa-bars"></i>
+			</button>
+		</div>
+		<div class="p-4 pt-5" id="sidebarTop">
+			<h2 id="sidebarTitle"><a href="index.html" class="logo">예약 확인</a></h2>
+			<ul class="list-unstyled components mb-5">
+				<li>
+					<a href="#">예약 요청 확인</a>
+				</li>
+				<li>
+					<a href="#">전체 예약 일정</a>
+				</li>
+				<li>
+					<a href="#">댓글 관리</a>
+				</li>
+				<li>
+					<a href="#">정산 내역</a>
+				</li>
+				<li>
+					<a href="#">결제 내역</a>
+				</li>
+				<li>
+					<a href="#">제재내역</a>
+				</li>
+				<li>
+					<a href="#">보고서</a>
+				</li>
+			</ul>
+		</div>
+		<div id="sidebarBottom">
+		</div>
 	</nav>
-        <!-- Page Content  -->
+	<!-- Page Content  -->
 	<div id="content" class="p-4 p-md-5 pt-5">
         <p>컨텐츠가 들어갈 영역입니다</p>
 	</div>
 </div>
-<script type="text/javascript">
+<br>
+<%@ include file="/views/common/footer.jsp" %>
+<script>
 	$(function () {
 		$("ul li a").click(function () {
 			$(".logo").html($(this).html());
