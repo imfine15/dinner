@@ -43,7 +43,7 @@
 	/* 여기까지가 스위치버튼css */
 	.outer{
 		width: 1200px;
-		height: 1500px;
+		height: 1000px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 50px;
@@ -78,7 +78,7 @@
 	}
 	#side{
 		width:350px;
-		height: 1300px;
+		height: 600px;
 		background-color: #EFEFEF;
 		border-radius: 30px 0 0 0;
 		display: inline-block;
@@ -215,13 +215,10 @@
 	}
 	#schedule {
 		width: 1200px;
-		height: 1500px;
-		border: 1px solid black;
-		position: relative;
-		top: -1420px;
-		left: 100px;
-		z-index: 1;
-		bottom: 0px;
+		height: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
 	}
 	#text2{
 		font-size: 24px;
@@ -422,8 +419,8 @@
 			</div>
 		</aside>
 		</div>
-	</div>
-	<!-- 맛집끝 ...-->
+		
+		<!-- 맛집끝 ...-->
 	<!-- 일정검색창시작 -->
 	<div id="schedule" align="center" style="display: none;">
 		<p id="text2" align="left">베스트 코스리뷰</p><br>
@@ -471,13 +468,14 @@
 					<td align="center">임피네</td>
 				</tr>
 			</table>
-			
+			</div>
 
 		</div>
 		<!-- 리뷰게시판끝 -->
 	</div><!-- 일정끝 -->
-	
-	
+		
+	</div>
+	<%@include file="../common/footer.jsp" %>
 	<script>
 		var toggle = false;
 		
@@ -509,6 +507,5 @@
 				}
 			}
 		</script>
-	<%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>
