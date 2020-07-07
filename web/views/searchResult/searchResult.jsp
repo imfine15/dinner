@@ -297,10 +297,11 @@
 		
 	}
 	.profileArea{
-    	margin-top: 50%;
+    	padding-top : 10px;
+    	padding-bottom:10px;
 		display: inline-block; 
 		width: 110px; 
-		height: 150px;
+		height: 130px;
 	}
 	
 	.profileBox{
@@ -317,6 +318,23 @@
 		border-radius: 70%;
 		object-fit: cover;
 		z-index: 1;
+	}
+	.textArea{
+		text-align: center;
+		
+	}
+	.heart{
+		 width : 25px;
+		 vertical-align: top;
+		 margin-top: 30px;
+	}
+	.dayArea{
+	 	display: inline-block;
+	 	
+	}
+	.textreview{
+		font-size: 24px;
+		font-weight: bold;
 	}
 	
 </style>
@@ -431,33 +449,30 @@
 				<button id="write">글쓰기</button>
 			</div>
 			<hr>
-			<div>
+			<div class="textArea">
 			
-				<span>
-					<label>0001</label>
-					<img src="/semiproject/images/닭갈비.jpg" width="200px" height="150px">
-					<div style="display: inline-block;" align="left">
-						<span>울부짖어라, '닭갈비'</span><br>
-						<span>오늘 배가 너무 고픈데 덥기까지 해...</span>
-					</div>
-					<span>
-						<img src="/semiproject/images/heartblack.png" width="25px">
-						<div style="display: inline-block;" align="right">
-							<span>2020.07.06</span><br>
-							<span>조회수 : 10</span><br>
-							<button class="report">신고</button>
-						</div>
-					</span>
-					<div class="profileArea" align="center" style="margin: auto;">
-					<div class="profileBox" align="center">
+			<table style="border-bottom: 1px solid black;">
+				<tr>
+					<td rowspan="3" width="100px">0001</td>
+					<td rowspan="3"><img src="/semiproject/images/닭갈비.jpg" width="200px" height="150px"></td>
+					<td align="left" valign="bottom"><label class="textreview">울부짖어라, '닭갈비'</label></td>
+					<td rowspan="3" valign="top" width="40px"><img class="heart" src="/semiproject/images/heartblack.png"></td>
+					<td align="right" valign="bottom">2020.07.06</td>
+					<td rowspan="2" width="180px" align="center"><div class="profileBox" align="center">
 						<img class="profile" src="/semiproject/images/imfine.png">
-					</div>
-						<span>임피네</span>
-					</div>
-					
-					
-				</span>
-			</div>
+					</div></td>
+				</tr>
+				<tr>
+					<td width="400px" align="left" valign="top" rowspan="2"><lable>오늘 배가 너무 고픈데 덥기까지 해...</label></td>
+					<td align="right" valign="top" width="100px">조회수 : 10</td>
+				</tr>
+				<tr>
+					<td align="right"><button class="report">신고</button></td>
+					<td align="center">임피네</td>
+				</tr>
+			</table>
+			
+
 		</div>
 		<!-- 리뷰게시판끝 -->
 	</div><!-- 일정끝 -->
@@ -494,8 +509,6 @@
 				}
 			}
 		</script>
-	<footer>
 	<%@ include file="/views/common/footer.jsp" %>
-	</footer>
 </body>
 </html>
