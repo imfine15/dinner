@@ -58,8 +58,8 @@ padding:10px;
 
 input {
 	height: 30px;
+	outline:none;
 }
-
 textarea {
 	width: 381px;
 	height: 200px;
