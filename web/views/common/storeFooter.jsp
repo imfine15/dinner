@@ -6,7 +6,6 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-/* REMOVE THIS, USE YOUR OWN  */
 html, body {
 	margin: 0;
 	padding: 0;
@@ -177,16 +176,16 @@ html, body {
 	background-color: white;
 	font-family:-윤고딕310;
 }
+
+#menu li {
+	font-weight:bold;
 }
 </style>
 </head>
 <body>
-	<header></header>
-
-	<!-- FOOTER START -->
 	<div class="footer">
 		<div class="contain">
-			<div class="col" style="margin-top:20px; margin-left:100px; ">
+			<div class="col" style="margin-top:20px; margin-left:20px; ">
 				<img src="/semiproject/images/YUMEET LOGO.png" id="ylogo"
 					alt="yumeetlogo">
 			</div>
@@ -209,7 +208,7 @@ html, body {
 			</div>
 
 			<div class="col" style="">
-				<ul style="margin-top:10px;">
+				<ul style="margin-top:10px;" id="menu">
 					<br>
 					<br>
 					<li style="padding:8px">공지사항</li>
@@ -218,9 +217,9 @@ html, body {
 					<li style="padding:8px">개인정보 처리방침</li>
 				</ul>
 			</div>
-
-			<div class="col">
-				<ul style="margin-top:10px;">
+			
+			<div class="col" style="">
+				<ul style="margin-top:10px;" id="menu">
 					<br>
 					<br>
 					<li style="padding:8px">문의하기</li>
@@ -229,26 +228,7 @@ html, body {
 					<li style="padding:8px">광고문의</li>
 				</ul>
 			</div>
-			
-			<div class="col" style="width: 400px;">
-				<ul style="margin-top:30px;">
-					<br>
-					<li>여밋소개</li>
-					<br>
-					<li style="display: inline-block;"><img
-						src="/semiproject/images/blog.png" style="width: 60px;"></li>
-					<li style="display: inline-block;"><img
-						src="/semiproject/images/facebook.png" style="width: 60px;"></li>
-					<li style="display: inline-block;"><img
-						src="/semiproject/images/kakao.png" style="width: 60px;"></li>
-					<li style="display: inline-block;"><img
-						src="/semiproject/images/picture.png"style="width: 60px;"></li>
-					<li style="display: inline-block;"><img
-						src="/semiproject/images/youtube.png" style="width: 60px;"></li>
-				</ul>
-			</div>
-			
-			
+
 			<div class="clearfix"></div>
 		</div>
 	</div>
