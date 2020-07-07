@@ -6,8 +6,10 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-p {
-	font-family: 나눔스퀘어_AC;
+.wrapper {
+	font-family: 나눔스퀘어;
+	width:100%;
+	height:700px;
 }
 
 #explain {
@@ -26,11 +28,15 @@ p {
 	font-size: 24px;
 	color: #FFFFFF;
 }
+footer {
+	clear:both;
+}
 </style>
 </head>
 <body>
 	<%@ include file="../common/header.jsp"%>
 	<div class="wrapper" align="center">
+		<div style="height:100px;"></div>
 		<img src="/semiproject/images/YUMEET LOGO WITH REST.png" id="logo"
 			alt="yumeet logo">
 		<div style="height: 50px;"></div>
@@ -38,6 +44,8 @@ p {
 		<div style="height: 50px;"></div>
 		<button id="sub_click" type="submit" style="color: white;">홈으로</button>
 	</div>
+	<footer>
 	<%@ include file="../common/footer.jsp"%>
+	</footer>
 </body>
 </html>

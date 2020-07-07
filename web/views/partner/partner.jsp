@@ -6,9 +6,6 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-p {
-	font-family: 나눔스퀘어_AC;
-}
 td {
 padding:10px;
 }
@@ -16,7 +13,7 @@ padding:10px;
 #wrapper {
 	width: 100%;
 	height: 1700px;
-	margin-top:50px;
+	font-family: 나눔스퀘어_AC;
 }
 
 #membership {
@@ -64,8 +61,8 @@ input {
 }
 
 textarea {
-	width: 100%;
-	height: 100px;
+	width: 381px;
+	height: 200px;
 }
 
 #sub_click_ {
@@ -86,12 +83,19 @@ textarea {
 }
 
 .explain_img {
-	width: 100px;
-	margin-left: -550px;
+	width: 200px;
+	display:inline-block;
+	margin-right:30px;
 }
 
 .exp_text {
-	
+	height:200px;
+	vertical-align:middle;
+	display:inline-block;
+}
+#pro-choice {
+	width:387px; 
+	height:40px;
 }
 </style>
 </head>
@@ -118,7 +122,7 @@ textarea {
 				<img src="/semiproject/images/manage_loggg_s.png" id="manage"
 					alt="manage">
 			</div>
-			<p id="exp_text">YUMEET을 통해 예약을 관리하실 수 있습니다.</p>
+			<div class="exp_text"><p >YUMEET을 통해 예약을 관리하실 수 있습니다.</p></div>
 		</div>
 		<div id="spacer"></div>
 		<!-- partner middle explain start -->
@@ -158,14 +162,14 @@ textarea {
 					</tr>
 					<tr>
 						<td>상품선택 :</td>
-						<td colspan="3"><select style="width:100%; height:30px">
+						<td colspan="3"><select id="pro-choice">
 						<option>베이직</option>
 						<option>프리미엄</option>
 						</select></td>
 					</tr>
 					<tr>
-						<td>상담내용 :</td>
-						<td colspan="3"><textarea></textarea></td>
+						<td style="vertical-align:top;">상담내용 :</td>
+						<td colspan="3"><textarea style="resize:none;"></textarea></td>
 					</tr>
 				</table>
 				<div align="center"></div>
@@ -181,6 +185,3 @@ textarea {
 	<%@ include file="../common/footer.jsp"%>
 </body>
 </html>
-
-
-
