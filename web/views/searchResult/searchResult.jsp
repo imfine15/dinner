@@ -43,7 +43,7 @@
 	/* 여기까지가 스위치버튼css */
 	.outer{
 		width: 1200px;
-		height: 1000px;
+		height: 1500px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 50px;
@@ -78,7 +78,7 @@
 	}
 	#side{
 		width:350px;
-		height: 600px;
+		height: 1300px;
 		background-color: #EFEFEF;
 		border-radius: 30px 0 0 0;
 		display: inline-block;
@@ -262,7 +262,7 @@
 		color: #535353;
 		float: left;
 		display: inline-block;
-		
+		font-weight: bold;
 	}
 	#write{
 		background: #59AAA4;
@@ -323,7 +323,7 @@
 	.heart{
 		 width : 25px;
 		 vertical-align: top;
-		 margin-top: 30px;
+		 margin-top: 45px;
 	}
 	.dayArea{
 	 	display: inline-block;
@@ -437,7 +437,7 @@
 		<!-- 리뷰게시판시작 -->
 		<div class="inner2" align="center">
 			<div align="left">
-				<label id="text3">리뷰 게시판</label>
+				<label id="text3">일정 리뷰</label>
 			</div>
 			<div align="right" id="btnArea">
 				<button class="check">조회순</button>
@@ -467,11 +467,90 @@
 					<td align="right"><button class="report">신고</button></td>
 					<td align="center">임피네</td>
 				</tr>
+				</table>
+				<table style="border-bottom: 1px solid black;">
+				<tr>
+					<td rowspan="3" width="100px">0002</td>
+					<td rowspan="3"><img src="/semiproject/images/장어구이.jpg" width="200px" height="150px"></td>
+					<td align="left" valign="bottom"><label class="textreview">장어야야ㅏ아앙</label></td>
+					<td rowspan="3" valign="top" width="40px"><img class="heart" src="/semiproject/images/heartblack.png"></td>
+					<td align="right" valign="bottom">2020.07.05</td>
+					<td rowspan="2" width="180px" align="center"><div class="profileBox" align="center">
+						<img class="profile" src="/semiproject/images/ddu.png">
+					</div></td>
+				</tr>
+				<tr>
+					<td width="400px" align="left" valign="top" rowspan="2"><lable>빨리집에가고싶다그칭</label></td>
+					<td align="right" valign="top" width="100px">조회수 : 100</td>
+				</tr>
+				<tr>
+					<td align="right"><button class="report">신고</button></td>
+					<td align="center">뚜뚜링</td>
+				</tr>
 			</table>
 			</div>
 
 		</div>
 		<!-- 리뷰게시판끝 -->
+		<!-- 페이징처리해야하는부분 -->
+		<!-- 맛집리뷰시작 -->
+		<div class="inner2" align="center">
+			<div align="left">
+				<label id="text3">맛집 리뷰</label>
+			</div>
+			<div align="right" id="btnArea">
+				<button class="check">조회순</button>
+				<button class="check">추천순</button>
+				<button class="check">최신순</button>
+				<button id="write">글쓰기</button>
+			</div>
+			<hr>
+			<div class="textArea">
+			
+			<table style="border-bottom: 1px solid black;">
+				<tr>
+					<td rowspan="3" width="100px">0001</td>
+					<td rowspan="3"><img src="/semiproject/images/닭갈비.jpg" width="200px" height="150px"></td>
+					<td align="left" valign="bottom"><label class="textreview">울부짖어라, '닭갈비'</label></td>
+					<td rowspan="3" valign="top" width="40px"><img class="heart" src="/semiproject/images/heartblack.png"></td>
+					<td align="right" valign="bottom">2020.07.06</td>
+					<td rowspan="2" width="180px" align="center"><div class="profileBox" align="center">
+						<img class="profile" src="/semiproject/images/imfine.png">
+					</div></td>
+				</tr>
+				<tr>
+					<td width="400px" align="left" valign="top" rowspan="2"><lable>오늘 배가 너무 고픈데 덥기까지 해...</label></td>
+					<td align="right" valign="top" width="100px">조회수 : 10</td>
+				</tr>
+				<tr>
+					<td align="right"><button class="report">신고</button></td>
+					<td align="center">임피네</td>
+				</tr>
+				</table>
+				<table style="border-bottom: 1px solid black;">
+				<tr>
+					<td rowspan="3" width="100px">0002</td>
+					<td rowspan="3"><img src="/semiproject/images/장어구이.jpg" width="200px" height="150px"></td>
+					<td align="left" valign="bottom"><label class="textreview">장어야야ㅏ아앙</label></td>
+					<td rowspan="3" valign="top" width="40px"><img class="heart" src="/semiproject/images/heartblack.png"></td>
+					<td align="right" valign="bottom">2020.07.05</td>
+					<td rowspan="2" width="180px" align="center"><div class="profileBox" align="center">
+						<img class="profile" src="/semiproject/images/ddu.png">
+					</div></td>
+				</tr>
+				<tr>
+					<td width="400px" align="left" valign="top" rowspan="2"><lable>빨리집에가고싶다그칭</label></td>
+					<td align="right" valign="top" width="100px">조회수 : 100</td>
+				</tr>
+				<tr>
+					<td align="right"><button class="report">신고</button></td>
+					<td align="center">뚜뚜링</td>
+				</tr>
+			</table>
+			</div>
+
+		</div>
+		<!-- 페이징처리해야할부분 -->
 	</div><!-- 일정끝 -->
 		
 	</div>
