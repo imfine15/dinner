@@ -181,6 +181,7 @@
 		</table>
 	</form>
 	<br>
+	<br>
 <%@ include file="/views/common/enterpriseFooter.jsp" %>
 </body>
 <script type="text/javascript" src="/semiproject/views/enterprise/signUp/js/signUpJs.js"></script>
