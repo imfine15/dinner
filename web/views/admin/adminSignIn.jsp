@@ -28,13 +28,14 @@ a:hover, a:active {
 	width: 100%;
 	height: auto;
 	vertical-align: middle;
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
 
 #box {
 	width: 450px;
 	height: 380px;
 	background: #F3F4F6;
-	margin-top: 12%;
 }
 
 #yumeet-logo {
