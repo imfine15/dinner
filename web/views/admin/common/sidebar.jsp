@@ -66,7 +66,7 @@
 	width: 0;
 	height: 100%;
 	padding: 50px 0;
-	position: absolute;
+	position: ;
 	top: 0;
 	right: 0;
 	overflow: hidden;

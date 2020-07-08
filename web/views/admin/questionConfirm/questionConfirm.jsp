@@ -11,8 +11,8 @@
 </head>
 <body>
    <%@ include file="../common/sidebar.jsp"%>
-	<div >
-	
+	<div id="inner-box"> 
+		
 	</div>
 </body>
 </html>
