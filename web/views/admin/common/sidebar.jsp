@@ -66,7 +66,7 @@
 	width: 0;
 	height: 100%;
 	padding: 50px 0;
-	position: absolute;
+	position: ;
 	top: 0;
 	right: 0;
 	overflow: hidden;
@@ -113,6 +113,12 @@ html, body {
 	color:white;
 	line-height:15px;
 	display:inline-block;
+}
+#inner-box {
+	margin-left:14%;
+	background-color:white;
+	width:500px;
+	height:500px;
 }
 </style>
 </head>
@@ -163,6 +169,6 @@ html, body {
 		</nav>
 	</div>
 	<!-- sidebar end -->
-	
+   <div style="width:100%; height:100%;margin-left:auto; margin-right:auto; padding-top:50px; background-color:#E4E4E4;"></div>
 </body>
 </html>
