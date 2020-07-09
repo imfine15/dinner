@@ -8203,7 +8203,8 @@ h1, h2, h3, h4, h5,
   border: none; }
 
 .wrapper {
-  width: 100%; }
+  width: 20%;
+  position: absolute; }
 
 #sidebar {
   min-width: 250px;
@@ -8341,7 +8342,7 @@ a[data-toggle="collapse"] {
 }
 
 #sidebarTop {
-	height:400px;
+	height:550px;;
 }
 
 #sidebarBottom {

@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div style="background: white;">
+<div style="background: white;">
 		<div class="container2" style="background: white; box-shadow:0px 5px 10px 5px #DE6B6B;">
 			<a href="">
 				<img src="/semiproject/images/YUMEET LOGO.png" style="width: 200px; background:white;">
@@ -34,7 +34,7 @@
 			<i class="fa fa-bars"></i>
 			</button>
 		</div>
-		<div class="p-4 pt-5" id="sidebarTop">
+		<div class="p-4 pt-5" id="sidebarTop" style="border-bottom-right-radius:100px;">
 			<h2 id="sidebarTitle"><a href="index.html" class="logo">예약 확인</a></h2>
 			<ul class="list-unstyled components mb-5">
 				<li>
@@ -60,16 +60,11 @@
 				</li>
 			</ul>
 		</div>
-		<div id="sidebarBottom">
-		</div>
 	</nav>
 	<!-- Page Content  -->
-	<div id="content" class="p-4 p-md-5 pt-5">
-        <p>컨텐츠가 들어갈 영역입니다</p>
-	</div>
+
 </div>
 <br>
-<%@ include file="/views/common/enterpriseFooter.jsp" %>
 <script>
 	$(function () {
 		$("ul li a").click(function () {

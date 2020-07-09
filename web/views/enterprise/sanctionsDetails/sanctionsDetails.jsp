@@ -9,7 +9,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/semiproject/views/enterprise/sidebar-02/css/style.css">
+<link rel="stylesheet" href="/semiproject/views/enterprise/sidebar/css/style.css">
 <style>
 	.payBtn{
 		width:50px;
@@ -37,60 +37,13 @@
 
 </head>
 <body>
-	<div style="background: white;">
-		<div class="container2" style="background: white; box-shadow:0px 5px 10px 5px #DE6B6B;">
-			<a href="">
-				<img src="/semiproject/images/YUMEET LOGO.png" style="width: 200px; background:white;">
-			</a>
-				
-			<a href="" style="float: right">
-				<img src="/semiproject/images/myicon.png" style="height:66.63px; width: 95px; background:white;">
-			</a>
-				
-			<a href="" style="float: right">
-				<img src="/semiproject/images/location.png" style="height:66.63px; width: 95px; background:white;">
-			</a>
-		</div>
-	</div>
-<div class="wrapper d-flex align-items-stretch">
-	<nav id="sidebar">
-		<div class="custom-menu">
-			<button type="button" id="sidebarCollapse" class="btn btn-primary">
-			<i class="fa fa-bars"></i>
-			</button>
-		</div>
-		<div class="p-4 pt-5" id="sidebarTop">
-			<h2 id="sidebarTitle"><a href="index.html" class="logo" style="color:white;">예약 확인</a></h2>
-			<ul class="list-unstyled components mb-5">
-				<li>
-					<a href="#">예약 요청 확인</a>
-				</li>
-				<li>
-					<a href="#">전체 예약 일정</a>
-				</li>
-				<li>
-					<a href="#">댓글 관리</a>
-				</li>
-				<li>
-					<a href="#">정산 내역</a>
-				</li>
-				<li>
-					<a href="#">결제 내역</a>
-				</li>
-				<li>
-					<a href="#">제재내역</a>
-				</li>
-				<li>
-					<a href="#">보고서</a>
-				</li>
-			</ul>
-		</div>
-		<div id="sidebarBottom">
-		</div>
-	</nav>
+	
+<%@include file="../sidebar/sidebar.jsp" %>
+
+
 	<!-- Page Content  -->
 	<div id="content" class="p-4 p-md-5 pt-5">
-           <div style="width:70%; height:600px;margin-left:auto; margin-right:auto; padding-top:50px;">
+           <div style="width:70%; height:600px;margin-left:auto; margin-right:auto;">
       <h1>회원관리</h1><br>
       <div style="padding-left:100px;">
          <label>사용자수 : 7명</label><br><br>
@@ -191,11 +144,11 @@
          <button class="hide" onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage='">>></button>
       </div>
    </div>
-
 	</div>
-</div>
+	
+	
+	<%@include file="../../common/enterpriseFooter.jsp" %>
 <br>
-<%@ include file="/views/common/storeFooter.jsp" %>
 <script>
 	$(function () {
 		$("ul li a").click(function () {
