@@ -9,7 +9,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="/semiproject/views/enterprise/sidebar/css/style.css">
 </head>
 <body>
 <div style="background: white;">
@@ -35,7 +35,7 @@
 			</button>
 		</div>
 		<div class="p-4 pt-5" id="sidebarTop" style="border-bottom-right-radius:100px;">
-			<h2 id="sidebarTitle"><a href="index.html" class="logo">예약 확인</a></h2>
+			<h2 id="sidebarTitle"><a href="index.html" class="logo"  style="color:white;">예약 확인</a></h2>
 			<ul class="list-unstyled components mb-5">
 				<li>
 					<a href="#">예약 요청 확인</a>
@@ -74,9 +74,9 @@
 		});
 	});
 </script>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+<script src="/semiproject/views/enterprise/sidebar/js/jquery.min.js"></script>
+<script src="/semiproject/views/enterprise/sidebar/js/popper.js"></script>
+<script src="/semiproject/views/enterprise/sidebar/js/bootstrap.min.js"></script>
+<script src="/semiproject/views/enterprise/sidebar/js/main.js"></script>
 </body>
 </html>

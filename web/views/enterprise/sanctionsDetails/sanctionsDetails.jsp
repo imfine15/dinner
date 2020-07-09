@@ -42,7 +42,7 @@
 
 
 	<!-- Page Content  -->
-	<div id="content" class="p-4 p-md-5 pt-5">
+	<!-- <div id="content" class="p-4 p-md-5 pt-5">
            <div style="width:70%; height:600px;margin-left:auto; margin-right:auto;">
       <h1>회원관리</h1><br>
       <div style="padding-left:100px;">
@@ -53,11 +53,31 @@
             <option>닉네임</option>
          </select>
          <input type="text" style="height: 23px;">
-         <button style="height:30px;">검색</button>
+         <button style="height:30px;">검색</button> -->
          
          <br><br>
          
-         <div>
+         <div style="margin-left:15%;">
+         	<table align="center">
+         		<tr>
+         			<td></td>
+         			<td></td>
+         			<td></td>
+         			
+         		</tr>
+         		<tr style="font-size: 30px;">
+         			<td>
+         				2020.06.01
+         			</td>
+         			<td>
+         				~
+					</td>
+					<td>
+						2020.06.30
+					</td>
+         		</tr>
+         	</table>
+         
             <table style="" align="center">
             <thead>
                <th style="width:150px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일자</th>
@@ -75,7 +95,7 @@
                   <td>IMFINE</td>
                   <td>imfine_123@kh.or.kr</td>
                   <td>일반</td>
-                  <td><button class="payBtn">결제</button></td>
+                  <td><button class="payBtn">지불</button></td>
                  
                </tr>
                <tr>
@@ -84,7 +104,7 @@
                   <td>IMFINE</td>
                   <td>imfine_123@kh.or.kr</td>
                   <td>일반</td>
-                  <td><button class="payBtn">결제</button></td>
+                  <td><button class="payBtn">지불</button></td>
                   
                </tr>
                <tr>
@@ -93,7 +113,7 @@
                   <td>IMFINE</td>
                   <td>imfine_123@kh.or.kr</td>
                   <td>일반</td>
-                  <td><button class="payBtn">결제</button></td>
+                  <td><button class="payBtn">지불</button></td>
                   
                </tr>
                <tr>
@@ -102,7 +122,7 @@
                   <td>IMFINE</td>
                   <td>imfine_123@kh.or.kr</td>
                   <td>일반</td>
-                  <td><button class="payBtn">결제</button></td>
+                  <td><button class="payBtn">지불</button></td>
                  
                </tr>
                <tr>
@@ -111,7 +131,7 @@
                   <td>IMFINE</td>
                   <td>imfine_123@kh.or.kr</td>
                   <td>일반</td>
-                  <td><button class="payBtn">결제</button></td>
+                  <td><button class="payBtn">지불</button></td>
                   
                </tr>
                <tr>
@@ -120,7 +140,7 @@
                   <td>IMFINE</td>
                   <td>imfine_123@kh.or.kr</td>
                   <td>일반</td>
-                  <td><button class="payBtn">결제</button></td>
+                  <td><button class="payBtn">지불</button></td>
                   
                </tr>
                <tr>
@@ -129,23 +149,27 @@
                   <td>IMFINE</td>
                   <td>imfine_123@kh.or.kr</td>
                   <td>일반</td>
-                  <td><button class="payBtn">결제</button></td>
+                  <td><button class="payBtn">지불</button></td>
                   
                </tr>
             </tbody>
             </table>
-         </div>
-      </div>
       <div class="pagingArea" align="center">
          <button class="hide" onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage=1'"><<</button>
          <button class="hide" onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage='"><</button>
 
-         <button class="hide" onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage='"><img src="images/arrow.png"></button>
+         <button class="hide" onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage='">></button>
          <button class="hide" onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage='">>></button>
       </div>
    </div>
-	</div>
-	
+	<br>	
+	<br>	
+	<br>	
+	<br>	
+	<br>	
+	<br>	
+ 	<br>	
+	<br>	
 	
 	<%@include file="../../common/enterpriseFooter.jsp" %>
 <br>
@@ -158,9 +182,9 @@
 		});
 	});
 </script>
-<script src="/semiproject/views/enterprise/sidebar-02/js/jquery.min.js"></script>
-<script src="/semiproject/views/enterprise/sidebar-02/js/popper.js"></script>
-<script src="/semiproject/views/enterprise/sidebar-02/js/bootstrap.min.js"></script>
-<script src="/semiproject/views/enterprise/sidebar-02/js/main.js"></script>
+<script src="/semiproject/views/enterprise/sidebar/js/jquery.min.js"></script>
+<script src="/semiproject/views/enterprise/sidebar/js/popper.js"></script>
+<script src="/semiproject/views/enterprise/sidebar/js/bootstrap.min.js"></script>
+<script src="/semiproject/views/enterprise/sidebar/js/main.js"></script>
 </body>
 </html>
