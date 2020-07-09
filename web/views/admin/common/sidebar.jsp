@@ -76,6 +76,7 @@
 	-o-transition: 0.3s;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
+	
 }
 
 .hidden li {
