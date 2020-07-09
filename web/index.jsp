@@ -131,6 +131,26 @@
 		list-style:none;
 		line-height:170%;
 	}
+	
+	#div {
+		width:1200px;
+		text-align:center;
+		margin:0 auto;
+	}
+	
+	#div1, #div2, #div3 {
+		width:33%;
+		height:100%;
+		display:inline-block;
+	}
+	
+	#div1 {
+		float:left;
+	}
+	
+	#div3 {
+		float:right;
+	}
 </style>
 </head>
 <body>
@@ -139,23 +159,52 @@
 	<br>
 	<h3>views 하위 폴더명과 jsp파일명이 같아야만 이동이 가능합니다</h3>
 	<br>
-	<label>이동하실 jsp 파일명 : </label><input type="text" id="url"><button id="go" onclick="goJsp();">이동하기</button>
+	<label>이동하실 jsp 파일명 : </label><input type="text" id="url">
+	<br>
+	<button onclick="goUser();">사용자메뉴<br>이동하기</button>
+	<button onclick="goStore();">업체메뉴<br>이동하기</button>
+	<button onclick="goAdmin();">관리자메뉴<br>이동하기</button>
 	<br>
 	<h3>현재(2020.07.07) 가능한 목록</h3>
 	<br>
-	<h3>목록을 눌러주세요</h3>
-	<ul>
-		<li>ad</li>
-		<li>main2</li>
-		<li>mapSearch</li>
-		<li>myPage</li>
-		<li>notice</li>
-		<li>partner</li>
-		<li>restaurantInfo</li>
-		<li>searchResult</li>
-		<li>signIn</li>
-		<li>signUp</li>
-	</ul>
+	<div id="div">
+		<div id="div1">
+			<h3>목록을 눌러주세요 - 사용자메뉴</h3>
+			<ul>
+				<li>ad</li>
+				<li>main2</li>
+				<li>mapSearch</li>
+				<li>myPage</li>
+				<li>notice</li>
+				<li>partner</li>
+				<li>restaurantInfo</li>
+				<li>searchResult</li>
+				<li>signIn</li>
+				<li>signUp</li>
+			</ul>
+		</div>
+		<div id="div2">
+			<h3>목록을 눌러주세요 - 업체메뉴</h3>
+			<ul>
+				<li>commentManage</li>
+				<li>paymentHistory</li>
+				<li>report</li>
+				<li>reservationCheck</li>
+				<li>reservationDate</li>
+				<li>sanctionsDetails</li>
+				<li>settlementDetails</li>
+				<li>sidebar</li>
+				<li>signIn</li>
+				<li>signUp</li>
+			</ul>
+		</div>
+		<div id="div3">
+			<h3>목록을 눌러주세요 - 관리자메뉴</h3>
+			<ul>
+				<li>관리자메뉴1</li>
+			</ul>
+		</div>
+	</div>
 	<script>
 		$(function() {
 			$("ul li").click(function() {
@@ -163,8 +212,16 @@
 			})
 		});
 	
-		function goJsp() {
+		function goUser() {
 			location.href = "/semiproject/views/" + $("#url").val() + "/" + $("#url").val() + ".jsp";
+		}
+		
+		function goStore() {
+			location.href = "/semiproject/views/enterprise/" + $("#url").val() + "/" + $("#url").val() + ".jsp";
+		}
+		
+		function goAdmin() {
+			location.href = "/semiproject/views/admin/" + $("#url").val() + "/" + $("#url").val() + ".jsp";
 		}
 	</script>
 </div>

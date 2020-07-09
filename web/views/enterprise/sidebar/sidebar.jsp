@@ -69,7 +69,7 @@
 	</div>
 </div>
 <br>
-<%@ include file="/views/common/storeFooter.jsp" %>
+<%@ include file="/views/common/enterpriseFooter.jsp" %>
 <script>
 	$(function () {
 		$("ul li a").click(function () {

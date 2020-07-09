@@ -15,7 +15,7 @@
 	<form action="<%= request.getContextPath() %>/signUp.me" method="post" onsubmit="return check();">
 		<table>
 			<tr>
-				<td colspan="3">아이디<br><span class="notice">아이디는 4 ~ 20글자 영어 대소문자와 숫자만 가능합니다.</span></td>
+				<td colspan="3">아이디<br><span class="notice">아이디는 특수문자 없이 4 ~ 20글자 영어 대소문자와 숫자만 가능합니다.</span></td>
 			</tr>
 			<tr>
 				<td colspan="3"><input type="text" name="id" id="id" size="20"></td>

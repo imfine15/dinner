@@ -191,8 +191,7 @@ html, body {
 			</div>
 			<div class="col2" id="dd" style="margin-left:100px;">
 				<ul style="margin-top:45px;">
-					<li style="font-size:20px; font-weight:bold;">회사소개</li>
-					<hr style=" margin-left:0px;background-color:#E4E4E4; border: 1px solid #E4E4E4; size: 1px; width:100px;">
+					<li style="font-size:20px; font-weight:bold; margin-bottom:10px;">회사소개</li>
 					<li>(주)YUMEET</li>
 					<li>서울 강남구 테헤란로 14길 6 남도빌딩</li>
 					<li>고객센터 : 010-3410-6215</li>
