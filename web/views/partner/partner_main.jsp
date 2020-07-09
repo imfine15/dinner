@@ -5,6 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <style>
 #wrapper {
 	width:100%;
@@ -65,13 +67,13 @@ td {
 		</div>
 
 		<div id="maarrgin"></div>
-		<div class="middle_box">
+		<div data-aos="fade-up" class="middle_box">
 			<img src="/semiproject/images/basic.png" class="box" id="box1">
 			<img src="/semiproject/images/premium.png" class="box" id="box2">
 		</div>
 		<div style="height:50px"></div>
 		<hr style="width:1000px">
-		<form>
+		<form data-aos="fade-down">
 			<table id="table_ali">
 				<tr>
 					<td></td>
@@ -106,5 +108,8 @@ td {
 	</div>
 		<div style="height:100px;"></div>
 	<%@ include file="../common/footer.jsp"%>
+		<script>
+		AOS.init();
+	</script>
 </body>
 </html>
