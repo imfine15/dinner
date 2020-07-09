@@ -34,6 +34,6 @@
 	</div>
 	<br><br>
 	<script type="text/javascript" src="/semiproject/views/signIn/js/signInJs.js"></script>
-	<%@ include file="/views/common/storeFooter.jsp" %>
+	<%@ include file="/views/common/enterpriseFooter.jsp" %>
 </body>
 </html>
