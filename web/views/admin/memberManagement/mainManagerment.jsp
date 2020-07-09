@@ -28,7 +28,7 @@
 <body style="background: lightgray;">
 	<%@ include file="../common/sidebar.jsp"%>
 	<div style="width:70%; height:600px;margin-left: 230px; padding-top:40px; padding-left:30px;">
-		<div style="background: white;width:1700px; margin-bottom: 10px;">
+		<div style="background: #F9F9F9;width:1700px; margin-bottom: 10px; height:50px; padding-left:10px;">
 			<h1>회원관리</h1><br>
 		</div>
 		<div style="padding-left:100px; background: white; width:1600px;">
