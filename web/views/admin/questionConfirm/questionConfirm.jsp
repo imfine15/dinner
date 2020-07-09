@@ -36,7 +36,7 @@
 
 #inner-box {
 	width: 100%;
-	height: 100%;
+	height: 700px;
 }
 
 #inner-wrap {
@@ -48,7 +48,41 @@
 #send-btn {
 	color: white;
 	background-color: #E07370;
-	border-line: none;
+	border: none;
+	width: 40px;
+	height: 25px;
+}
+
+#sendcom-btn {
+	color: white;
+	background-color: #A0A0A0;
+	border: none;
+	width: 70px;
+	height: 25px;
+}
+
+td {
+	text-align: center;
+}
+
+#check-box {
+	width: 50px;
+}
+
+#review-tb {
+	border-collapse: collapse;
+}
+
+tr {
+	border-bottom: 0.5px solid #9F9F9F;
+	height: 40px;
+}
+#upload-btn {
+	color: white;
+	background-color: #E07370;
+	border: none;
+	width: 70px;
+	height: 25px;	
 }
 </style>
 </head>
@@ -61,10 +95,11 @@
 		</div>
 		<div id="inner-wrap">
 			<div id="inner-box">
+			<div style="height:30px;"></div>
 				<form>
-					<table>
+					<table id="review-tb" style="width:100%;">
 						<tr>
-							<th></th>
+							<th id="check-box"></th>
 							<th>제목</th>
 							<th>회원 ID</th>
 							<th>등록 날짜</th>
@@ -72,7 +107,21 @@
 							<th>관리</th>
 						</tr>
 						<tr>
-							<td><input type="checkbox"></td>
+							<td id="check-box"><input type="checkbox"></td>
+							<td>울부짖어라, ‘닭갈비'</td>
+							<td>imfine_123</td>
+							<td>20/06/19 17:33</td>
+							<td>
+								<button id="send-btn">지급</button>
+							</td>
+							<td>
+								<button id="upload-btn">업로드</button>
+								<button id="update-btn">수정</button>
+								<button id="delete-btn">삭제</button>
+							</td>
+						</tr>
+						<tr>
+							<td id="check-box"><input type="checkbox"></td>
 							<td>울부짖어라, ‘닭갈비'</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
@@ -85,8 +134,37 @@
 								<button>삭제</button>
 							</td>
 						</tr>
+						<tr>
+							<td id="check-box"><input type="checkbox"></td>
+							<td>울부짖어라, ‘닭갈비'</td>
+							<td>imfine_123</td>
+							<td>20/06/19 17:33</td>
+							<td>
+								<button id="send-btn">지급</button>
+							</td>
+							<td>
+								<button>업로드</button>
+								<button>수정</button>
+								<button>삭제</button>
+							</td>
+						</tr>
+						<tr>
+							<td id="check-box"><input type="checkbox"></td>
+							<td>울부짖어라, ‘닭갈비'</td>
+							<td>imfine_123</td>
+							<td>20/06/19 17:33</td>
+							<td>
+								<button id="sendcom-btn">지급완료</button>
+							</td>
+							<td>
+								<button>업로드</button>
+								<button>수정</button>
+								<button>삭제</button>
+							</td>
+						</tr>
 					</table>
 				</form>
+							<div style="height:30px;"></div>
 			</div>
 		</div>
 
