@@ -66,7 +66,7 @@
 	width: 0;
 	height: 100%;
 	padding: 50px 0;
-	position: ;
+	position: absolute;
 	top: 0;
 	right: 0;
 	overflow: hidden;
@@ -76,6 +76,7 @@
 	-o-transition: 0.3s;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
+	
 }
 
 .hidden li {
@@ -169,6 +170,5 @@ html, body {
 		</nav>
 	</div>
 	<!-- sidebar end -->
-   <div style="width:100%; height:100%;margin-left:auto; margin-right:auto; padding-top:50px; background-color:#E4E4E4;"></div>
 </body>
 </html>
