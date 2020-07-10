@@ -13,6 +13,7 @@
 </style>
 </head>
 <body>
+	<%@include file="../common/header.jsp" %>
 	<ul class="dd">
 	
 	</ul>

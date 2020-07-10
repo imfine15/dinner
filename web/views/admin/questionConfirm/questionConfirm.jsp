@@ -4,11 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET</title>
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
 	rel="stylesheet">
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
+
 .hide {
 	background-color: white;
 	border: 0px;
@@ -108,6 +111,7 @@ tr {
 	padding-left:30px;
 	width:40%;
 }
+
 </style>
 </head>
 <body style="background: lightgray;">
