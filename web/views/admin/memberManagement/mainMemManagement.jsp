@@ -20,18 +20,18 @@
 	.hide{
 		background-color: white;
 		border: 0px;
-		height:30px;
+		height:25px;
 		
 	}
 </style>
 </head>
 <body style="background: lightgray;">
 	<%@ include file="../common/sidebar.jsp"%>
-	<div style="width:70%; height:600px;margin-left: 230px; padding-top:40px; padding-left:30px;">
-		<div style="background: #F9F9F9;width:1700px; margin-bottom: 10px; height:50px; padding-left:10px;">
+	<div style="width:85%; height:600px;margin-left: 230px; padding-top:40px; padding-left:30px;">
+		<div style="background: #F9F9F9;width:100%; margin-bottom: 10px; height:50px; padding-left:10px;">
 			<h1>회원관리</h1><br>
 		</div>
-		<div style="padding-left:100px; background: white; width:1600px;">
+		<div style="padding-left:50px; background: white; width:95%; height:800px; padding-top:50px;">
 			<label>사용자수 : 7명</label><br><br>
 			<select style="width:70px; height:30px;">
 				<option>이름</option>	
@@ -130,12 +130,17 @@
 				</table>
 			</div>
 		</div>
-		<div class="pagingArea" align="center">
-      	<button class="hide" onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage=1'"><<</button>
-      	<button class="hide" onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage='"><</button>
-
-      	<button class="hide" onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage='"><img style="width:15px; height:15px" src="images/arrow.png"></button>
-      	<button class="hide" onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage='">>></button>
+		<div class="pagingArea" align="center" style="background: white;">
+      	<button class="hide" onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage=1'"><img style="width:15px; height:18px" src="images/arrow.png"><img style="width:15px; height:18px" src="images/arrow.png"></button>
+      	<button class="hide" onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage='"><img style="width:15px; height:18px" src="images/arrow.png"></button>
+		
+		<button class="hide"><div style="height:18px; width:15px">1</div></button>
+		<button class="hide"><div style="height:18px; width:15px">2</div></button>
+		<button class="hide"><div style="height:18px; width:15px">3</div></button>
+		<button class="hide"><div style="height:18px; width:15px">4</div></button>
+      	
+      	<button class="hide" onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage='"><img style="width:15px; height:18px" src="images/arrow2.png"></button>
+      	<button class="hide" onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage='"><img style="width:15px; height:18px" src="images/arrow2.png"><img style="width:15px; height:18px" src="images/arrow2.png"></button>
       </div>
 	</div>
 </body>
