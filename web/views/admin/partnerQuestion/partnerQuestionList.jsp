@@ -114,7 +114,7 @@ tr {
 	<%@ include file="../common/sidebar.jsp"%>
 	<div id="wrapper">
 		<div id="title-box">
-			<p>문의 관리</p>
+			<p>제휴 문의 관리</p>
 			<br>
 		</div>
 		<div id="inner-wrap">
@@ -123,151 +123,123 @@ tr {
 				<form>
 					<table id="review-tb" style="width: 100%;">
 						<tr>
-							<th>제목</th>
-							<th>회원 ID</th>
-							<th>등록 날짜</th>
+							<th>회원명</th>
+							<th>전화번호</th>
+							<th>이메일</th>
+							<th>업체명</th>
+							<th>업체 종류</th>
+							<th>상품 선택</th>
+							<th>신청 일자</th>
 							<th>처리 상태</th>
-							<th>관리</th>
+							<th></th>
 						</tr>
 						<tr>
-							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
-							<td>imfine_123</td>
-							<td>20/06/19 17:33</td>
+							<td>정용탁</td>
+							<td>010-6537-7772</td>
+							<td>abc@gmail.com</td>
+							<td>예승이콩버거</td>
+							<td>패스트푸드</td>
 							<td>
-								<button id="confirm-before-btn">처리 대기</button>
+								<button>프리미엄</button>
+							</td>
+							<td>2020-06-22</td>
+							<td>
+								<button>미확인</button>
 							</td>
 							<td>
+								<button>아</button>
 							</td>
+				
 						</tr>
 						<tr>
-							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
-							<td>imfine_123</td>
-							<td>20/06/19 17:33</td>
+							<td>정용탁</td>
+							<td>010-6537-7772</td>
+							<td>abc@gmail.com</td>
+							<td>예승이콩버거</td>
+							<td>패스트푸드</td>
 							<td>
-								<button id="confirm-after-btn">처리 완료</button>
+								<button>프리미엄</button>
+							</td>
+							<td>2020-06-22</td>
+							<td>
+								<button>미확인</button>
 							</td>
 							<td>
+								<button>아</button>
 							</td>
+				
 						</tr>
 						<tr>
-							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
-							<td>imfine_123</td>
-							<td>20/06/19 17:33</td>
+							<td>정용탁</td>
+							<td>010-6537-7772</td>
+							<td>abc@gmail.com</td>
+							<td>예승이콩버거</td>
+							<td>패스트푸드</td>
 							<td>
-								<button id="confirm-after-btn">처리 완료</button>
+								<button>프리미엄</button>
+							</td>
+							<td>2020-06-22</td>
+							<td>
+								<button>미확인</button>
 							</td>
 							<td>
+								<button>아</button>
 							</td>
+				
 						</tr>
 						<tr>
-							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
-							<td>imfine_123</td>
-							<td>20/06/19 17:33</td>
+							<td>정용탁</td>
+							<td>010-6537-7772</td>
+							<td>abc@gmail.com</td>
+							<td>예승이콩버거</td>
+							<td>패스트푸드</td>
 							<td>
-								<button id="confirm-after-btn">처리 완료</button>
+								<button>프리미엄</button>
+							</td>
+							<td>2020-06-22</td>
+							<td>
+								<button>미확인</button>
 							</td>
 							<td>
+								<button>아</button>
 							</td>
+				
 						</tr>
 						<tr>
-							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
-							<td>imfine_123</td>
-							<td>20/06/19 17:33</td>
+							<td>정용탁</td>
+							<td>010-6537-7772</td>
+							<td>abc@gmail.com</td>
+							<td>예승이콩버거</td>
+							<td>패스트푸드</td>
 							<td>
-								<button id="confirm-after-btn">처리 완료</button>
+								<button>프리미엄</button>
+							</td>
+							<td>2020-06-22</td>
+							<td>
+								<button>미확인</button>
 							</td>
 							<td>
+								<button>아</button>
 							</td>
+				
 						</tr>
 						<tr>
-							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
-							<td>imfine_123</td>
-							<td>20/06/19 17:33</td>
+							<td>정용탁</td>
+							<td>010-6537-7772</td>
+							<td>abc@gmail.com</td>
+							<td>예승이콩버거</td>
+							<td>패스트푸드</td>
 							<td>
-								<button id="confirm-after-btn">처리 완료</button>
+								<button>프리미엄</button>
+							</td>
+							<td>2020-06-22</td>
+							<td>
+								<button>미확인</button>
 							</td>
 							<td>
+								<button>아</button>
 							</td>
-						</tr>
-						<tr>
-							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
-							<td>imfine_123</td>
-							<td>20/06/19 17:33</td>
-							<td>
-								<button id="confirm-after-btn">처리 완료</button>
-							</td>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
-							<td>imfine_123</td>
-							<td>20/06/19 17:33</td>
-							<td>
-								<button id="confirm-after-btn">처리 완료</button>
-							</td>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
-							<td>imfine_123</td>
-							<td>20/06/19 17:33</td>
-							<td>
-								<button id="confirm-after-btn">처리 완료</button>
-							</td>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
-							<td>imfine_123</td>
-							<td>20/06/19 17:33</td>
-							<td>
-								<button id="confirm-after-btn">처리 완료</button>
-							</td>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
-							<td>imfine_123</td>
-							<td>20/06/19 17:33</td>
-							<td>
-								<button id="confirm-after-btn">처리 완료</button>
-							</td>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
-							<td>imfine_123</td>
-							<td>20/06/19 17:33</td>
-							<td>
-								<button id="confirm-after-btn">처리 완료</button>
-							</td>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
-							<td>imfine_123</td>
-							<td>20/06/19 17:33</td>
-							<td>
-								<button id="confirm-after-btn">처리 완료</button>
-							</td>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
-							<td>imfine_123</td>
-							<td>20/06/19 17:33</td>
-							<td>
-								<button id="confirm-after-btn">처리 완료</button>
-							</td>
-							<td>
-							</td>
+				
 						</tr>
 
 					</table>
