@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/semiproject/views/enterprise/sidebar/css/style.css">
 <style>
-	
 	.payBtn{
 		width:50px;
 		height:25px;
@@ -59,7 +58,7 @@
          <br><br>
          
          <div style="margin-left:15%;">
-         	<table align="center">
+         	<!-- <table align="center">
          		<tr>
          			<td></td>
          			<td></td>
@@ -68,76 +67,102 @@
          		</tr>
          		<tr style="font-size: 30px;">
          			<td style="font-weight: bolder; color:black; padding-right: 50px;">
-         				2020/06/01
+         				<
          			</td>
          			<td>
-         				~
+         				2020.06.22
 					</td>
 					<td style="font-weight: bolder; color:black;  padding-left: 50px;">
-         				2020.06.22
+         				>
          			</td>
          		</tr>
-         	</table>
-         	<br>
+         	</table> -->
+         	<h3 style="text-align: left; margin-left: 5%; color:black; font-weight:normal;">예약 요청 확인</h3>
+         	
             <table style="text-align: center;" align="center">
             <thead>
-               <th style="width:150px;">일자</th>
-               <th style="width:150px;">예약 건수</th>
-               <th style="width:150px;">매출 금액</th>
-               <th style="width:150px;">정산 금액</th>
-               <th style="width:150px;">처리 여부</th>
-               <th style="width:150px;">이의 신청</th>
-               <th style="width:150px;">전자 서명</th>
+               <th style="width:30px;">&nbsp;</th>
+               <th style="width:150px;">NO</th>
+               <th style="width:150px;">예약자</th>
+               <th style="width:150px;">시간</th>
+               <th style="width:150px;">인원</th>
+               <th style="width:150px;">요청 일자</th>
+               <th style="width:150px;">상세 정보</th>
+               <th style="width:150px;">고객 정보 확인</th>
+               <th style="width:150px;">예약 접수</th>
+                
             </thead>
             <tbody align="center">
                <tr>
+                  <td><button  style="background:#EB7673; width:17px; height:17px; border:0;"></button></td>
                   <td><a href="">00000001</a></td>
                   <td><a href="">imfine123</a></td>
-                  <td>IMFINE</td>
-                  <td>imfine_123@kh.or.kr</td>
-                  <td><button class="payBtn" style="background-color: #5EB8B4; width: 80px; border:0; color:gray;">입금 예정</button></td>
-                  <td><button class="payBtn">신청</button></td>
+                  <td>13:30</td>
+                  <td>3</td>
+                  <td>2020/06/22</td>
                   <td><button class="payBtn">확인</button></td>
+                  <td><button class="payBtn">확인</button></td>
+                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
                <tr>
+                  <td><button  style="background:#EB7673; width:17px; height:17px; border:0;"></button></td>
                   <td><a href="">00000001</a></td>
                   <td><a href="">imfine123</a></td>
-                  <td>IMFINE</td>
-                  <td>imfine_123@kh.or.kr</td>
-                  <td><button class="payBtn" style="background-color: #5EB8B4; width: 80px; border:0; color:gray;">입금 예정</button></td>
-                  <td><button class="payBtn">신청</button></td>
+                  <td>13:30</td>
+                  <td>3</td>
+                  <td>2020/06/22</td>
                   <td><button class="payBtn">확인</button></td>
+                  <td><button class="payBtn">확인</button></td>
+                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
                <tr>
+                  <td><button  style="background:#EB7673; width:17px; height:17px; border:0;"></button></td>
                   <td><a href="">00000001</a></td>
                   <td><a href="">imfine123</a></td>
-                  <td>IMFINE</td>
-                  <td>imfine_123@kh.or.kr</td>
-                  <td><button class="payBtn" style="background-color: #5EB8B4; width: 80px; border:0; color:gray;">입금 예정</button></td>
-                  <td><button class="payBtn">신청</button></td>
+                  <td>13:30</td>
+                  <td>3</td>
+                  <td>2020/06/22</td>
                   <td><button class="payBtn">확인</button></td>
+                  <td><button class="payBtn">확인</button></td>
+                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
                <tr>
+                  <td><button  style="background:#EB7673; width:17px; height:17px; border:0;"></button></td>
                   <td><a href="">00000001</a></td>
                   <td><a href="">imfine123</a></td>
-                  <td>IMFINE</td>
-                  <td>imfine_123@kh.or.kr</td>
-                  <td><button class="payBtn" style="background-color: #5EB8B4; width: 80px; border:0; color:gray;">입금 예정</button></td>
-                  <td><button class="payBtn">신청</button></td>
+                  <td>13:30</td>
+                  <td>3</td>
+                  <td>2020/06/22</td>
                   <td><button class="payBtn">확인</button></td>
+                  <td><button class="payBtn">확인</button></td>
+                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
                <tr>
+                  <td><button  style="background:#5EB8B4; width:17px; height:17px; border:0;"></button></td>
                   <td><a href="">00000001</a></td>
                   <td><a href="">imfine123</a></td>
-                  <td>IMFINE</td>
-                  <td>imfine_123@kh.or.kr</td>
-                  <td><button class="payBtn" style="background-color: #5EB8B4; width: 80px; border:0; color:gray;">입금 예정</button></td>
-                  <td><button class="payBtn">신청</button></td>
+                  <td>13:30</td>
+                  <td>3</td>
+                  <td>2020/06/22</td>
                   <td><button class="payBtn">확인</button></td>
+                  <td><button class="payBtn">확인</button></td>
+                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
+                 
+               </tr>
+               <tr>
+                  <td><button  style="background:#5EB8B4; width:17px; height:17px; border:0;"></button></td>
+                  <td><a href="">00000001</a></td>
+                  <td><a href="">imfine123</a></td>
+                  <td>13:30</td>
+                  <td>3</td>
+                  <td>2020/06/22</td>
+                  <td><button class="payBtn">확인</button></td>
+                  <td><button class="payBtn">확인</button></td>
+                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
             </tbody>
@@ -159,12 +184,11 @@
  	<br>	
 	<br>	
 	
-	
 	<div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">이의 신청</h5>
+					<h5 class="modal-title" id="exampleModalLabel">상세 정보</h5>
 					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">X</span>
 					</button>
@@ -172,34 +196,43 @@
 				<br>
 				<br>
 				<div class="modal-body">
-					<form action="" style="margin-left: 10%;">
-						<p>업체명 : <a>피카츄돈까스</a></p>
-						<br>
-						<p>신청인 : <input type="text"></p>
-						<br>
-						<p>핸드폰 : <input type="tel"></p>
-						<br>
-						<p>이메일 : <input type="email"></p>
-						<br>
-						<p>이의신청 취지 및 사유 : </p>
-						
-						<textarea rows="5" cols="40" style="resize:none;"></textarea>
-						<br>
-						<button type="submit" style="text-align: center; margin-left: 80%;">확인</button>
-						
-						
-						
-						
-					</form>
-				</div>
-					<br>
-				
+					<table align="center" >
 					
-				
+		         		<thead>
+			         		<tr style="font-size: 14px; color:black; text-align: center;">
+			         			<th>총 방문횟수</th>
+			         			<th>총 취소횟수</th>
+			         			<th style="color:red;">No Show</th>
+			         			<th>최근 방문일</th>
+			         			<th>예약자 정보</th>
+			         		</tr>
+		         		</thead>
+		         		<tr style="font-size: 10px; text-align: center;">
+		         			<td style="font-weight: bolder; color:black;">
+		         				1
+		         			</td>
+		         			<td>
+		         				0
+							</td>
+							<td style="font-weight: bolder; color:black;">
+		         				0
+		         			</td>
+		         			<td>
+		         				2020.06.21
+		         			</td>
+		         			<td>
+		         				군필 여고생
+		         			</td>
+		         			
+		         		</tr>
+	         		</table>			
+				</div>
+				<br>
+				<br>
 				
 				<div class="modal-footer">
 					<!-- <a class="btn" id="modalY" href="#">예</a> -->
-					<button class="btn" type="button" data-dismiss="modal">취소</button>
+					<button class="btn" type="button" data-dismiss="modal">확인</button>
 				</div>
 			</div>
 		</div>
