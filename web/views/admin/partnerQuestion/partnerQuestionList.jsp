@@ -4,10 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET admin</title>
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
 	rel="stylesheet">
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
 .hide {
 	background-color: white;
@@ -108,6 +110,12 @@ tr {
 	padding-left:30px;
 	width:40%;
 }
+#toggle {
+	background: url("/semiproject/images/toggle.png") no-repeat;
+	width:10px;
+	height:10px;
+	border:none;
+}
 </style>
 </head>
 <body style="background: lightgray;">
@@ -134,7 +142,7 @@ tr {
 							<th></th>
 						</tr>
 						<tr>
-							<td>정용탁</td>
+							<td>임희진</td>
 							<td>010-6537-7772</td>
 							<td>abc@gmail.com</td>
 							<td>예승이콩버거</td>
@@ -147,12 +155,12 @@ tr {
 								<button>미확인</button>
 							</td>
 							<td>
-								<button>아</button>
+								<button id="toggle"></button>
 							</td>
 				
 						</tr>
 						<tr>
-							<td>정용탁</td>
+							<td>윤수경</td>
 							<td>010-6537-7772</td>
 							<td>abc@gmail.com</td>
 							<td>예승이콩버거</td>
@@ -165,12 +173,12 @@ tr {
 								<button>미확인</button>
 							</td>
 							<td>
-								<button>아</button>
+								<button id="toggle"></button>
 							</td>
 				
 						</tr>
 						<tr>
-							<td>정용탁</td>
+							<td>백종현</td>
 							<td>010-6537-7772</td>
 							<td>abc@gmail.com</td>
 							<td>예승이콩버거</td>
@@ -183,12 +191,12 @@ tr {
 								<button>미확인</button>
 							</td>
 							<td>
-								<button>아</button>
+								<button id="toggle"></button>
 							</td>
 				
 						</tr>
 						<tr>
-							<td>정용탁</td>
+							<td>지니어스</td>
 							<td>010-6537-7772</td>
 							<td>abc@gmail.com</td>
 							<td>예승이콩버거</td>
@@ -201,12 +209,12 @@ tr {
 								<button>미확인</button>
 							</td>
 							<td>
-								<button>아</button>
+								<button id="toggle"></button>
 							</td>
 				
 						</tr>
 						<tr>
-							<td>정용탁</td>
+							<td>김진호</td>
 							<td>010-6537-7772</td>
 							<td>abc@gmail.com</td>
 							<td>예승이콩버거</td>
@@ -219,12 +227,12 @@ tr {
 								<button>미확인</button>
 							</td>
 							<td>
-								<button>아</button>
+								<button id="toggle"></button>
 							</td>
 				
 						</tr>
 						<tr>
-							<td>정용탁</td>
+							<td>정파덕</td>
 							<td>010-6537-7772</td>
 							<td>abc@gmail.com</td>
 							<td>예승이콩버거</td>
@@ -237,7 +245,7 @@ tr {
 								<button>미확인</button>
 							</td>
 							<td>
-								<button>아</button>
+								<button id="toggle"></button>
 							</td>
 				
 						</tr>

@@ -8,6 +8,8 @@
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
 	rel="stylesheet">
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
 .hide {
 	background-color: white;
@@ -105,8 +107,15 @@ tr {
 
 #title {
 	text-align: left;
-	padding-left:30px;
-	width:40%;
+	padding-left: 30px;
+	width: 40%;
+}
+
+#toggle {
+	background: url("/semiproject/images/toggle.png") no-repeat;
+	width:10px;
+	height:10px;
+	border:none;
 }
 </style>
 </head>
@@ -134,114 +143,127 @@ tr {
 							<th></th>
 						</tr>
 						<tr>
-							<td>정용탁</td>
+							<td>임희진</td>
 							<td>010-6537-7772</td>
 							<td>abc@gmail.com</td>
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>프리미엄</button>
+								<button>기타</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
 								<button>미확인</button>
 							</td>
 							<td>
-								<button>아</button>
+								<button id="toggle"></button>
+							</td>
+						</tr>
+						
+						<tr>
+						<tr>
+							<td colspan="2">업체주소</td>
+							<td colspan="3">상담내용</td>
+							<td colspan="2">진행 세부 상황</td>
+							<td colspan="2">취소사유</td>
+						</tr>
+						<tr>
+							<td colspan="2">서울특별시 강남대로 42길 3, 파덕스하우스 1층</td>
+							<td colspan="3">프리미엄으로 신청하고 싶어여!</td>
+							<td colspan="2"></td>
+							<td colspan="2"></td>
+						</tr>
+						</tr>
+						
+						<tr>
+							<td>윤수경</td>
+							<td>010-6537-7772</td>
+							<td>abc@gmail.com</td>
+							<td>예승이콩버거</td>
+							<td>패스트푸드</td>
+							<td>
+								<button>메인</button>
+							</td>
+							<td>2020-06-22</td>
+							<td>
+								<button>미확인</button>
+							</td>
+							<td>
+								<button id="toggle"></button>
 							</td>
 				
 						</tr>
 						<tr>
-							<td>정용탁</td>
+							<td>백종현</td>
 							<td>010-6537-7772</td>
 							<td>abc@gmail.com</td>
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>프리미엄</button>
+								<button>메인</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
 								<button>미확인</button>
 							</td>
 							<td>
-								<button>아</button>
+								<button id="toggle"></button>
 							</td>
 				
 						</tr>
 						<tr>
-							<td>정용탁</td>
+							<td>지니어스</td>
 							<td>010-6537-7772</td>
 							<td>abc@gmail.com</td>
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>프리미엄</button>
+								<button>기타</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
 								<button>미확인</button>
 							</td>
 							<td>
-								<button>아</button>
+								<button id="toggle"></button>
 							</td>
 				
 						</tr>
 						<tr>
-							<td>정용탁</td>
+							<td>김진호</td>
 							<td>010-6537-7772</td>
 							<td>abc@gmail.com</td>
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>프리미엄</button>
+								<button>메인</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
 								<button>미확인</button>
 							</td>
 							<td>
-								<button>아</button>
+								<button id="toggle"></button>
 							</td>
 				
 						</tr>
 						<tr>
-							<td>정용탁</td>
+							<td>정파덕</td>
 							<td>010-6537-7772</td>
 							<td>abc@gmail.com</td>
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>프리미엄</button>
+								<button>메인</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
 								<button>미확인</button>
 							</td>
 							<td>
-								<button>아</button>
+								<button id="toggle"></button>
 							</td>
-				
 						</tr>
-						<tr>
-							<td>정용탁</td>
-							<td>010-6537-7772</td>
-							<td>abc@gmail.com</td>
-							<td>예승이콩버거</td>
-							<td>패스트푸드</td>
-							<td>
-								<button>프리미엄</button>
-							</td>
-							<td>2020-06-22</td>
-							<td>
-								<button>미확인</button>
-							</td>
-							<td>
-								<button>아</button>
-							</td>
-				
-						</tr>
-
 					</table>
 				</form>
 				<div style="height: 30px;"></div>
@@ -297,6 +319,19 @@ tr {
 				onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage='">>></button>
 		</div>
 	</div>
+		<script>
+	$('dt').on('click', function () {
 
+	    if ($(this).hasClass('on')) {
+	        slideUp();
+	    } else {
+	        slideUp();
+	        $(this).addClass('on').next().slideDown();
+	    }
+	    function slideUp() {
+	        $('dt').removeClass('on').next().slideUp();
+	    };
+	})
+	</script>
 </body>
 </html>
