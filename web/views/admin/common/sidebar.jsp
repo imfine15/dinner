@@ -115,12 +115,7 @@ html, body {
 	line-height:15px;
 	display:inline-block;
 }
-#inner-box {
-	margin-left:14%;
-	background-color:white;
-	width:500px;
-	height:500px;
-}
+
 </style>
 </head>
 <body>
