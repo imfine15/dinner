@@ -77,15 +77,15 @@
 					</td>
          		</tr>
          	</table>
-         
-            <table style="" align="center">
+         	<br>
+            <table style="text-align: center;" align="center">
             <thead>
-               <th style="width:150px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일자</th>
-               <th style="width:150px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;예약번호</th>
-               <th style="width:150px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;결제금액</th>
-               <th style="width:150px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;총 금액</th>
-               <th style="width:150px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;제제 수수료<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;지불 여부</th>
-               <th style="width:150px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;지불</th>
+               <th style="width:150px;">일자</th>
+               <th style="width:150px;">예약번호</th>
+               <th style="width:150px;">결제금액</th>
+               <th style="width:150px;">총 금액</th>
+               <th style="width:150px;">제제 수수료<br>지불 여부</th>
+               <th style="width:150px;">지불</th>
                
             </thead>
             <tbody align="center">
@@ -182,9 +182,9 @@
 		});
 	});
 </script>
-<script src="/semiproject/views/enterprise/sidebar/js/jquery.min.js"></script>
+<!-- <script src="/semiproject/views/enterprise/sidebar/js/jquery.min.js"></script>
 <script src="/semiproject/views/enterprise/sidebar/js/popper.js"></script>
 <script src="/semiproject/views/enterprise/sidebar/js/bootstrap.min.js"></script>
-<script src="/semiproject/views/enterprise/sidebar/js/main.js"></script>
+<script src="/semiproject/views/enterprise/sidebar/js/main.js"></script> -->
 </body>
 </html>
