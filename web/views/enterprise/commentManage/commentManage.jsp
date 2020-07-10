@@ -225,7 +225,7 @@
             <img alt="음식 사진" src="/semiproject/images/dishPic.png">
             <br>
             <br>
-            <textarea rows="4" cols="80" style="resize:none;"></textarea>
+            <textarea rows="4" cols="80" style="resize:none; border-radius: 0; border: 1px solid gray; outline-style: none;"></textarea>
          </div>
          <button style="align-content: center; margin-left: 70%;">댓글 작성</button>
       </div>
