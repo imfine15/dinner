@@ -14,7 +14,7 @@
 		text-decoration: none;
 		color:black;
 	}
-	tr{
+	tr{ 
 		height:30px;
 	}
 	.hide{
