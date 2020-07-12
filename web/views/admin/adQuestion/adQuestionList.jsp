@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>YUMEET</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
 	rel="stylesheet">
@@ -166,14 +167,14 @@ tr {
 						
 						
 						<tr class="innerText1">
-							<td colspan="2">업체주소</td>
-							<td colspan="3">상담내용</td>
+							<td colspan="3">업체주소</td>
+							<td colspan="2">상담내용</td>
 							<td colspan="2">진행 세부 상황</td>
 							<td colspan="2">취소사유</td>
 						</tr>
 						<tr class="innerText1">
-							<td colspan="2">서울특별시 강남대로 42길 3, 파덕스하우스 1층</td>
-							<td colspan="3">프리미엄으로 신청하고 싶어여!</td>
+							<td colspan="3">서울특별시 강남대로 42길 3, 파덕스하우스 1층</td>
+							<td colspan="2">프리미엄으로 신청하고 싶어여!</td>
 							<td colspan="2"></td>
 							<td colspan="2"></td>
 						</tr>
@@ -339,16 +340,15 @@ tr {
 	
 	$(document).ready(function() {
 		$("#toggle1").click(function() {
-			console.log("눌림");
-			$(".innerText1").show();
-			/* status = $(".innerText1").css("display"); 
+			status = $(".innerText1").css("display"); 
+			console.log(status);
 			if (status == "none") { 
-				$(".innerText1").css("display", ""); 
+				$(".innerText1").show();
 			} else { 
-				$(".innerText1").css("display", "none"); 
-			} */
+				$(".innerText1").css("display", "none");
+			}
 
-		})
+		});
 	});
 	
 	</script>
