@@ -111,12 +111,16 @@ tr {
 	width: 40%;
 }
 
-#toggle {
-	background: url("/semiproject/images/toggle.png") no-repeat;
+.toggle {
+	/* background: url("/semiproject/images/toggle.png") no-repeat; */
 	width:10px;
 	height:10px;
 	border:none;
 }
+.innerText1{
+	display: none;
+}
+
 </style>
 </head>
 <body style="background: lightgray;">
@@ -156,24 +160,24 @@ tr {
 								<button>미확인</button>
 							</td>
 							<td>
-								<button id="toggle"></button>
+								<img src="/semiproject/images/toggle.png" class="toggle" id="toggle1">
 							</td>
 						</tr>
 						
-						<tr>
-						<tr>
+						
+						<tr class="innerText1">
 							<td colspan="2">업체주소</td>
 							<td colspan="3">상담내용</td>
 							<td colspan="2">진행 세부 상황</td>
 							<td colspan="2">취소사유</td>
 						</tr>
-						<tr>
+						<tr class="innerText1">
 							<td colspan="2">서울특별시 강남대로 42길 3, 파덕스하우스 1층</td>
 							<td colspan="3">프리미엄으로 신청하고 싶어여!</td>
 							<td colspan="2"></td>
 							<td colspan="2"></td>
 						</tr>
-						</tr>
+						
 						
 						<tr>
 							<td>윤수경</td>
@@ -189,7 +193,7 @@ tr {
 								<button>미확인</button>
 							</td>
 							<td>
-								<button id="toggle"></button>
+								<button class="toggle" id="toggle2"></button>
 							</td>
 				
 						</tr>
@@ -207,7 +211,7 @@ tr {
 								<button>미확인</button>
 							</td>
 							<td>
-								<button id="toggle"></button>
+								<button class="toggle" id="toggle3"></button>
 							</td>
 				
 						</tr>
@@ -225,7 +229,7 @@ tr {
 								<button>미확인</button>
 							</td>
 							<td>
-								<button id="toggle"></button>
+								<button class="toggle" id="toggle4"></button>
 							</td>
 				
 						</tr>
@@ -243,7 +247,7 @@ tr {
 								<button>미확인</button>
 							</td>
 							<td>
-								<button id="toggle"></button>
+								<button class="toggle" id="toggle5"></button>
 							</td>
 				
 						</tr>
@@ -261,7 +265,7 @@ tr {
 								<button>미확인</button>
 							</td>
 							<td>
-								<button id="toggle"></button>
+								<button class="toggle" id="toggle6"></button>
 							</td>
 						</tr>
 					</table>
@@ -320,18 +324,33 @@ tr {
 		</div>
 	</div>
 		<script>
-	$('dt').on('click', function () {
+/* 	$('#toggle1').on('click', function () {
 
-	    if ($(this).hasClass('on')) {
+	    if ($(".innerText1").hasClass('on')) {
 	        slideUp();
 	    } else {
 	        slideUp();
-	        $(this).addClass('on').next().slideDown();
+	        $(".innerText1").addClass('on').next().slideDown();
 	    }
 	    function slideUp() {
-	        $('dt').removeClass('on').next().slideUp();
+	        $('#toggle1').removeClass('on').next().slideUp();
 	    };
-	})
+	}) */
+	
+	$(document).ready(function() {
+		$("#toggle1").click(function() {
+			console.log("눌림");
+			$(".innerText1").show();
+			/* status = $(".innerText1").css("display"); 
+			if (status == "none") { 
+				$(".innerText1").css("display", ""); 
+			} else { 
+				$(".innerText1").css("display", "none"); 
+			} */
+
+		})
+	});
+	
 	</script>
 </body>
 </html>
