@@ -138,7 +138,7 @@ img {vertical-align: middle;}
 		<div class="banner"
 			style="padding-top: -1px; margin-top: -300px; height: 500px; position: relative;">
 			<div>
-				<img src="/semiproject/images/mainBanner.png"
+				<img src="/semiproject/images/mainBanner.jpg"
 					style="width: 100%; height: 600px;">
 			</div>
 			<div class="container"
@@ -288,10 +288,7 @@ img {vertical-align: middle;}
 		<h2 style="color: #D5706D; margin-left: 50px;">오늘의 메뉴</h2>
 		<div class="container"
 			style="border: 0px white; width: 1400px; height: 450px">
-			
-
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -311,7 +308,6 @@ img {vertical-align: middle;}
                      style="margin-left: auto; margin-right: auto; height: 300px; display: inline;">
                      
                </div>
-
 
 				<div class="slideshow-container">
 
