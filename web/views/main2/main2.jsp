@@ -38,7 +38,7 @@
 		<div class="banner"
 			style="padding-top: -1px; margin-top: -300px; height: 500px; position: relative;">
 			<div>
-				<img src="../../images/mainBanner.jpg"
+				<img src="/semiproject/images/mainBanner.jpg"
 					style="width: 100%; height: 600px;">
 			</div>
 			<div class="container"
@@ -200,11 +200,13 @@
 				<div class="carousel-inner"
 					style="box-shadow: 0px 0px 0px 0px black;">
 
-					<div class="item active" align="center">
+					<div class="item active" align="center"><a href="sdfsdf">
 						<img src="img/cos1.png"
 							style="margin-left: auto; margin-right: auto; height: 300px; display: inline;">
+							</a>
 						<img src="img/cos1.png"
 							style="margin-left: auto; margin-right: auto; height: 300px; display: inline;">
+							
 					</div>
 
 					<div class="item" align="center">
