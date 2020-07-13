@@ -289,25 +289,25 @@ img {vertical-align: middle;}
 		<div class="container"
 			style="border: 0px white; width: 1400px; height: 450px">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-               <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+	            <!-- Indicators -->
+	            <ol class="carousel-indicators">
+	               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	               <li data-target="#myCarousel" data-slide-to="1"></li>
+	               <li data-target="#myCarousel" data-slide-to="2"></li>
+	            </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner"
-               style="box-shadow: 0px 0px 0px 0px black;">
-
-               <div class="item active" align="center"><a href="sdfsdf">
-                  <img src="img/cos1.png"
-                     style="margin-left: auto; margin-right: auto; height: 300px; display: inline;">
-                     </a>
-                  <img src="img/cos1.png"
-                     style="margin-left: auto; margin-right: auto; height: 300px; display: inline;">
-                     
-               </div>
+	            <!-- Wrapper for slides -->
+	            <div class="carousel-inner"
+	               style="box-shadow: 0px 0px 0px 0px black;">
+	
+	               <div class="item active" align="center"><a href="sdfsdf">
+	                  <img src="img/cos1.png"
+	                     style="margin-left: auto; margin-right: auto; height: 300px; display: inline;">
+	                     </a>
+	                  <img src="img/cos1.png"
+	                     style="margin-left: auto; margin-right: auto; height: 300px; display: inline;">
+	                     
+	               </div>
 
 				<div class="slideshow-container">
 
