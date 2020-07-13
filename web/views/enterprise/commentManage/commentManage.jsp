@@ -125,54 +125,17 @@
          <div style="border:1px solid black; margin-left: 20%; width:900px; height:400px;">
         <div class="visitorInfo"  style="border-right:1px solid black; height:398px;">
          <table>
-            <tr>
-               <td><img alt="사용자 프로필 사진" src="/semiproject/images/userPic1.png"></td>
+            <tr style="padding-bottom: 10%;">
+               <td style="border:0"><img alt="사용자 프로필 사진" src="/semiproject/images/userPic1.png"></td>
             </tr>
             <tr>
-               <td>파덕이사생팬</td>
+               <td style="border:0"><br>파덕이사생팬</td>
             </tr>
             <tr>
-               <td>방문일 : 2020-06-17</td>
+               <td style="border:0">방문일 : 2020-06-17</td>
             </tr>
             <tr>
-               <td>예약번호 : 20200710</td>
-            </tr>
-         </table>
-      </div>
-      <div class="visitorReviewContent">
-         <div class="visitorReviewArticle">
-            <span class="reviewDate">2020-06-18</span>
-            <img alt="리뷰 별점" src="/semiproject/images/Star.png" class="reviewRateStar">
-            <span class="reviewRate">4.5</span>
-            <p>서비스가 맛있고 돈까스가 친절해요. 다섯이 가서 넷이 죽어도 모를 맛입니다. 최고입니다.</p>
-         </div>
-         <div class="visitorReviewPic">
-            <img alt="음식 사진" src="/semiproject/images/규카츠.jpg">
-            <img alt="음식 사진" src="/semiproject/images/dishPic.png">
-            <br>
-            <br>
-            <textarea rows="4" cols="80" style="resize:none;"></textarea>
-         </div>
-         <button style="align-content: center; margin-left: 70%;">댓글 작성</button>
-      </div>
-      </div>
-      </form>
-      <br><br>
-         <form action=""  style="margin-left: 10%;">
-         <div style="border:1px solid black; margin-left: 20%; width:900px; height:400px;">
-        <div class="visitorInfo"  style="border-right:1px solid black; height:398px;">
-         <table>
-            <tr>
-               <td><img alt="사용자 프로필 사진" src="/semiproject/images/userPic1.png"></td>
-            </tr>
-            <tr>
-               <td>파덕이사생팬</td>
-            </tr>
-            <tr>
-               <td>방문일 : 2020-06-17</td>
-            </tr>
-            <tr>
-               <td>예약번호 : 20200710</td>
+               <td style="border:0">예약번호 : 20200710</td>
             </tr>
          </table>
       </div>
@@ -195,21 +158,21 @@
       </div>
       </form>
       <br><br>
-         <form action=""  style="margin-left: 10%;">
+         <form action="" style="margin-left: 10%;">
          <div style="border:1px solid black; margin-left: 20%; width:900px; height:400px;">
         <div class="visitorInfo"  style="border-right:1px solid black; height:398px;">
          <table>
-            <tr>
-               <td><img alt="사용자 프로필 사진" src="/semiproject/images/userPic1.png"></td>
+            <tr style="padding-bottom: 10%;">
+               <td style="border:0"><img alt="사용자 프로필 사진" src="/semiproject/images/userPic1.png"></td>
             </tr>
             <tr>
-               <td>파덕이사생팬</td>
+               <td style="border:0"><br>파덕이사생팬</td>
             </tr>
             <tr>
-               <td>방문일 : 2020-06-17</td>
+               <td style="border:0">방문일 : 2020-06-17</td>
             </tr>
             <tr>
-               <td>예약번호 : 20200710</td>
+               <td style="border:0">예약번호 : 20200710</td>
             </tr>
          </table>
       </div>
@@ -225,12 +188,85 @@
             <img alt="음식 사진" src="/semiproject/images/dishPic.png">
             <br>
             <br>
-            <textarea rows="4" cols="80" style="resize:none; border-radius: 0; border: 1px solid gray; outline-style: none;"></textarea>
+            <textarea rows="4" cols="80" style="resize:none;"></textarea>
          </div>
          <button style="align-content: center; margin-left: 70%;">댓글 작성</button>
       </div>
       </div>
       </form>
+      <br><br><form action="" style="margin-left: 10%;">
+         <div style="border:1px solid black; margin-left: 20%; width:900px; height:400px;">
+        <div class="visitorInfo"  style="border-right:1px solid black; height:398px;">
+         <table>
+            <tr style="padding-bottom: 10%;">
+               <td style="border:0"><img alt="사용자 프로필 사진" src="/semiproject/images/userPic1.png"></td>
+            </tr>
+            <tr>
+               <td style="border:0"><br>파덕이사생팬</td>
+            </tr>
+            <tr>
+               <td style="border:0">방문일 : 2020-06-17</td>
+            </tr>
+            <tr>
+               <td style="border:0">예약번호 : 20200710</td>
+            </tr>
+         </table>
+      </div>
+      <div class="visitorReviewContent">
+         <div class="visitorReviewArticle">
+            <span class="reviewDate">2020-06-18</span>
+            <img alt="리뷰 별점" src="/semiproject/images/Star.png" class="reviewRateStar">
+            <span class="reviewRate">4.5</span>
+            <p>서비스가 맛있고 돈까스가 친절해요. 다섯이 가서 넷이 죽어도 모를 맛입니다. 최고입니다.</p>
+         </div>
+         <div class="visitorReviewPic">
+            <img alt="음식 사진" src="/semiproject/images/규카츠.jpg">
+            <img alt="음식 사진" src="/semiproject/images/dishPic.png">
+            <br>
+            <br>
+            <textarea rows="4" cols="80" style="resize:none;"></textarea>
+         </div>
+         <button style="align-content: center; margin-left: 70%;">댓글 작성</button>
+      </div>
+      </div>
+      </form>
+      <br><br><form action="" style="margin-left: 10%;">
+         <div style="border:1px solid black; margin-left: 20%; width:900px; height:400px;">
+        <div class="visitorInfo"  style="border-right:1px solid black; height:398px;">
+         <table>
+            <tr style="padding-bottom: 10%;">
+               <td style="border:0"><img alt="사용자 프로필 사진" src="/semiproject/images/userPic1.png"></td>
+            </tr>
+            <tr>
+               <td style="border:0"><br>파덕이사생팬</td>
+            </tr>
+            <tr>
+               <td style="border:0">방문일 : 2020-06-17</td>
+            </tr>
+            <tr>
+               <td style="border:0">예약번호 : 20200710</td>
+            </tr>
+         </table>
+      </div>
+      <div class="visitorReviewContent">
+         <div class="visitorReviewArticle">
+            <span class="reviewDate">2020-06-18</span>
+            <img alt="리뷰 별점" src="/semiproject/images/Star.png" class="reviewRateStar">
+            <span class="reviewRate">4.5</span>
+            <p>서비스가 맛있고 돈까스가 친절해요. 다섯이 가서 넷이 죽어도 모를 맛입니다. 최고입니다.</p>
+         </div>
+         <div class="visitorReviewPic">
+            <img alt="음식 사진" src="/semiproject/images/규카츠.jpg">
+            <img alt="음식 사진" src="/semiproject/images/dishPic.png">
+            <br>
+            <br>
+            <textarea rows="4" cols="80" style="resize:none;"></textarea>
+         </div>
+         <button style="align-content: center; margin-left: 70%;">댓글 작성</button>
+      </div>
+      </div>
+      </form>
+      <br><br>
       
 	
 	
