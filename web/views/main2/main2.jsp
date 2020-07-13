@@ -289,7 +289,7 @@ img {vertical-align: middle;}
 		<div class="container"
 			style="border: 0px white; width: 1400px; height: 450px">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				    <!-- Indicators -->
+				    <!-- Indicators -->1
 		            <ol class="carousel-indicators">
 		               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		               <li data-target="#myCarousel" data-slide-to="1"></li>
