@@ -65,9 +65,9 @@ img {vertical-align: middle;}
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+/* .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
-}
+} */
 
 /* Caption text */
 .text {
@@ -288,42 +288,35 @@ img {vertical-align: middle;}
 		<h2 style="color: #D5706D; margin-left: 50px;">오늘의 메뉴</h2>
 		<div class="container"
 			style="border: 0px white; width: 1400px; height: 450px">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>
+			
 
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner"
-					style="box-shadow: 0px 0px 0px 0px black;">
+				<div class="slideshow-container">
 
-					<div class="item active" align="center">
-						<img src="img/cos1.png"
-							style="margin-left: auto; margin-right: auto; height: 300px; display: inline;">
-						<img src="img/cos1.png"
-							style="margin-left: auto; margin-right: auto; height: 300px; display: inline;">
-					</div>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/cos1.png" style="width:45%; margin-right:9.2%;">
+  <img src="img/cos1.png" style="width:45%">
+  <div class="text">Caption Text</div>
+</div>
 
-					<div class="item" align="center">
-						<img src="img/cos2.png"
-							style="margin-left: auto; margin-right: auto; height: 300px; display: inline;">
-						<img src="img/cos2.png"
-							style="margin-left: auto; margin-right: auto; height: 300px; display: inline;">
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/cos1.png" style="width:45%;margin-right:9.2%;">
+  <img src="img/cos1.png" style="width:45%">
+  <div class="text">Caption Two</div>
+</div>
 
-					</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/cos1.png" style="width:45%;margin-right:9.2%;">
+  <img src="img/cos1.png" style="width:45%">
+  <div class="text">Caption Three</div>
+</div>
 
-					<div class="item" align="center">
-						<img src="img/cos1.png"
-							style="margin-left: auto; margin-right: auto; height: 300px; display: inline;">
-						<img src="img/cos1.png"
-							style="margin-left: auto; margin-right: auto; height: 300px; display: inline;">
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-					</div>
-
-				</div>
+</div>
 
 				<!-- Left and right controls -->
 				<a class="left carousel-control" href="#myCarousel"
@@ -337,13 +330,19 @@ img {vertical-align: middle;}
 				</a>
 			</div>
 		</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+		
+		
 		<hr
 			style="border: 1px solid black; color: gray; width: 50%; align: center;">
 		<br>
 		<br>
 		<br>
-		
-		
 		
 		<div class="works" id="work" style="margin-top: -180px;">
 			<div class="container"
@@ -468,40 +467,8 @@ img {vertical-align: middle;}
 			</div>
 		</div>
 	<br><br><br>
-	<div class="slideshow-container">
+	
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="img/cos1.png" style="width:40%; margin-right:19.2%;">
-  <img src="img/cos1.png" style="width:40%">
-  <div class="text">Caption Text</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="img/cos1.png" style="width:40%;margin-right:19.2%;">
-  <img src="img/cos1.png" style="width:40%">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="img/cos1.png" style="width:40%;margin-right:19.2%;">
-  <img src="img/cos1.png" style="width:40%">
-  <div class="text">Caption Three</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
 
 <script>
 var slideIndex = 1;
