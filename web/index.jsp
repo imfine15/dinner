@@ -154,6 +154,8 @@
 </style>
 </head>
 <body>
+<%@include file="views/main2/main2.jsp" %>
+<!-- 
 <div id="outer">
 	<h1>이동할 jsp페이지 이름을 입력해주세요</h1>
 	<br>
@@ -224,7 +226,7 @@
 			location.href = "/semiproject/views/admin/" + $("#url").val() + "/" + $("#url").val() + ".jsp";
 		}
 	</script>
-</div>
+</div>-->
 <!--
 	<h1> Hello World!!</h1>
 	<header></header>
