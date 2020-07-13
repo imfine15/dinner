@@ -274,7 +274,7 @@ img {vertical-align: middle;}
 								<a href="#" style="color: black; font-weight: 600;">쏭타이</a>
 							</h3>
 							<!-- brand org -->
-							<span class="org">대전 달성구</span>
+							<span class="org">대전 미달성구</span>
 						</div>
 					</div>
 				</div>
