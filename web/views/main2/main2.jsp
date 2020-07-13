@@ -138,7 +138,7 @@ img {vertical-align: middle;}
 		<div class="banner"
 			style="padding-top: -1px; margin-top: -300px; height: 500px; position: relative;">
 			<div>
-				<img src="/semiproject/images/mainBanner6.png"
+				<img src="/semiproject/images/mainBanner.png"
 					style="width: 100%; height: 600px;">
 			</div>
 			<div class="container"
