@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>YUMEET admin</title>
+<title>YUMEET 관리자페이지</title>
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
 	rel="stylesheet">
@@ -116,10 +116,29 @@ tr {
 	height:10px;
 	border:none;
 }
+.checkBtn{
+		background: gray;
+ 		color: #FFFFFF;
+		border: 0;
+		outline: 0;
+		width: 80px;
+		height: 25px;
+		font-size: 14px;
+		
+}
+ .productBtn{
+ 	background: #E07370;
+ 		color: #FFFFFF;
+		border: 0;
+		outline: 0;
+		width: 60px;
+		height: 25px;
+		font-size: 14px;
+ }
 </style>
 </head>
 <body style="background: lightgray;">
-	<%@ include file="../common/sidebar.jsp"%>
+	<%@ include file="/views/admin/common/sidebar.jsp"%>
 	<div id="wrapper">
 		<div id="title-box">
 			<p>제휴 문의 관리</p>
@@ -148,14 +167,14 @@ tr {
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>프리미엄</button>
+								<button class="productBtn">프리미엄</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
-								<button>미확인</button>
+								<button class="checkBtn">미확인</button>
 							</td>
 							<td>
-								<button id="toggle"></button>
+								<img src="/semiproject/images/toggle.png" class="toggle" id="toggle1">
 							</td>
 				
 						</tr>
@@ -184,14 +203,14 @@ tr {
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>프리미엄</button>
+								<button class="productBtn">프리미엄</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
-								<button>미확인</button>
+								<button class="checkBtn">미확인</button>
 							</td>
 							<td>
-								<button id="toggle"></button>
+								<img src="/semiproject/images/toggle.png" class="toggle" id="toggle2">
 							</td>
 				
 						</tr>
@@ -202,14 +221,14 @@ tr {
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>프리미엄</button>
+								<button class="productBtn">프리미엄</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
-								<button>미확인</button>
+								<button class="checkBtn">미확인</button>
 							</td>
 							<td>
-								<button id="toggle"></button>
+								<img src="/semiproject/images/toggle.png" class="toggle" id="toggle3">
 							</td>
 				
 						</tr>
@@ -220,14 +239,14 @@ tr {
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>프리미엄</button>
+								<button class="productBtn">프리미엄</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
-								<button>미확인</button>
+								<button class="checkBtn">미확인</button>
 							</td>
 							<td>
-								<button id="toggle"></button>
+								<img src="/semiproject/images/toggle.png" class="toggle" id="toggle4">
 							</td>
 				
 						</tr>
@@ -238,14 +257,14 @@ tr {
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>프리미엄</button>
+								<button class="productBtn">프리미엄</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
-								<button>미확인</button>
+								<button class="checkBtn">미확인</button>
 							</td>
 							<td>
-								<button id="toggle"></button>
+								<img src="/semiproject/images/toggle.png" class="toggle" id="toggle5">
 							</td>
 				
 						</tr>
@@ -305,6 +324,22 @@ tr {
 				onclick="location.href='<%=request.getContextPath()%>/selectList.no?currentPage='">>></button>
 		</div>
 	</div>
+		<script>
 
+	
+	$(document).ready(function() {
+		$("#toggle1").click(function() {
+			status = $(".innerText1").css("display"); 
+			console.log(status);
+			if (status == "none") { 
+				$(".innerText1").show();
+			} else { 
+				$(".innerText1").css("display", "none");
+			}
+
+		});
+	});
+	
+	</script>
 </body>
 </html>
