@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET 관리자페이지</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
 	
 	.writebtn{
@@ -47,7 +49,9 @@
 		border-radius: 0;
 		border: 1px solid gray;
 		outline-style: none;
-		height: 17px;
+		height: 19px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 	textarea{
 		border-radius: 0;
@@ -59,15 +63,16 @@
 </style>
 </head>
 <body style="background: lightgray;">
-	<%@ include file="../common/sidebar.jsp"%>
+	<%@ include file="/views/admin/common/sidebar.jsp"%>
 	<div class="outer" align="center">
 		<div class="header" align="left">
 			<h1>업체 관리</h1><br>
 		</div>
 		<div class="inner">
-			<h3>제재 정보 작성</h3>
+			<h2>제재 정보 작성</h2>
 			<table>
 				<tr>
+				<!-- 이메일 연락처는 자동기입 -->
 					<td>이메일</td>
 					<td><input type="email" style="width: 95%;"></td>
 					<td>연락처</td>
@@ -75,11 +80,11 @@
 				</tr>
 				<tr>
 					<td>제목</td>
-					<td colspan="3"><input type="text" size="78.5"></td>
+					<td colspan="3"><input type="text" size="99"></td>
 				</tr>
 				<tr>
 					<td>내용</td>
-					<td colspan="3"><textarea rows="12" cols="80" style="resize: none;"></textarea></td>
+					<td colspan="3"><textarea rows="15" cols="101" style="resize: none;"></textarea></td>
 				</tr>
 				
 			</table>

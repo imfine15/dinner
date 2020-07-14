@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET 관리자페이지</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
 	th, td{
 		border: 1px solid black;
@@ -23,7 +25,7 @@
 		height:25px;
 	}
 	.info1{
-		width: 150px; 
+		width: 180px; 
 		height:43px; 
 		border: 1px solid gray; 
 		font-size: 17px; 
@@ -32,7 +34,7 @@
 		float:left;
 		vertical-align: middle;
 		padding-top: 10px;
-		padding-left: 20px;
+		
 	}
 	.info2{
 		width: 200px; 
@@ -49,17 +51,17 @@
 </style>
 </head>
 <body style="background: lightgray;">
-	<%@ include file="../common/sidebar.jsp"%>
+	<%@ include file="/views/admin/common/sidebar.jsp"%>
 	<div style="width:85%; height:600px;margin-left: 230px; padding-top:40px; padding-left:30px;">
 		<div style="background: #F9F9F9;width:100%; margin-bottom: 10px; height:50px; padding-left:10px;">
 			<h1>회원관리</h1><br>
 		</div>
-		<div style="padding-left:50px; background: white; width:95%; height:800px; padding-top:50px;">
+		<div align="center" style="padding-left:50px; background: white; width:95%; height:800px; padding-top:50px;">
 			<label style="font-size: 20px;">고객상세정보</label><br><br>
 
 			<br><br>
 			
-			<div style="width:800px;">
+			<div style="width:900px;">
 				<div class="info1"><label>회원번호</label></div>
 				<div class="info2"><label>00000001</label></div>
 				<div class="info1"><label>이름</label></div>
@@ -77,7 +79,7 @@
 				
 				<div class="info1"><label>이메일</label></div>
 				<div class="info2"><label>taks22334@kh.or.kr</label></div>
-				<div class="info1"><label>제제횟수</label></div>
+				<div class="info1"><label>제재횟수</label></div>
 				<div class="info2"><label>0</label></div>
 				
 				<div class="info1"><label>성별</label></div>

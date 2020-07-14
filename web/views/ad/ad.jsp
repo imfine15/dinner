@@ -83,7 +83,7 @@ color: #000000;
 </style>
 </head>
 <body>
-	<%@ include file="../common/header.jsp"%>
+	<%@ include file="/views/common/header.jsp" %>
 	<div class="wrapper" align="center">
 		<div>
 			<img src="/semiproject/images/YUMEET LOGO WITH REST.png" id="logo"
@@ -166,7 +166,7 @@ color: #000000;
 		</div>
 	</div>
 	<div style="height: 100px;"></div>
-	<%@ include file="../common/footer.jsp"%>
+	<%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>
 
