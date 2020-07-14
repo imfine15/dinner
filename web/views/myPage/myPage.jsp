@@ -11,6 +11,13 @@
 .info {
 	font-family: Roboto;
 	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 18px;
+}
+.info2{
+	font-family: Roboto;
+	font-style: normal;
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 18px;
@@ -73,12 +80,13 @@ ul li a span:hover{
 									class="">프로필 이미지 업로드</span>
 								</a>
 							</div>
-							<div>
-								<label class="info">이름 : </label>&nbsp;&nbsp;<label class="info">별명
-									: </label><br> <label class="info">주소 : </label><br> <label
-									class="info">번호 : </label>
+							<div style="margin-top: -10px;">
+								<label class="info">이름 : </label> <label class="info2">정용탁</label><br>
+								<label class="info">별명 : </label> <label class="info2">Paduck</label><br> 
+								<label class="info">주소 : </label> <label class="info2">서울 서초구 양재동 16-12</label><br> 
+								<label class="info">번호 : </label> <label class="info2">010-4422-3043</label>
 							</div>
-						</div><a
+						</div><a href="/semiproject/views/myPage/bookMark.jsp"
 							class="bg_box" style="display: inline-block; border: 1px solid darkgray;" > <!-- 미사용시 class 'box_off', 사용시 class 'box_on' -->
 							<h2>즐겨찾기</h2>
 							<ul>
@@ -86,15 +94,17 @@ ul li a span:hover{
 								<li>· 뢰벤돈까스</li>
 								<li>· 청목</li>
 							</ul>
-						</a> <a class="bg_box" style="display: inline-block; border: 1px solid darkgray;"> <!-- 미사용시 class 'box_off', 사용시 class 'box_on' -->
-							<h2>내가쓴 게시글</h2> <span class="txt_desc">"내가쓴 게시글이 한눈에!" </span> <span
-							class="screen_out">현재상태 </span>
-						</a> <a class="bg_box" style="display: inline-block; border: 1px solid darkgray;">
-							<h2>내가쓴 리뷰</h2> <span class="txt_desc">"리뷰들을 모아서 보자!" </span> <span
-							class="screen_out">현재상태 </span>
-						</a> <a class="bg_box" style="display: inline-block; border: 1px solid darkgray;"> <!-- 미사용시 class 'box_off2', 사용시 class 'box_on2' -->
+						</a> 
+						<a href="/semiproject/views/myPage/writePostsByMe.jsp" class="bg_box" style="display: inline-block; border: 1px solid darkgray;"> <!-- 미사용시 class 'box_off', 사용시 class 'box_on' -->
+							<h2>내가쓴 게시글</h2> <span class="txt_desc">"내가쓴 게시글이 한눈에!" </span>
+						</a> 
+						
+						<a href="/semiproject/views/myPage/writeReviewsByMe.jsp" class="bg_box" style="display: inline-block; border: 1px solid darkgray;">
+							<h2>내가쓴 리뷰</h2> <span class="txt_desc">"리뷰들을 모아서 보자!" </span>
+						</a> 
+						
+						<a href="/semiproject/views/myPage/likePosts.jsp" class="bg_box" style="display: inline-block; border: 1px solid darkgray;"> <!-- 미사용시 class 'box_off2', 사용시 class 'box_on2' -->
 							<h2>좋아요한 글</h2>
-
 							<ul>
 								<li>· 장터식당</li>
 								<li>· 뢰벤돈까스</li>
