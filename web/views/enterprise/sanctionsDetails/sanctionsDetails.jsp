@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<title>사장님 페이지</title>
+<title>YUMEET 사장님페이지</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -59,22 +59,23 @@
          
          <div style="margin-left:15%;">
          	<table align="center">
-         		<tr>
-         			<td></td>
-         			<td></td>
-         			<td></td>
-         			
-         		</tr>
+         		
          		<tr style="font-size: 30px;">
-         			<td>
+         		<td style="border:0; padding-right:30px;">
+         				<
+         			</td>
+         			<td style="border:0;">
          				2020.06.01
          			</td>
-         			<td>
+         			<td style="border:0;">
          				~
 					</td>
-					<td>
+					<td style="border:0;">
 						2020.06.30
 					</td>
+					<td style="border:0; padding-left:30px;">
+         				>
+         			</td>
          		</tr>
          	</table>
          	<br>
@@ -85,7 +86,6 @@
                <th style="width:150px;">결제금액</th>
                <th style="width:150px;">총 금액</th>
                <th style="width:150px;">제제 수수료<br>지불 여부</th>
-               <th style="width:150px;">지불</th>
                
             </thead>
             <tbody align="center">
@@ -95,7 +95,6 @@
                   <td>IMFINE</td>
                   <td>imfine_123@kh.or.kr</td>
                   <td>일반</td>
-                  <td><button class="payBtn">지불</button></td>
                  
                </tr>
                <tr>
@@ -104,7 +103,6 @@
                   <td>IMFINE</td>
                   <td>imfine_123@kh.or.kr</td>
                   <td>일반</td>
-                  <td><button class="payBtn">지불</button></td>
                   
                </tr>
                <tr>
@@ -113,7 +111,6 @@
                   <td>IMFINE</td>
                   <td>imfine_123@kh.or.kr</td>
                   <td>일반</td>
-                  <td><button class="payBtn">지불</button></td>
                   
                </tr>
                <tr>
@@ -122,7 +119,6 @@
                   <td>IMFINE</td>
                   <td>imfine_123@kh.or.kr</td>
                   <td>일반</td>
-                  <td><button class="payBtn">지불</button></td>
                  
                </tr>
                <tr>
@@ -131,7 +127,6 @@
                   <td>IMFINE</td>
                   <td>imfine_123@kh.or.kr</td>
                   <td>일반</td>
-                  <td><button class="payBtn">지불</button></td>
                   
                </tr>
                <tr>
@@ -140,7 +135,6 @@
                   <td>IMFINE</td>
                   <td>imfine_123@kh.or.kr</td>
                   <td>일반</td>
-                  <td><button class="payBtn">지불</button></td>
                   
                </tr>
                <tr>
@@ -149,7 +143,6 @@
                   <td>IMFINE</td>
                   <td>imfine_123@kh.or.kr</td>
                   <td>일반</td>
-                  <td><button class="payBtn">지불</button></td>
                   
                </tr>
             </tbody>

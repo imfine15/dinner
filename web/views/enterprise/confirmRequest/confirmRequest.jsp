@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<title>사장님 페이지</title>
+<title>YUMEET 사장님페이지</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,19 +14,24 @@
 	.payBtn{
 		width:50px;
 		height:25px;
-		background: pink;
+		background: #EB7673;
+		border:0;
+		color:white;
+		font-weight: bold;
 	}
-
+ tr{
+   		width:120px;
+      height:30px;
+   }
    th, td{
+     width:100px;
       border-bottom: 1px solid black;
    }
    a{
       text-decoration: none;
       color:black;
    }
-   tr{
-      height:30px;
-   }
+  
    .hide{
       background-color: white;
       border: 0px;
@@ -82,14 +87,14 @@
             <table style="text-align: center;" align="center">
             <thead>
                <th style="width:30px;">&nbsp;</th>
-               <th style="width:150px;">NO</th>
-               <th style="width:150px;">예약자</th>
-               <th style="width:150px;">시간</th>
-               <th style="width:150px;">인원</th>
-               <th style="width:150px;">요청 일자</th>
-               <th style="width:150px;">상세 정보</th>
-               <th style="width:150px;">고객 정보 확인</th>
-               <th style="width:150px;">예약 접수</th>
+               <th style="width:130px;">NO</th>
+               <th style="width:130px;">예약자</th>
+               <th style="width:130px;">시간</th>
+               <th style="width:130px;">인원</th>
+               <th style="width:130px;">요청 일자</th>
+               <th style="width:130px;">상세 정보</th>
+               <th style="width:130px;">고객 정보 확인</th>
+               <th style="width:130px;">예약 접수</th>
                 
             </thead>
             <tbody align="center">
@@ -237,7 +242,9 @@
 			</div>
 		</div>
 	</div>
-	
+	<br>
+	<br>
+	<br>
 	
 	<%@include file="../../common/enterpriseFooter.jsp" %>
 <br>

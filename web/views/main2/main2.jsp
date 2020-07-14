@@ -150,7 +150,7 @@ img {vertical-align: middle;}
             <input type="search"
                style="height: 100%; width: 70%; float: left; border: 1px solid white; background: white; padding-left: 10px;">
             <button
-               style="height: 100%; background: white; border: 0px white; float: right; margin-right: 5px;">
+               style="height: 95%; background: white; border: 0px white; float: right; margin-right: 5px;">
                <img src="../../images/searchicon.png">
             </button>
          </div>
@@ -296,21 +296,21 @@ img {vertical-align: middle;}
   <div class="numbertext">1 / 3</div>
   <img src="img/cos1.png" style="width:45%; margin-right:9.2%;">
   <img src="img/cos1.png" style="width:45%">
-  <div class="text">Caption Text</div>
+  <div class="text">1/3</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
   <img src="img/cos1.png" style="width:45%;margin-right:9.2%;">
   <img src="img/cos1.png" style="width:45%">
-  <div class="text">Caption Two</div>
+  <div class="text">2/3</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
   <img src="img/cos1.png" style="width:45%;margin-right:9.2%;">
   <img src="img/cos1.png" style="width:45%">
-  <div class="text">Caption Three</div>
+  <div class="text">3/3</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -327,7 +327,7 @@ img {vertical-align: middle;}
                data-slide="next"> <span
                class="glyphicon glyphicon-chevron-right"></span> <span
                class="sr-only">Next</span> --> -->
-            </a>
+            <!-- </a> -->
          </div>
       </div>
 
