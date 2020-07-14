@@ -92,7 +92,7 @@ label {
 		</div>
 		<div id="btnarea" align="center">
 		<div style="height:30px;"></div>
-		<button id="confirm-btn">확인</button>
+		<button onClick="window.close()" id="confirm-btn">확인</button>
 		</div>
 		<div style="height:20px"></div>
 </body>

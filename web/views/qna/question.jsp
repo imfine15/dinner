@@ -107,6 +107,11 @@ tr {
 	width:200px;
 	font-size:30px;
 }
+#btn-file {
+	width: 150px;
+	float:right;
+}
+
 #agree-div {
 	display:inline-block; 
 	margin-right:300px;
@@ -129,10 +134,9 @@ tr {
 	font-family: dotum, '돋움';
 }
 
-
 input.upload_text {/*읽기전용 인풋텍스트*/
 	float:left;
-	width:230px;/* 버튼 포함 전체 가로 길이*/
+	width:100%;/* 버튼 포함 전체 가로 길이*/
 	height:19px;
 	line-height:19px;
 	padding:0 3px;
@@ -209,13 +213,12 @@ div.upload-btn_wrap button {/*버튼 div*/
 												style="width:700px; height:26px;">
 							<div class="upload-btn_wrap">
 								<button type="button" title="파일찾기" id="btn-file">
-									<span>파일찾기</span>
+									<div>파일찾기</div>
 								</button>
 								<input type="file" class="input_file" title="파일찾기">
 							</div>
 						  </div>
 						</td>
-						<td></td>
 					</tr>
 					<tr>
 						<td class="first" rowspan="2">답변 <br>알림받기</td>
@@ -223,7 +226,9 @@ div.upload-btn_wrap button {/*버튼 div*/
 							<p style="line-height: 40px;">※ 답변 등록 시 이메일로 보내드립니다.</p> 
 							<input type="checkbox" id=""> 
 							<div id="agree-div"><label style="line-height: 40px;">
-							(선택)이메일 수집 및 이용 동의</label></div><div class="phone-div"><button class="btn-agree" id="mail-agree">전문보기</button></div>
+							(선택)이메일 수집 및 이용 동의</label></div><div class="phone-div">
+							<button class="btn-agree" id="mail-agree"
+							onclick="window.open('/semiproject/views/qna/questionDetailMail.jsp', '_blank', 'width=650px,height=550px,toolbars=no,scrollbars=no'); return false;">전문보기</button></div>
 							<br><br>
 							<input type="email" placeholder="이메일 주소 입력" style="width:500px; height:26px; font-size:16px;"> 
 						<br>
@@ -239,9 +244,16 @@ div.upload-btn_wrap button {/*버튼 div*/
 						
 						</label></div><div class="phone-div">
 						
-						<a href="/semiproject/views/qna/questionDetail.jsp" onclick="window.open(this.href, '_blank', 'width=650px,height=550px,toolbars=no,scrollbars=no'); return false;">완전 간단하게 팝업 띄우기!!</a>
+						<!--
+						window.open('', '', 'status=no, height=' + popupHeight  + ', width=' + popupWidth  + ', left='+ popupX + ', top='+ popupY);
+						
+var popupX = (window.screen.width / 2) - (popupWidth / 2);
+// 만들 팝업창 width 크기의 1/2 만큼 보정값으로 빼주었음
 
-						<button class="btn-agree" id="phone-agree">전문보기</button></div>
+var popupY= (window.screen.height / 2) - (popupHeight / 2);
+						!-->
+						<button class="btn-agree" id="phone-agree" 
+						onclick="window.open('/semiproject/views/qna/questionDetail.jsp', '_blank', 'width=650px,height=550px,toolbars=no,scrollbars=no'); return false;">전문보기</button></div>
 						<br> <br>
 							<input type="text" placeholder="전화번호 입력" style="width:500px; height:26px; font-size:16px;"> 
 						<br>
