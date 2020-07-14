@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script async src="//jsfiddle.net/mLjyupjh/1/embed/"></script>
@@ -78,7 +80,21 @@ tr {
 table {
 	border-collapse: collapse;
 }
-
+input {
+border-radius: 0;
+border: 1px solid gray;
+outline-style: none;
+}
+textarea {
+border-radius: 0;
+border: 1px solid gray;
+outline-style: none;
+}
+select {
+border-radius: 0;
+border: 1px solid gray;
+outline-style: none;
+}
 tr {
 	border-bottom: 1px solid #9F9F9F;
 	border-top: 0.5px solid #343434;
@@ -168,7 +184,7 @@ div.upload-btn_wrap button {/*버튼 div*/
 					</tr>
 					<tr>
 						<td class="first" style="width: 100px;">문의 분류</td>
-						<td colspan="3"><select style="height:30px; width:897px;">
+						<td colspan="3"><select style="height:30px; width:897px; font-size:16px;">
 								<option>예약 문의</option>
 								<option>환불 및 결제 문의</option>
 								<option>신고 및 제재 문의</option>
@@ -219,10 +235,17 @@ div.upload-btn_wrap button {/*버튼 div*/
 						<p style="line-height: 40px;">※ 답변 등록 시 알림문자를 보내드립니다.</p>
 						<input type="checkbox" id=""> 
 						<div id="agree-div2"><label style="line-height: 40px;">
-						(선택)휴대폰번호 수집 및 이용 동의</label></div><div class="phone-div"><button class="btn-agree" id="phone-agree">전문보기</button></div>
+						(선택)휴대폰번호 수집 및 이용 동의&nbsp;( -(하이픈) 을 제외하고 입력해주세요.)<br>
+						
+						</label></div><div class="phone-div">
+						
+						<a href="/semiproject/views/qna/questionDetail.jsp" onclick="window.open(this.href, '_blank', 'width=650px,height=550px,toolbars=no,scrollbars=no'); return false;">완전 간단하게 팝업 띄우기!!</a>
+
+						<button class="btn-agree" id="phone-agree">전문보기</button></div>
 						<br> <br>
-							<input type="number" placeholder="전화번호 입력" style="width:500px; height:26px; font-size:16px;"> 
+							<input type="text" placeholder="전화번호 입력" style="width:500px; height:26px; font-size:16px;"> 
 						<br>
+
 						<br>
 						</td>
 					</tr>
@@ -247,8 +270,9 @@ div.upload-btn_wrap button {/*버튼 div*/
 			$('.upload_text').val(i);
 		});
 	});
+	
 	</script>
-	<%@ include file="../common/footer.jsp"%>
+	<%@ include file="/views/common/footer.jsp"%>
 </body>
 </html>
 
