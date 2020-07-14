@@ -103,13 +103,14 @@ tr {
 	height: 100%;
 	z-index: 1;
 	vertical-align: middle;
+	align:center;
 }
 
 #modal p {
 	margin: 0;
 }
 
-#modal button {
+#modal_close_btn {
 	display: inline-block;
 	color: white;
 	background-color: #E07370;
@@ -117,16 +118,18 @@ tr {
 	width: 60px;
 	height: 25px;
 	font-size: 16px;
-	margin: 100 auto;
+	margin-left: 40%;
 }
 
 #modal .modal_content {
-	width: 400px;
+	width: 500px;
 	height: auto;
 	margin: 0 auto;
 	padding: 20px 10px;
 	background: #fff;
 	border: 2px solid #666;
+	line-height: 30px;
+	box-shadow: 10px 10px 20px #616161;
 }
 
 #modal .modal_layer {
@@ -136,7 +139,7 @@ tr {
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.5);
-	z-index: -2;
+	z-index: -1;
 }
 </style>
 </head>
@@ -202,13 +205,11 @@ tr {
 							<td>2020/07/28</td>
 							<td><button id="detail">자세히</button></td>
 						</tr>
-
-
 					</table>
 				</form>
-				<div id="modal">
+				<div id="modal" class="mdeal-c">
 					<div class="modal_content">
-						<p style="font-size:25px;">예약 상세 정보</p>
+						<p style="font-size:25px;">예약 상세 정보</p><br>
 						<label>고객 : 정파덕 (paduck)</label><br>
 						<label>예약 상태 : 취소됨 </label><br>
 						<label>일자 : 2020/09/18</label><br>
@@ -218,7 +219,7 @@ tr {
 						<label>취소 일자 : 2020/06/23 11:12</label><br>
 						<label>업체 수락 일자 : 2020/06/24 23:42</label><br>
 						<label>환불 금액 : 현금 99,400 원 | 포인트 600 점</label><br>
-						<label>취소 사유 : (없음)</label><br>
+						<label>취소 사유 : (없음)</label><br><br>
 						<button id="modal_close_btn">확인</button>
 					</div>
 					<div class="modal_layer"></div>
@@ -243,11 +244,11 @@ tr {
 	</div>
 	<script>
 		$("#detail").click(function() {
-			$("#modal").attr("style", "display:block");
+			$("#modal").css("display", "block");
 		});
 
 		$("#modal_close_btn").click(function() {
-			$("#modal").attr("style", "display:none");
+			$("#modal-c").css("display", "none");
 		});
 	</script>
 </body>
