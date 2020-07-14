@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET 관리자페이지</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
 	table{
 		border-collapse: collapse;
@@ -52,10 +54,10 @@
 </style>
 </head>
 <body style="background: lightgray;">
-	<%@ include file="../common/sidebar.jsp"%>
+	<%@ include file="/views/admin/common/sidebar.jsp"%>
 	<div class="outer" align="center">
 		<div class="header" align="left">
-			<h1>회원 환불 내역</h1><br>
+			<h1>회원 신고 내역</h1><br>
 		</div>
 		<div class="inner">
 			

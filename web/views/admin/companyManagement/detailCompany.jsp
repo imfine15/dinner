@@ -4,24 +4,22 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMMET 관리자페이지</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
 	table{
 		border-collapse: collapse;
 	}
-	.hide{
-		background-color: white;
-		border: 0px;
-		height:25px;
-	}
+	
 	th{
 		width: 180px; 
 		height:45px; 
 		border: 1px solid gray; 
 		font-size: 17px; 
 		background: rgba(196, 196, 196, 0.29); 
-		float:left;
 		vertical-align: middle;
+		text-align: center;
 
 	}
 	td{
@@ -30,11 +28,9 @@
 		border: 1px solid gray; 
 		font-size: 17px; 
 		background: #FAFAFA; 
-		text-align: left;
-		float:left;
 		vertical-align: middle;
-		padding-left: 5px;
-
+		text-align: middle;
+		padding-left: 10px;
 	}
 	.btn{
 		color: #FFFFFF;
@@ -46,10 +42,11 @@
 		margin: 20px;
 		margin-top: 50px;
 	}
+
 </style>
 </head>
 <body style="background: lightgray;">
-	<%@ include file="../common/sidebar.jsp"%>
+	<%@ include file="/views/admin/common/sidebar.jsp"%>
 	<div style="width:85%; height:600px;margin-left: 230px; padding-top:40px; padding-left:30px;">
 		<div style="background: #F9F9F9;width:100%; margin-bottom: 10px; height:50px; padding-left:10px;">
 			<h1>제휴업체관리</h1><br>
@@ -112,10 +109,9 @@
 					
 				</table>
 			
-			
+			</div>
 			
 			<div align="center">
-				<button class="btn" style="background: #E07370;">제휴 연장</button>
 				<button class="btn" style="background: #FF0700;">제휴 해지</button>
 				<button class="btn" style="background: #5EB8B4;">업체 제재</button>
 			</div>

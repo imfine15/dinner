@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET 관리자페이지</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
 	
 	.writebtn{
@@ -88,16 +90,16 @@
 		font-weight: bold;
 		
 	}
-   th, td{
-      border-bottom: 1px solid lightgray;
-     
-   }
+	table{
+	border-collapse: collapse;
+	}
    a{
       text-decoration: none;
       color:black;
    }
    tr{
       height:30px;
+      border-bottom: 1px solid lightgary;
    }
    .hide{
       background-color: white;
@@ -109,7 +111,7 @@
 
 </head>
 <body style="background: lightgray;">
-	<%@ include file="../common/sidebar.jsp"%>
+	<%@ include file="/views/admin/common/sidebar.jsp"%>
 	<div class="outer" align="center">
 		<div class="header" align="left">
 			<h1 >정산 내역<button style="margin-left:800px;" class="whenBtn">1개월</button><button style="margin-left:10px;" class="whenBtn">3개월</button><button style="margin-left:10px;" class="whenBtn">6개월</button><button style="margin-left:10px;" class="whenBtn">1년</button></h1><br>
@@ -141,6 +143,7 @@
          	<br>
             <table style="text-align: center;" align="center">
             <thead>
+            <tr>
                <th style="width:100px;">업체명</th>
                <th style="width:100px;">구분</th>
                <th style="width:100px;">매출건수</th>
@@ -149,6 +152,7 @@
                <th style="width:100px;">처리일자</th>
                <th style="width:100px;">처리여부</th>
                <th style="width:100px;">요청하기</th>
+            </tr>   
             </thead>
             <tbody align="center">
                <tr>
@@ -219,6 +223,7 @@
                </tr>
             </tbody>
             </table>
+            </div>
 			<!-- <button class="writebtn">제재 내용 전송</button> -->
 		</div>
 		

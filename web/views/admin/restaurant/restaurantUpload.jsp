@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET 관리자페이지</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
 	table{
 		border-collapse: collapse;
@@ -21,11 +23,11 @@
  		color: #FFFFFF;
 		border: 0;
 		outline: 0;
-		width: 50px;
-		height: 20px;
-		font-size: 12px;
+		width: 55px;
+		height: 23px;
+		font-size: 14px;
 		border-radius: 3px;
-		margin-bottom: 2px;
+
 	}
 
 	.outer{
@@ -59,7 +61,7 @@
 </style>
 </head>
 <body style="background: lightgray;">
-	<%@ include file="../common/sidebar.jsp"%>
+	<%@ include file="/views/admin/common/sidebar.jsp"%>
 	<div class="outer" align="center">
 		<div class="header" align="left">
 			<h1>가게 등록 요청</h1><br>
