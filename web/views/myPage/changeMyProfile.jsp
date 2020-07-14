@@ -102,7 +102,7 @@ button:active{
 				</div>
 			</div>
 		</div>
-	<form method="get">
+	<form method="post">
 	<div
 		style="width: 700px; height: 700px; margin-left: auto; margin-right: auto;">
 		
