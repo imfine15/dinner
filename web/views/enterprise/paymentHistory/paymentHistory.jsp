@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<title>사장님 페이지</title>
+<title>YUMEET 사장님페이지</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -15,7 +15,10 @@
 	.payBtn{
 		width:50px;
 		height:25px;
-		background: pink;
+		background: #EB7673;
+		font-weight: bold;
+		color:white;
+		border:0;
 	}
 
    th, td{
@@ -60,21 +63,22 @@
          
          <div style="margin-left:15%;">
          	<table align="center">
-         		<tr>
-         			<td></td>
-         			<td></td>
-         			<td></td>
-         			
-         		</tr>
+         		
          		<tr style="font-size: 30px;">
-         			<td style="font-weight: bolder; color:black; padding-right: 50px;">
+         			<td style="border:0; padding-right:50px;">
+         				<
+         			</td>
+         			<td style="font-weight: bolder; color:black; padding-right: 50px;  border:0;">
          				2020/06/01
          			</td>
-         			<td>
+         			<td style=" border:0;">
          				~
 					</td>
-					<td style="font-weight: bolder; color:black;  padding-left: 50px;">
+					<td style="font-weight: bolder; color:black;  padding-left: 50px;  border:0;">
          				2020.06.22
+         			</td>
+         			<td style="border:0; padding-left:50px;">
+         				>
          			</td>
          		</tr>
          	</table>

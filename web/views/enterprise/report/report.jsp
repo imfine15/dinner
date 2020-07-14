@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<title>사장님 페이지</title>
+<title>YUMEET 사장님페이지</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -59,22 +59,23 @@
          
          <div style="margin-left:15%;">
          	<table align="center">
-         		<tr>
-         			<td></td>
-         			<td></td>
-         			<td></td>
-         			
-         		</tr>
+         		
          		<tr style="font-size: 30px;">
-         			<td>
+         		<td style="border:0; padding-right:30px;">
+         				<
+         			</td>
+         			<td style="border:0;">
          				2020.06.01
          			</td>
-         			<td>
+         			<td style="border:0;">
          				~
 					</td>
-					<td>
+					<td style="border:0;">
 						2020.06.30
 					</td>
+					<td style="border:0; padding-left:30px;">
+         				>
+         			</td>
          		</tr>
          	</table>
          	<br>

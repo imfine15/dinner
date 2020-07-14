@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<title>사장님 페이지</title>
+<title>YUMEET 사장님페이지</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -98,6 +98,14 @@
       height:30px;
       width:30px;
    }
+   .commentBtn{
+   	background-color:#EB7673;
+   	border:0;
+   	color:white;
+   	font-weight: bold;
+   	border-radius: 4px;
+   	text-align: center;
+   }
 </style>
 
 </head>
@@ -125,7 +133,7 @@
          <div style="border:1px solid black; margin-left: 20%; width:900px; height:400px;">
         <div class="visitorInfo"  style="border-right:1px solid black; height:398px;">
          <table>
-            <tr style="padding-bottom: 10%;">
+            <tr style="padding-bottom: 10%; ">
                <td style="border:0"><img alt="사용자 프로필 사진" src="/semiproject/images/userPic1.png"></td>
             </tr>
             <tr>
@@ -153,7 +161,7 @@
             <br>
             <textarea rows="4" cols="80" style="resize:none;"></textarea>
          </div>
-         <button style="align-content: center; margin-left: 70%;">댓글 작성</button>
+         <button class="commentBtn" style="align-content: center; margin-left: 70%;">댓글 작성</button>
       </div>
       </div>
       </form>
@@ -190,7 +198,7 @@
             <br>
             <textarea rows="4" cols="80" style="resize:none;"></textarea>
          </div>
-         <button style="align-content: center; margin-left: 70%;">댓글 작성</button>
+         <button class="commentBtn" style="align-content: center; margin-left: 70%;">댓글 작성</button>
       </div>
       </div>
       </form>
@@ -226,7 +234,7 @@
             <br>
             <textarea rows="4" cols="80" style="resize:none;"></textarea>
          </div>
-         <button style="align-content: center; margin-left: 70%;">댓글 작성</button>
+         <button class="commentBtn" style="align-content: center; margin-left: 70%;">댓글 작성</button>
       </div>
       </div>
       </form>
@@ -262,7 +270,7 @@
             <br>
             <textarea rows="4" cols="80" style="resize:none;"></textarea>
          </div>
-         <button style="align-content: center; margin-left: 70%;">댓글 작성</button>
+         <button class="commentBtn" style="align-content: center; margin-left: 70%;">댓글 작성</button>
       </div>
       </div>
       </form>
