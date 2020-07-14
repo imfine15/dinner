@@ -1,6 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<% int asd = Integer.parseInt(request.getParameter("asd"));
+<% int asd = 1;
+	 
+	 if(request.getParameter("asd") == null){
+		 response.sendRedirect("/semiproject/views/enterprise/signIn/signIn.jsp");
+	 }else{
+		 
+	 	asd = Integer.parseInt(request.getParameter("asd")); 
+	 }
+	
 	String pageName = "";
 	switch(asd){
 	case 1 : pageName = "예약 요청 확인"; break;
@@ -10,6 +18,7 @@
 	case 5 : pageName = "결제 내역"; break;
 	case 6 : pageName = "제재내역"; break;
 	case 7 : pageName = "보고서"; break;
+	default : pageName = "1"; break;
 	} %>
 <!doctype html>
 <html lang="ko">
