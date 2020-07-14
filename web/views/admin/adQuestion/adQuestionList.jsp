@@ -100,7 +100,7 @@ tr {
 
 #search-btn {
 	width: 53px;
-	height: 24px;
+	height: 25px;
 	background: #C4C4C4;
 	color: black;
 	border: none;
@@ -121,11 +121,30 @@ tr {
 .innerText1{
 	display: none;
 }
+.checkBtn{
+		background: gray;
+ 		color: #FFFFFF;
+		border: 0;
+		outline: 0;
+		width: 80px;
+		height: 25px;
+		font-size: 14px;
+		
+}
+ .productBtn{
+ 	background: #E07370;
+ 		color: #FFFFFF;
+		border: 0;
+		outline: 0;
+		width: 60px;
+		height: 25px;
+		font-size: 14px;
+ }
 
 </style>
 </head>
 <body style="background: lightgray;">
-	<%@ include file="../common/sidebar.jsp"%>
+	<%@ include file="/views/admin/common/sidebar.jsp"%>
 	<div id="wrapper">
 		<div id="title-box">
 			<p>광고 문의 관리</p>
@@ -154,11 +173,11 @@ tr {
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>기타</button>
+								<button class="productBtn">기타</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
-								<button>미확인</button>
+								<button class="checkBtn">미확인</button>
 							</td>
 							<td>
 								<img src="/semiproject/images/toggle.png" class="toggle" id="toggle1">
@@ -187,14 +206,14 @@ tr {
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>메인</button>
+								<button class="productBtn">메인</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
-								<button>미확인</button>
+								<button class="checkBtn">미확인</button>
 							</td>
 							<td>
-								<button class="toggle" id="toggle2"></button>
+								<img src="/semiproject/images/toggle.png" class="toggle" id="toggle2">
 							</td>
 				
 						</tr>
@@ -205,14 +224,14 @@ tr {
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>메인</button>
+								<button class="productBtn">메인</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
-								<button>미확인</button>
+								<button class="checkBtn">미확인</button>
 							</td>
 							<td>
-								<button class="toggle" id="toggle3"></button>
+								<img src="/semiproject/images/toggle.png" class="toggle" id="toggle3">
 							</td>
 				
 						</tr>
@@ -223,14 +242,14 @@ tr {
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>기타</button>
+								<button class="productBtn">기타</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
-								<button>미확인</button>
+								<button class="checkBtn">미확인</button>
 							</td>
 							<td>
-								<button class="toggle" id="toggle4"></button>
+								<img src="/semiproject/images/toggle.png" class="toggle" id="toggle4">
 							</td>
 				
 						</tr>
@@ -241,14 +260,14 @@ tr {
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>메인</button>
+								<button class="productBtn">메인</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
-								<button>미확인</button>
+								<button class="checkBtn">미확인</button>
 							</td>
 							<td>
-								<button class="toggle" id="toggle5"></button>
+								<img src="/semiproject/images/toggle.png" class="toggle" id="toggle5">
 							</td>
 				
 						</tr>
@@ -259,14 +278,14 @@ tr {
 							<td>예승이콩버거</td>
 							<td>패스트푸드</td>
 							<td>
-								<button>메인</button>
+								<button class="productBtn">메인</button>
 							</td>
 							<td>2020-06-22</td>
 							<td>
-								<button>미확인</button>
+								<button class="checkBtn">미확인</button>
 							</td>
 							<td>
-								<button class="toggle" id="toggle6"></button>
+								<img src="/semiproject/images/toggle.png" class="toggle" id="toggle6">
 							</td>
 						</tr>
 					</table>
@@ -277,9 +296,9 @@ tr {
 						<table>
 							<tr>
 								<td><select style="height:25px; font-size:14px;">
-										<option>제목</option>
-										<option>회원 ID</option>
-										<option>등록 날짜</option>
+										<option>회원명</option>
+										<option>업체명</option>
+										<option>처리상태</option>
 								</select>&nbsp;&nbsp;&nbsp;</td>
 								<td><input style="height:25px;" type="search" size="25"></td>
 								<td>
@@ -325,18 +344,7 @@ tr {
 		</div>
 	</div>
 		<script>
-/* 	$('#toggle1').on('click', function () {
 
-	    if ($(".innerText1").hasClass('on')) {
-	        slideUp();
-	    } else {
-	        slideUp();
-	        $(".innerText1").addClass('on').next().slideDown();
-	    }
-	    function slideUp() {
-	        $('#toggle1').removeClass('on').next().slideUp();
-	    };
-	}) */
 	
 	$(document).ready(function() {
 		$("#toggle1").click(function() {

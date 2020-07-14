@@ -112,6 +112,7 @@
 			</div>
 			
 			<div align="center">
+				<button class="btn" style="background: #EB7673;">정산 내역</button>
 				<button class="btn" style="background: #FF0700;">제휴 해지</button>
 				<button class="btn" style="background: #5EB8B4;">업체 제재</button>
 			</div>
