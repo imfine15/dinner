@@ -5,7 +5,6 @@
 	 if(request.getParameter("asd") == null){
 		 response.sendRedirect("/semiproject/views/enterprise/signIn/signIn.jsp");
 	 }else{
-		 
 	 	asd = Integer.parseInt(request.getParameter("asd")); 
 	 }
 	
@@ -18,7 +17,7 @@
 	case 5 : pageName = "결제 내역"; break;
 	case 6 : pageName = "제재내역"; break;
 	case 7 : pageName = "보고서"; break;
-	default : pageName = "1"; break;
+	default : pageName = "에러 발생"; break;
 	} %>
 <!doctype html>
 <html lang="ko">
