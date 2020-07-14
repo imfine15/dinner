@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
 .wrapper {
 	height: auto;
@@ -96,9 +98,18 @@ color: #000000;
 		</div>
 		<div style="height: 500px;">
 			<p id="option">광고 종류</p>
-			<img src="/semiproject/images/banner_ad.png" id="banner_ad"
-				alt="배너광고"> <img src="/semiproject/images/mainad.png"
-				id="main_ad">
+			<table>
+				<tr>
+					<td><img src="/semiproject/images/banner_ad.png" id="banner_ad"
+						alt="배너광고"></td>
+					<td><label>YUMEEY 페이지 내에서의 배너 광고</label></td>
+				</tr>
+				<tr>
+					<td><img src="/semiproject/images/mainad.png"
+						id="main_ad"></td>
+					<td><label>YUMEEY 메인 페이지 배너 광고</label></td>
+				</tr>
+			</table>
 		</div>
 		<hr style="width: 1000px;">
 		<div id="adsec">

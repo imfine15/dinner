@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
 	.outer{
 		width:100%; 
@@ -82,7 +84,7 @@
 		<div align="left">
 		<p>취소 사유를 입력해주세요 (선택)</p>
 		<textarea rows="10" cols="132px" style="resize: none;" placeholder="이곳에 취소 사유를 입력해 주세요."></textarea>
-		<input type="checkbox" value="" ><label>상기 내용을 확인하고 동의합니다.</label>
+		<br><input type="checkbox" value="" ><label>상기 내용을 확인하고 동의합니다.</label>
 		</div>
 		<div>
 			<button class="btn" style="background: #757575;">취소</button>
