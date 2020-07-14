@@ -25,7 +25,7 @@ html, body {
 /* STYLES SPECIFIC TO FOOTER  */
 
 .footer .col {
-	width: 250px;
+	width: 210px;
 	height: 100%;
 	float: left;
 	box-sizing: border-box;
@@ -55,7 +55,7 @@ html, body {
 
 .footer .col ul li {
 	color: #999999;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: inherit;
 	font-weight: lighter;
 	padding: 5px 0px 5px 0px;
@@ -67,7 +67,7 @@ html, body {
 
 .footer .col2 ul li {
 	color: #999999;
-	font-size: 14px;
+	font-size: 12px;
 	font-family: inherit;
 	font-weight: bold;
 	padding: 5px 0px 5px 0px;
@@ -90,7 +90,7 @@ html, body {
 }
 
 .footer .col2 {
-	width: 350px;
+	width: 300px;
 	height: auto;
 	float: left;
 	box-sizing: border-box;
@@ -132,7 +132,7 @@ html, body {
 
 .footer .col2 ul li {
 	color: #999999;
-	font-size: 14px;
+	font-size: 12px;
 	font-family: inherit;
 	font-weight: normal;
 	padding: 5px 0px 0px 0px;
@@ -167,7 +167,7 @@ html, body {
 }
 
 #ylogo {
-	width: 250px;
+	width: 150px;
 	height: auto;
 }
 
@@ -186,11 +186,11 @@ html, body {
 	<!-- FOOTER START -->
 	<div class="footer">
 		<div class="contain">
-			<div class="col" style="margin-top:20px; margin-left:100px; ">
+			<div class="col" style="margin-top:20px; margin-left:30px; ">
 				<img src="/semiproject/images/YUMEET LOGO.png" id="ylogo"
 					alt="yumeetlogo">
 			</div>
-			<div class="col2" id="dd" style="margin-left:100px;">
+			<div class="col2" id="dd" style="margin-left:0px;">
 				<ul style="margin-top:45px;">
 					<li style="font-size:20px; font-weight:bold;">회사소개</li>
 					<hr style=" margin-left:0px;background-color:#E4E4E4; border: 1px solid #E4E4E4; size: 1px; width:100px;">
