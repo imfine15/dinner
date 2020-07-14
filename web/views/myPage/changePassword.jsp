@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css"
 	href="/semiproject/views/myPage/css/myPage.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -37,6 +39,24 @@
 	width: 100px;
 	height: 30px;
 }
+.navbar{
+	color: #666666;
+	font-size: 20px;
+	
+	
+}
+.left{
+	list-style-type:none;
+	float:left;
+	margin-left: 20px;
+}
+.left2:hover{
+	text-decoration: none;
+	border-bottom: 3px #E1A9A9 solid;
+}
+ul li a span:hover{
+	color: pink;
+}
 </style>
 </head>
 <body>
@@ -48,34 +68,22 @@
 	</div>
 
 	<div id="daumHead" role="banner">
-		<div class="inner_head">
-			<h1>
-				<a href="/home.daum" id="daumServiceLogo"
-					data-tiara-action-name="내정보"><span class="ir_wa">내정보</span></a>
-			</h1>
-
-			<!-- PC 웹 내정보 GNB -->
-			<div id="daumGnb" role="navigation">
-				<h2 class="screen_out">내정보 메인메뉴</h2>
-				<ul class="gnb_comm">
-					<li><a href="/home.daum" class="link_gnb link_gnb1"
-						data-tiara-action-name="내정보_홈"><span class="ir_wa">내정보
-								홈</span></a></li>
-					<li class="on"><a href="/my/basic.daum" class="link_gnb link_gnb2"
-						data-tiara-action-name="내정보_관리"><span class="ir_wa">내정보
-								관리</span></a></li>
-					<li><a href="/security/basic.daum" class="link_gnb link_gnb3"
-						data-tiara-action-name="내정보_보호"><span class="ir_wa">비밀번호변경</span></a></li>
-					<li><a href="/change/password.daum" class="link_gnb link_gnb4"
-						data-tiara-action-name="비밀번호_변경"><span class="ir_wa">고객센터</span></a></li>
-				</ul>
-				<ul class="gnb_with">
-					<li><a href="/withdraw.daum" class="link_gnb link_gnb1"
-						data-tiara-action-name="회원탈퇴"><span class="ir_wa">회원탈퇴</span></a></li>
-				</ul>
+			<div class="inner_head" style="padding-right:30px;">
+				<h1>
+					<a href="/semiproject/views/myPage/myPage.jsp" id="daumServiceLogo"><span class="ir_wa">내정보</span></a>
+				</h1>
+				<!-- PC 웹 내정보 GNB -->
+				<div id="" role="navigation">
+					<ul style="padding-top: 10px; padding-left:-30px;">
+						<li class="left"><a class="left2" href="/semiproject/views/myPage/myPage.jsp"><span class="navbar"">내정보 홈</span></a></li>
+						<li class="left"><a class="left2"  href="/semiproject/views/myPage/checkingPassword.jsp"><span class="navbar" style="color: #E1A9A9;">내정보 관리</span></a></li>
+						<li class="left"><a class="left2"  href="/semiproject/views/myPage/checkingPassword.jsp"><span class="navbar">비밀번호 변경</span></a></li>
+						<li class="left"><a class="left2"  href=""><span class="navbar">고객센터</span></a></li>
+						<li class="left"><a class="left2"  href="/semiproject/views/myPage/withdrawalFromMembership.jsp"><span class="navbar">회원탈퇴</span></a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
 
 	<div
 		style="width: 500px; height: 500px; margin-left: auto; margin-right: auto;">
@@ -89,7 +97,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td><label class="text" style="margin-left: 50px">현재 비밀번호 : &nbsp;</label>
+				<td><label class="text" style="margin-left: 50px">새로운 비밀번호 : &nbsp;</label>
 						<input
 					class="box" type="password" style="margin-left: 50px;" id="password1">
 					<button style="background: #C4C4C4; border-radius: 5px;" id="pwdShowHide1">보기</button><br>
@@ -97,7 +105,7 @@
 			</tr>
 			<tr>
 				<td style="margin-top: 10px;"><label class="text"
-					style="margin-left: 50px">새로운 비밀번호  :</label> <input
+					style="margin-left: 50px">새로운 비밀번호  확인:</label> <input
 					class="box" type="password" style="margin-left: 50px;" id="password2">
 					<button style="background: #C4C4C4; border-radius: 5px;" id="pwdShowHide2">보기</button>
 					<br>
