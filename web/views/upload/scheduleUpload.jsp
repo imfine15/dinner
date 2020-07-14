@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
  .line{
  	width: 1000px;
@@ -33,26 +35,24 @@
  	background: #666666;
  }
  #btnadd{
- 		background: #FFFFFF;
- 		color: #000000;
-		border: 1px solid black;
+ 		background: #EF9996;
+ 		color: #FFFFFF;
+		border: 0;
 		outline: 0;
 		width: 120px;
 		height: 30px;
 		font-size: 20px;
-		font-weight: bold;
 		margin: 20px;
 		
  }
  #btndel{
  		background: #C9C9C9;
- 		color: #000000;
-		border: 1px solid #C9C9C9;
+ 		color: #FFFFFF;
+		border: 0;
 		outline: 0;
 		width: 120px;
 		height: 30px;
 		font-size: 20px;
-		font-weight: bold;
 		margin: 20px;
  }
  #textlabel{
@@ -68,11 +68,32 @@
  margin-bottom: 10px;
 		margin-top: 10px;
  }
+ h1{
+ 	margin-left: 200px;
+ 	margin-top: 30px;
+ }
+ 	input[type=text]{
+		border-radius: 0;
+		border: 1px solid gray;
+		outline-style: none;
+		height: 20px;
+	}
+	textarea{
+		border-radius: 0;
+		border: 1px solid gray;
+		outline-style: none;
+	}
+	select{
+		border-radius: 0;
+		border: 1px solid gray;
+		outline-style: none;
+		height: 20px;
+	}
  
 </style>
 </head>
 <body>
-
+<%@ include file="/views/common/header.jsp" %>
 	<h1>일정 및 맛집 등록</h1>
 	<div align="center">
 		<hr class="line">
@@ -84,7 +105,7 @@
 		</div>
 		<br>
 		<hr class="line">
-		<div>
+		<div style="margin-bottom: 80px;">
 			<form action="">
 				<table>
 					<tr>

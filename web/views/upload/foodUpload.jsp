@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
 	.area{
 		resize: none;
@@ -51,13 +53,30 @@
 	.star{
 		color: red;
 	}
-
+	
+	input[type=text]{
+		border-radius: 0;
+		border: 1px solid gray;
+		outline-style: none;
+		height: 20px;
+	}
+	textarea{
+		border-radius: 0;
+		border: 1px solid gray;
+		outline-style: none;
+	}
+	select{
+		border-radius: 0;
+		border: 1px solid gray;
+		outline-style: none;
+		height: 20px;
+	}
 
 </style>
 </head>
 <body>
 <%@ include file="/views/common/header.jsp" %>
-	<h1>식당 등록</h1>
+	<h1 style="margin-left: 200px; margin-top: 30px;">식당 등록</h1>
 		<div class="box" align="center">
 		<form action="" method="post">
 		
@@ -157,7 +176,7 @@
 			 
 		</table>
 	</div>
-	<div align="center">
+	<div align="center" style="margin-bottom: 80px;">
 		<br><br><br>
 		  <input type="submit" value="추 가">
           <input type="reset" value="취 소">

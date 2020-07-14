@@ -5,7 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<title>Insert title here</title>
+<title>YUMEET</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
 	#switch1 {
 		display: none;
@@ -43,7 +45,7 @@
 	/* 여기까지가 스위치버튼css */
 	.outer{
 		width: 1200px;
-		height: 1500px;
+		height: 2000px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 50px;
@@ -78,7 +80,7 @@
 	}
 	#side{
 		width:350px;
-		height: 1300px;
+		height: 1800px;
 		background-color: #EFEFEF;
 		border-radius: 30px 0 0 0;
 		display: inline-block;
@@ -150,11 +152,12 @@
 		border: 0;
 		outline: 0;
 		width: 85px;
-		height: 20px;
+		height: 23px;
 		border: 1px solid #DD6664;
 		border-radius: 5px;
 		margin: 2px;
 		margin-top: 5px;
+		vertical-align: middle;
 	}
 	
 	#ad {
@@ -215,7 +218,7 @@
 	}
 	#schedule {
 		width: 1200px;
-		height: 1000px;
+		height: auto;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 50px;
@@ -384,18 +387,14 @@
 		<!-- 사이드 -->
 		<aside>
 			<div id="side">
-				<p id="keyword">키워드</p><br><br><br>
+				<p id="keyword">카테고리</p><br><br><br>
 				<div id="keywordArea">
 					<button class="keybtn">한식</button>
 					<button class="keybtn">일식</button>
 					<button class="keybtn">중식</button>
 					<button class="keybtn">양식</button>
 					<button class="keybtn">비건</button>
-					<button class="keybtn">데이트</button>
 					<button class="keybtn">패스트푸드</button>
-					<button class="keybtn">육류</button>
-					<button class="keybtn">밥 포함</button>
-					<button class="keybtn">캐쥬얼</button>
 				</div>
 				<!-- 배너광고 -->
 				<div id="ad">
@@ -453,6 +452,26 @@
 					<td rowspan="3" width="100px">0001</td>
 					<td rowspan="3"><img src="/semiproject/images/닭갈비.jpg" width="200px" height="150px"></td>
 					<td align="left" valign="bottom"><label class="textreview">울부짖어라, '닭갈비'</label></td>
+					<td rowspan="3" valign="top" width="40px"><img class="heart" src="/semiproject/images/heartblack.png"></td>
+					<td align="right" valign="bottom">2020.07.06</td>
+					<td rowspan="2" width="180px" align="center"><div class="profileBox" align="center">
+						<img class="profile" src="/semiproject/images/imfine.png">
+					</div></td>
+				</tr>
+				<tr>
+					<td width="400px" align="left" valign="top" rowspan="2"><lable>오늘 배가 너무 고픈데 덥기까지 해...</label></td>
+					<td align="right" valign="top" width="100px">조회수 : 10</td>
+				</tr>
+				<tr>
+					<td align="right"><button class="report">신고</button></td>
+					<td align="center">임피네</td>
+				</tr>
+				</table>
+				<table style="border-bottom: 1px solid black;">
+				<tr>
+					<td rowspan="3" width="100px">0001</td>
+					<td rowspan="3"><img src="/semiproject/images/죠떡.jpg" width="200px" height="150px"></td>
+					<td align="left" valign="bottom"><label class="textreview">떡볶이냠냠</label></td>
 					<td rowspan="3" valign="top" width="40px"><img class="heart" src="/semiproject/images/heartblack.png"></td>
 					<td align="right" valign="bottom">2020.07.06</td>
 					<td rowspan="2" width="180px" align="center"><div class="profileBox" align="center">
@@ -547,6 +566,26 @@
 					<td align="center">뚜뚜링</td>
 				</tr>
 			</table>
+			<table style="border-bottom: 1px solid black;">
+				<tr>
+					<td rowspan="3" width="100px">0001</td>
+					<td rowspan="3"><img src="/semiproject/images/죠떡.jpg" width="200px" height="150px"></td>
+					<td align="left" valign="bottom"><label class="textreview">떡볶이냠냠</label></td>
+					<td rowspan="3" valign="top" width="40px"><img class="heart" src="/semiproject/images/heartblack.png"></td>
+					<td align="right" valign="bottom">2020.07.06</td>
+					<td rowspan="2" width="180px" align="center"><div class="profileBox" align="center">
+						<img class="profile" src="/semiproject/images/imfine.png">
+					</div></td>
+				</tr>
+				<tr>
+					<td width="400px" align="left" valign="top" rowspan="2"><lable>오늘 배가 너무 고픈데 덥기까지 해...</label></td>
+					<td align="right" valign="top" width="100px">조회수 : 10</td>
+				</tr>
+				<tr>
+					<td align="right"><button class="report">신고</button></td>
+					<td align="center">임피네</td>
+				</tr>
+				</table>
 			</div>
 
 		</div>

@@ -44,9 +44,36 @@ a{
 	color : #DE7270;
 	font-size: 36px;
 }
-
+input{
+	border-radius: 0;
+	border: 1px solid gray;
+	outline-style: none;
+	vertical-align: top;
+	height: 20px;
+}
+select{
+	border-radius: 0;
+	border: 1px solid gray;
+	outline-style: none;
+	height: 20px;
+}
+button{
+	background: #DDDDDD;
+ 		color: #000000;
+		border: 0;
+		outline: 0;
+		width: 80px;
+		height: 20px;
+		font-size: 14px;
+		vertical-align: top;
+}
+.searchArea{
+	margin-top: 30px;
+}
 </style>
-<title>공지사항</title>
+<title>YUMEET</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 	<%@ include file="/views/common/header.jsp" %>
