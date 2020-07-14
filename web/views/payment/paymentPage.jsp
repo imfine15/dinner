@@ -4,9 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>YUMEET</title>
-<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<title>Insert title here</title>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
@@ -30,7 +28,6 @@ label {
 	rel='stylesheet' type='text/css'>
 <script
 	src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
 <script src="js/index.js"></script>
 </head>
 <body>
@@ -105,7 +102,7 @@ label {
 
 	<div id="calendar"
 		style="position: absolute; top: 100px; right: 170px;">
-		<div id="calendar_header">
+		<div id="calendar_header" onclick="dd();">
 			<i class="icon-chevron-left"></i>
 			<h1></h1>
 			<i class="icon-chevron-right"></i>
@@ -116,21 +113,58 @@ label {
 	<img src="images/food.png"
 		style="position: absolute; left: 200px; top: 100px;">
 	<script>
-		var day;
+var day;
+var yearAndMonth;
+var month;
+function dd(){
+	$("#calendar_content div").click(function(){
+		day = this.innerHTML;
+		yearAndMonth = $("#calendar_header h1").html().split(" ");
+		console.log(yearAndMonth);
+		switch(yearAndMonth[0]){
+		case "JANUARY" : month = 1; break;
+		case "FEBRUARY" : month = 2; break;
+		case "MARCH" : month = 3; break;
+		case "APRIL" : month = 4; break;
+		case "MAY" : month = 5; break;
+		case "JUNE" : month = 6; break;
+		case "JULY": month = 7; break;
+		case "AUGUST": month = 8; break;
+		case "SEPTEMBER": month = 9; break;
+		case "OCTOBER": month = 10; break;
+		case "NOVEMBER": month = 11; break;
+		case "DECEMBER": month = 12; break;
+		}
+		console.log(month);
+		console.log(day);
+	});
+}
 
-		$(document).ready(function() {
-			$("#calendar_header").click(function() {
-				console.log(this);
-				month = this;
-			});
 
-			$("#calendar_content div").click(function() {
-				day = this.innerHTML;
-				console.log(day);
-				var month = $("#calendar_header h1").val();
-				console.log($("#calendar #calender_header h1"));
-			});
-		});
-	</script>
+ $(document).ready(function(){
+	$("#calendar_content div").click(function(){
+		day = this.innerHTML;
+		yearAndMonth = $("#calendar_header h1").html().split(" ");
+		console.log(yearAndMonth);
+		switch(yearAndMonth[0]){
+		case "JANUARY" : month = 1; break;
+		case "FEBRUARY" : month = 2; break;
+		case "MARCH" : month = 3; break;
+		case "APRIL" : month = 4; break;
+		case "MAY" : month = 5; break;
+		case "JUNE" : month = 6; break;
+		case "JULY": month = 7; break;
+		case "AUGUST": month = 8; break;
+		case "SEPTEMBER": month = 9; break;
+		case "OCTOBER": month = 10; break;
+		case "NOVEMBER": month = 11; break;
+		case "DECEMBER": month = 12; break;
+		}
+		console.log(month);
+		console.log(day);
+	});
+}); 
+
+</script>
 </body>
 </html>
