@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css"
 	href="/semiproject/views/myPage/css/myPage.css" />
 <style>
@@ -40,6 +42,11 @@
 ul li a span:hover{
 	color: pink;
 }
+input{
+	border-radius: 0;
+	border: 1px solid gray;
+	outline-style: none;
+}
 </style>
 </head>
 <body>
@@ -53,7 +60,7 @@ ul li a span:hover{
 				<!-- PC 웹 내정보 GNB -->
 				<div id="" role="navigation">
 					<ul style="padding-top: 10px; padding-left:-30px;">
-						<li class="left"><a class="left2" href="/semiproject/views/myPage/myPage.jsp"><span class="navbar">내정보 홈</span></a></li>
+						<li class="left"><a class="left2" href="/semiproject/views/myPage/myPage.jsp"><span class="navbar" style="color: #E1A9A9;">내정보 홈</span></a></li>
 						<li class="left"><a class="left2"  href="/semiproject/views/myPage/checkingPassword.jsp"><span class="navbar">내정보 관리</span></a></li>
 						<li class="left"><a class="left2"  href="/semiproject/views/myPage/checkingPassword.jsp"><span class="navbar">비밀번호 변경</span></a></li>
 						<li class="left"><a class="left2"  href=""><span class="navbar">고객센터</span></a></li>
@@ -82,19 +89,11 @@ ul li a span:hover{
 							</div>
 							<div style="margin-top: -10px;">
 								<label class="info">이름 : </label> <label class="info2">정용탁</label><br>
-								<label class="info">별명 : </label> <label class="info2">Paduck</label><br> 
+								<label class="info">닉네임 : </label> <label class="info2">Paduck</label><br> 
 								<label class="info">주소 : </label> <label class="info2">서울 서초구 양재동 16-12</label><br> 
 								<label class="info">번호 : </label> <label class="info2">010-4422-3043</label>
 							</div>
-						</div><a href="/semiproject/views/myPage/bookMark.jsp"
-							class="bg_box" style="display: inline-block; border: 1px solid darkgray;" > <!-- 미사용시 class 'box_off', 사용시 class 'box_on' -->
-							<h2>즐겨찾기</h2>
-							<ul>
-								<li>· 장터식당</li>
-								<li>· 뢰벤돈까스</li>
-								<li>· 청목</li>
-							</ul>
-						</a> 
+						</div>
 						<a href="/semiproject/views/myPage/writePostsByMe.jsp" class="bg_box" style="display: inline-block; border: 1px solid darkgray;"> <!-- 미사용시 class 'box_off', 사용시 class 'box_on' -->
 							<h2>내가쓴 게시글</h2> <span class="txt_desc">"내가쓴 게시글이 한눈에!" </span>
 						</a> 
@@ -104,14 +103,17 @@ ul li a span:hover{
 						</a> 
 						
 						<a href="/semiproject/views/myPage/likePosts.jsp" class="bg_box" style="display: inline-block; border: 1px solid darkgray;"> <!-- 미사용시 class 'box_off2', 사용시 class 'box_on2' -->
-							<h2>좋아요한 글</h2>
+							<h2>좋아요</h2>
 							<ul>
 								<li>· 장터식당</li>
 								<li>· 뢰벤돈까스</li>
 								<li>· 청목</li>
-							</ul> <span class="screen_out">현재상태 </span> <em class="ir_pm">
-								미사용 </em>
+							</ul>
 						</a>
+						<a style="padding-left:0px; display:block; padding-top: 30px;">
+						<img src="/semiproject/images/YUMEET LOGO.png" style="width:300px; height:100px;">
+						</a>
+						
 					</div>
 					<ul class="ir_pm"
 						style="width: 678px; height: 116px; margin: 0 0 52px 16px; overflow: hidden; background: url(images/subbar.png) no-repeat 0 0">
@@ -140,15 +142,15 @@ ul li a span:hover{
 				<div id="mAside">
 					<div class="wing_userinfo">
 						<div class="section_myinfo">
-							<a id="profileImageContainer" class="link_profile"
+							<a id="profileImageContainer" href="/semiproject/views/myPage/checkingPassword.jsp" class="link_profile"
 								data-tiara-action-name="프로필_이미지_관리"> <img id=""
 								alt="프로필 사진" class="img_profile"
 								src="https://img1.daumcdn.net/thumb/R158x158/?fname=http%3A%2F%2Ftwg.tset.daumcdn.net%2Fprofile%2F-IMNvhQBTjI0&t=1593580361035">
 								<span class="frame_img">프로필 이미지 관리</span> <span
 								class="">프로필 이미지 업로드</span>
-							</a> <a href="/my/basic.daum" class="link_user"
+							</a> <a href="/semiproject/views/myPage/checkingPassword.jsp" class="link_user"
 								data-tiara-action-name="내_정보">dydxkr님<br>
-							</a><a class="link_user">
+							</a><a class="link_user" href="/semiproject/views/myPage/myPoint.jsp">
 							<label class="" >포인트 : 300</label>	
 							</a>
 							
