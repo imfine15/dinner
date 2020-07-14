@@ -1,5 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<% int asd = Integer.parseInt(request.getParameter("asd"));
+	String pageName = "";
+	switch(asd){
+	case 1 : pageName = "예약 요청 확인"; break;
+	case 2 : pageName = "전체 예약 일정"; break;
+	case 3 : pageName = "댓글 관리"; break;
+	case 4 : pageName = "정산 내역"; break;
+	case 5 : pageName = "결제 내역"; break;
+	case 6 : pageName = "제재내역"; break;
+	case 7 : pageName = "보고서"; break;
+	} %>
 <!doctype html>
 <html lang="ko">
 <head>
@@ -35,28 +46,28 @@
 			</button>
 		</div>
 		<div class="p-4 pt-5" id="sidebarTop" style="border-bottom-right-radius:100px;">
-			<h2 id="sidebarTitle"><a href="index.html" class="logo"  style="color:white;">예약 확인</a></h2>
+			<h2 id="sidebarTitle"><a href="index.html" class="logo"  style="color:white;"><%= pageName %></a></h2>
 			<ul class="list-unstyled components mb-5">
 				<li>
-					<a href="#">예약 요청 확인</a>
+					<a href="/semiproject/views/enterprise/confirmRequest/confirmRequest.jsp?asd=1">예약 요청 확인</a>
 				</li>
 				<li>
-					<a href="#">전체 예약 일정</a>
+					<a href="/semiproject/views/enterprise/reservationDate/reservationDate.jsp?asd=2">전체 예약 일정</a>
 				</li>
 				<li>
-					<a href="#">댓글 관리</a>
+					<a href="/semiproject/views/enterprise/commentManage/commentManage.jsp?asd=3">댓글 관리</a>
 				</li>
 				<li>
-					<a href="#">정산 내역</a>
+					<a href="/semiproject/views/enterprise/paymentHistory/paymentHistory.jsp?asd=4">정산 내역</a>
 				</li>
 				<li>
-					<a href="#">결제 내역</a>
+					<a href="/semiproject/views/enterprise/sanctionsDetails/sanctionsDetails.jsp?asd=5">결제 내역</a>
 				</li>
 				<li>
-					<a href="#">제재내역</a>
+					<a href="/semiproject/views/enterprise/settlementDetails/settlementDetails.jsp?asd=6">제재내역</a>
 				</li>
 				<li>
-					<a href="#">보고서</a>
+					<a href="/semiproject/views/enterprise/report/report.jsp?asd=7">보고서</a>
 				</li>
 			</ul>
 		</div>

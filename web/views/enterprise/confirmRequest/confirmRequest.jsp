@@ -11,7 +11,31 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/semiproject/views/enterprise/sidebar/css/style.css">
 <style>
-	.payBtn{
+	.reservateBtn{
+		width:50px;
+		height:25px;
+		background: #EB7673;
+		border:0;
+		color:white;
+		font-weight: bold;
+	}
+	.moreInfoBtn{
+		width:50px;
+		height:25px;
+		background: #EB7673;
+		border:0;
+		color:white;
+		font-weight: bold;
+	}
+	.userInfoBtn{
+		width:50px;
+		height:25px;
+		background: #EB7673;
+		border:0;
+		color:white;
+		font-weight: bold;
+	}
+	.cancelBtn{
 		width:50px;
 		height:25px;
 		background: #EB7673;
@@ -105,9 +129,9 @@
                   <td>13:30</td>
                   <td>3</td>
                   <td>2020/06/22</td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
+                  <td><button class="moreInfoBtn">확인</button></td>
+                  <td><button class="userInfoBtn">확인</button></td>
+                  <td><button class="reservateBtn">확인</button> <button class="cancelBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
                <tr>
@@ -117,9 +141,9 @@
                   <td>13:30</td>
                   <td>3</td>
                   <td>2020/06/22</td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
+                  <td><button class="moreInfoBtn">확인</button></td>
+                  <td><button class="userInfoBtn">확인</button></td>
+                  <td><button class="reservateBtn">확인</button> <button class="cancelBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
                <tr>
@@ -129,9 +153,9 @@
                   <td>13:30</td>
                   <td>3</td>
                   <td>2020/06/22</td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
+                  <td><button class="moreInfoBtn">확인</button></td>
+                  <td><button class="userInfoBtn">확인</button></td>
+                  <td><button class="reservateBtn">확인</button> <button class="cancelBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
                <tr>
@@ -141,9 +165,9 @@
                   <td>13:30</td>
                   <td>3</td>
                   <td>2020/06/22</td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
+                  <td><button class="moreInfoBtn">확인</button></td>
+                  <td><button class="userInfoBtn">확인</button></td>
+                  <td><button class="reservateBtn">확인</button> <button class="cancelBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
                <tr>
@@ -153,9 +177,9 @@
                   <td>13:30</td>
                   <td>3</td>
                   <td>2020/06/22</td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
+                  <td><button class="moreInfoBtn">확인</button></td>
+                  <td><button class="userInfoBtn">확인</button></td>
+                  <td><button class="reservateBtn">확인</button> <button class="cancelBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
                <tr>
@@ -165,9 +189,9 @@
                   <td>13:30</td>
                   <td>3</td>
                   <td>2020/06/22</td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
+                  <td><button class="moreInfoBtn">확인</button></td>
+                  <td><button class="userInfoBtn">확인</button></td>
+                  <td><button class="reservateBtn">확인</button> <button class="cancelBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
             </tbody>
@@ -258,11 +282,22 @@
 	});
 	
 	$(function () {
-		$("button").click(function () {
+		$(".userInfoBtn").click(function () {
 			console.log("asd");
 			$('#testModal').modal("show");
 		});
 	});
+	$(function () {
+		$(".reservateBtn").click(function () {
+			$(this).parent().parent().children().children().eq(0).css("background","#5EB8B4");
+		});
+	});
+	$(function () {
+		$(".cancelBtn").click(function () {
+			
+			$(this).parent().parent().children().empty();
+		});
+	})
 </script>
 <!-- <script src="/semiproject/views/enterprise/sidebar/js/jquery.min.js"></script>
 <script src="/semiproject/views/enterprise/sidebar/js/popper.js"></script>
