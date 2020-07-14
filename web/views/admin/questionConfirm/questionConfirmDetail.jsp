@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET 관리자페이지</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
 	rel="stylesheet">
@@ -36,8 +38,8 @@
 }
 
 #inner-box {
-	width: 100%;
-	height: 100%;
+	width: 90%;
+	height: 90%;
 }
 
 #inner-wrap {
@@ -87,10 +89,20 @@
 	color: #FFFBFB;
 	border:none;
 }
+input{
+border-radius: 0;
+border: 1px solid gray;
+outline-style: none;
+}
+textarea{
+border-radius: 0;
+border: 1px solid gray;
+outline-style: none;
+}
 </style>
 </head>
 <body style="background: lightgray;">
-	<%@ include file="../common/sidebar.jsp"%>
+	<%@ include file="/views/admin/common/sidebar.jsp"%>
 	<div id="wrapper">
 		<div id="title-box">
 			<p>문의 관리</p>

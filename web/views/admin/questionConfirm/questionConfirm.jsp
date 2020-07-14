@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>YUMEET</title>
+<title>YUMEET 관리자페이지</title>
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
 	rel="stylesheet">
@@ -111,11 +111,21 @@ tr {
 	padding-left:30px;
 	width:40%;
 }
+select{
+border-radius: 0;
+border: 1px solid gray;
+outline-style: none;
+}
+input{
+border-radius: 0;
+border: 1px solid gray;
+outline-style: none;
+}
 
 </style>
 </head>
 <body style="background: lightgray;">
-	<%@ include file="../common/sidebar.jsp"%>
+	<%@ include file="/views/admin/common/sidebar.jsp"%>
 	<div id="wrapper">
 		<div id="title-box">
 			<p>문의 관리</p>
@@ -127,151 +137,148 @@ tr {
 				<form>
 					<table id="review-tb" style="width: 100%;">
 						<tr>
+							<th>카테고리</th>
 							<th>제목</th>
 							<th>회원 ID</th>
 							<th>등록 날짜</th>
 							<th>처리 상태</th>
-							<th>관리</th>
 						</tr>
 						<tr>
+							<td>예약문의</td>
 							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
 							<td>
 								<button id="confirm-before-btn">처리 대기</button>
 							</td>
-							<td>
-							</td>
 						</tr>
 						<tr>
+							<td>예약문의</td>
 							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
 							<td>
 								<button id="confirm-after-btn">처리 완료</button>
 							</td>
-							<td>
-							</td>
+							
 						</tr>
 						<tr>
+							<td>예약문의</td>
 							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
 							<td>
 								<button id="confirm-after-btn">처리 완료</button>
 							</td>
-							<td>
-							</td>
 						</tr>
 						<tr>
+							<td>예약문의</td>
 							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
 							<td>
 								<button id="confirm-after-btn">처리 완료</button>
 							</td>
-							<td>
-							</td>
 						</tr>
 						<tr>
+							<td>예약문의</td>
 							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
 							<td>
 								<button id="confirm-after-btn">처리 완료</button>
 							</td>
-							<td>
-							</td>
+
 						</tr>
 						<tr>
+							<td>예약문의</td>
 							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
 							<td>
 								<button id="confirm-after-btn">처리 완료</button>
 							</td>
-							<td>
-							</td>
+
 						</tr>
 						<tr>
+							<td>예약문의</td>
 							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
 							<td>
 								<button id="confirm-after-btn">처리 완료</button>
 							</td>
-							<td>
-							</td>
+
 						</tr>
 						<tr>
+							<td>예약문의</td>
 							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
 							<td>
 								<button id="confirm-after-btn">처리 완료</button>
 							</td>
-							<td>
-							</td>
+							
 						</tr>
 						<tr>
+							<td>예약문의</td>
 							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
 							<td>
 								<button id="confirm-after-btn">처리 완료</button>
 							</td>
-							<td>
-							</td>
+						
 						</tr>
 						<tr>
+						<td>예약문의</td>
 							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
 							<td>
 								<button id="confirm-after-btn">처리 완료</button>
 							</td>
-							<td>
-							</td>
+							
 						</tr>
 						<tr>
+						<td>예약문의</td>
 							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
 							<td>
 								<button id="confirm-after-btn">처리 완료</button>
 							</td>
-							<td>
-							</td>
+							
 						</tr>
 						<tr>
+						<td>예약문의</td>
 							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
 							<td>
 								<button id="confirm-after-btn">처리 완료</button>
 							</td>
-							<td>
-							</td>
+							
 						</tr>
 						<tr>
+						<td>예약문의</td>
 							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
 							<td>
 								<button id="confirm-after-btn">처리 완료</button>
 							</td>
-							<td>
-							</td>
+							
 						</tr>
 						<tr>
+						<td>예약문의</td>
 							<td id="title">회원탈퇴 시 적립포인트는 어떻게 처리 되나요?</td>
 							<td>imfine_123</td>
 							<td>20/06/19 17:33</td>
 							<td>
 								<button id="confirm-after-btn">처리 완료</button>
 							</td>
-							<td>
-							</td>
+							
 						</tr>
 
 					</table>
@@ -284,7 +291,8 @@ tr {
 								<td><select style="height:25px; font-size:14px;">
 										<option>제목</option>
 										<option>회원 ID</option>
-										<option>등록 날짜</option>
+										<option>처리 상태</option>
+										<option>카테고리</option>
 								</select>&nbsp;&nbsp;&nbsp;</td>
 								<td><input style="height:25px;" type="search" size="25"></td>
 								<td>
