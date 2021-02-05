@@ -75,7 +75,7 @@
 	-moz-transition: 0.3s;
 	-o-transition: 0.3s;
 	-webkit-transition: 0.3s;
-	transition: 0.3s;
+	transition: 0.5s;
 	
 }
 
@@ -115,7 +115,12 @@ html, body {
 	line-height:15px;
 	display:inline-block;
 }
-
+#logout {
+	float:right;
+	display: inline-block;
+	margin-right:20px;
+	margin-top:13px;
+}
 </style>
 </head>
 <body>
@@ -123,6 +128,9 @@ html, body {
 	<header id="admin-header">
 		<div id="admin-t">
 			<p><a>ADMINISTRATOR</a></p>
+		</div>
+		<div id="logout">
+		<button>로그아웃</button>
 		</div>
 		<div id="welcome-user">
 			<p>안녕하세요, IMFINE 님</p>
@@ -134,31 +142,35 @@ html, body {
 	<div id="sidebar">
 		<nav class="sidenav">
 			<ul class="main-buttons">
-				<li><i class="fa fa-circle fa-2x"></i> 고객관리
+				<li><i class="fa fa-circle fa-2x"></i> 예약/가게/리뷰 관리
 					<ul class="hidden">
-						<li>회원 관리</li>
-						<li>업체 관리</li>
-						<li>가게 관리</li>
-					</ul></li>
-				<li><i class="fa fa-circle fa-2x"></i> 게시글 관리
-					<ul class="hidden">
+						<li>예약 내역</li>
+						<li>가게 등록 요청</li>
 						<li>리뷰 게시글 관리</li>
-						<li>뫄뫄</li>
-						<li>솨솨</li>
-						<li>나나</li>
-						<li>뽀뽀</li>
-					</ul></li>
-				<li><i class="fa fa-circle fa-2x"></i> 정산관리
-					<ul class="hidden">
-						<li>정산내역</li>
-						<li>이의 신청 내역</li>
-						<li>환불 처리</li>
 					</ul></li>
 				<li><i class="fa fa-circle fa-2x"></i> 공지사항
 					<ul class="hidden">
-						<li>YUMEET 공지사항</li>
-						<li>업체 공지사항</li>
 						<li>고객 공지사항</li>
+						<li>업체 공지사항</li>
+						<li>관리자 공지사항</li>
+					</ul></li>
+				<li><i class="fa fa-circle fa-2x"></i> 정산 환불관리
+					<ul class="hidden">
+						<li>회원 환불 내역</li>
+						<li>정산 요청 관리</li>
+						<li>정산 이의신청 내역</li>
+					</ul></li>
+				<li><i class="fa fa-circle fa-2x"></i> 문의사항 관리
+					<ul class="hidden">
+						<li>제휴 문의 관리</li>
+						<li>광고 문의 관리</li>
+						<li>회원 문의 관리</li>
+					</ul></li>
+				<li><i class="fa fa-circle fa-2x"></i> 고객 관리
+					<ul class="hidden">
+						<li>회원 관리</li>
+						<li>업체 관리</li>
+						<li>회원 신고내역 관리</li>
 					</ul></li>
 
 			</ul>

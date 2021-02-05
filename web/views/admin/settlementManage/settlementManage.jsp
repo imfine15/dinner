@@ -44,6 +44,7 @@
 		 height: 800px;
 		 margin-left: auto;
 		 margin-right: auto;
+		 vertical-align: middle;
 	}
 	input{
 		border-radius: 0;
@@ -64,6 +65,9 @@
 		border:0;
 		color:white;
 		font-weight: bold;
+		float: right;
+		margin-top: 15px;
+		margin-right: 10px;
 	}
 	.payBtn{
 		width:70px;
@@ -80,16 +84,11 @@
 		border:0;
 		color:white;
 		font-weight: bold;
+		float: right;
+		margin-right: 90px;
+		margin-top: 10px;
 	}
-	.allCheckBtn2{
-		width:70px;
-		height:25px;
-		background: white;
-		border:0;
-		color:white;
-		font-weight: bold;
-		
-	}
+
 	table{
 	border-collapse: collapse;
 	}
@@ -98,14 +97,21 @@
       color:black;
    }
    tr{
-      height:30px;
       border-bottom: 1px solid lightgary;
+   }
+   td{
+      height: 25px;
+      width: 120px;
    }
    .hide{
       background-color: white;
       border: 0px;
       height:30px;
       width:30px;
+   }
+   .dateText{
+   	  font-size: 30px;
+   	  font-weight: bold;
    }
 </style>
 
@@ -114,34 +120,18 @@
 	<%@ include file="/views/admin/common/sidebar.jsp"%>
 	<div class="outer" align="center">
 		<div class="header" align="left">
-			<h1 >정산 내역<button style="margin-left:800px;" class="whenBtn">1개월</button><button style="margin-left:10px;" class="whenBtn">3개월</button><button style="margin-left:10px;" class="whenBtn">6개월</button><button style="margin-left:10px;" class="whenBtn">1년</button></h1><br>
+			<h1 >정산 요청 관리<button class="whenBtn">1개월</button><button class="whenBtn">3개월</button><button class="whenBtn">6개월</button><button class="whenBtn">1년</button></h1><br>
 		</div>
-		<div class="inner">
-			<div >
-         	<table align="center" >
-         		<tr>
-         			<td></td>
-         			<td></td>
-         			<td></td>
-         			
-         		</tr>
-         		<tr style="font-size: 30px;">
-         			<td>
-         				<button class="allCheckBtn2" style="margin-right:185px;" >일괄신청</button>
-         				2020.06.01
-         			</td>
-         			<td>
-         				~
-					</td>
-					<td>
-						2020.06.30
-         				<button class="allCheckBtn" style="margin-left:185px;">일괄신청</button>
-					</td>
-         		</tr>
-         		
-         	</table>
+		<div align="center" class="inner">
+			<div style="width: 1000px;">
+         		<label class="dateText">2020.06.01</label>
+         		<label class="dateText"> ~ </label>
+				<label class="dateText">2020.06.30</label>
+         		<button class="allCheckBtn">일괄신청</button>
+			</div>
+					
          	<br>
-            <table style="text-align: center;" align="center">
+            <table style="text-align: center;">
             <thead>
             <tr>
                <th style="width:100px;">업체명</th>
@@ -223,7 +213,7 @@
                </tr>
             </tbody>
             </table>
-            </div>
+            
 			<!-- <button class="writebtn">제재 내용 전송</button> -->
 		</div>
 		
