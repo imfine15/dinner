@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css"
 	href="/semiproject/views/myPage/css/myPage.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -82,6 +84,22 @@
 	background: #E4E4E4;
 	margin-left:5px;
 }
+.navbar{
+	color: #666666;
+	font-size: 20px;
+}
+.left{
+	list-style-type:none;
+	float:left;
+	margin-left: 20px;
+}
+.left2:hover{
+	text-decoration: none;
+	border-bottom: 3px #E1A9A9 solid;
+}
+ul li a span:hover{
+	color: pink;
+}
 </style>
 </head>
 <body>
@@ -89,31 +107,18 @@
 	<div id="daumWrap" class="userinfo_type1 ">
 
 		<div id="daumHead" role="banner">
-			<div class="inner_head">
+			<div class="inner_head" style="padding-right:30px;">
 				<h1>
-					<a href="/home.daum" id="daumServiceLogo"
-						data-tiara-action-name="내정보"><span class="ir_wa">내정보</span></a>
+					<a href="/semiproject/views/myPage/myPage.jsp" id="daumServiceLogo"><span class="ir_wa">내정보</span></a>
 				</h1>
-
 				<!-- PC 웹 내정보 GNB -->
-				<div id="daumGnb" role="navigation">
-					<h2 class="screen_out">내정보 메인메뉴</h2>
-					<ul class="gnb_comm">
-						<li class="on"><a href="/home.daum"
-							class="link_gnb link_gnb1" data-tiara-action-name="내정보_홈"><span
-								class="ir_wa">내정보 홈</span></a></li>
-						<li><a href="/my/basic.daum" class="link_gnb link_gnb2"
-							data-tiara-action-name="내정보_관리"><span class="ir_wa">내정보
-									관리</span></a></li>
-						<li><a href="/security/basic.daum" class="link_gnb link_gnb3"
-							data-tiara-action-name="내정보_보호"><span class="ir_wa">비밀번호변경</span></a></li>
-						<li><a href="/change/password.daum"
-							class="link_gnb link_gnb4" data-tiara-action-name="비밀번호_변경"><span
-								class="ir_wa">고객센터</span></a></li>
-					</ul>
-					<ul class="gnb_with">
-						<li><a href="/withdraw.daum" class="link_gnb link_gnb1"
-							data-tiara-action-name="회원탈퇴"><span class="ir_wa">회원탈퇴</span></a></li>
+				<div id="" role="navigation">
+					<ul style="padding-top: 10px; padding-left:-30px;">
+						<li class="left"><a class="left2" href="/semiproject/views/myPage/myPage.jsp"><span class="navbar" style="color: #E1A9A9;">내정보 홈</span></a></li>
+						<li class="left"><a class="left2"  href="/semiproject/views/myPage/checkingPassword.jsp"><span class="navbar">내정보 관리</span></a></li>
+						<li class="left"><a class="left2"  href="/semiproject/views/myPage/checkingPassword.jsp"><span class="navbar">비밀번호 변경</span></a></li>
+						<li class="left"><a class="left2"  href=""><span class="navbar">고객센터</span></a></li>
+						<li class="left"><a class="left2"  href="/semiproject/views/myPage/withdrawalFromMembership.jsp"><span class="navbar">회원탈퇴</span></a></li>
 					</ul>
 				</div>
 			</div>
@@ -179,48 +184,24 @@
 				<div id="mAside">
 					<div class="wing_userinfo">
 						<div class="section_myinfo">
-							<a id="profileImageContainer" class="link_profile profile_img"
-								data-tiara-action-name="프로필_이미지_관리"> <img id="profileImage"
+							<a id="profileImageContainer" href="/semiproject/views/myPage/checkingPassword.jsp" class="link_profile"
+								data-tiara-action-name="프로필_이미지_관리"> <img id=""
 								alt="프로필 사진" class="img_profile"
 								src="https://img1.daumcdn.net/thumb/R158x158/?fname=http%3A%2F%2Ftwg.tset.daumcdn.net%2Fprofile%2F-IMNvhQBTjI0&t=1593580361035">
 								<span class="frame_img">프로필 이미지 관리</span> <span
-								class="ico_camera">프로필 이미지 업로드</span>
-							</a> <a href="/my/basic.daum" class="link_user"
+								class="">프로필 이미지 업로드</span>
+							</a> <a href="/semiproject/views/myPage/checkingPassword.jsp" class="link_user"
 								data-tiara-action-name="내_정보">dydxkr님<br>
-							</a> <label class=""> 포인트 : 300</label>
+							</a><a class="link_user" href="/semiproject/views/myPage/myPoint.jsp">
+							<label class="" >포인트 : 300</label>	
+							</a>
+							
 							<div id="profileImageAgreeDialog" class="layer_manage"
 								style="display: none">
-								<p class="txt_desc">[선택] 회원식별 목적으로 프로필 이미지를 수집하며, 삭제 시 지체없이
-									파기됩니다.</p>
-								<button id="profileImageDisagree" class="btn_comm btn_disagree"
-									data-tiara-action-name="profileImageDisagree">
-									<span class="inner">동의안함</span>
-								</button>
-								<div class="inputButtonWrap">
-									<label id="profileImageAgree" for="profileImageAgreeInput">동의</label>
-									<input type="file" id="profileImageAgreeInput" name="name"
-										accept="image/*" />
-								</div>
-
-								<button onclick="hideElement('profileImageAgreeDialog')"
-									class="btn_comm btn_close" data-tiara-action-name="닫기_01">닫기</button>
 							</div>
+							
 							<div id="profileImageChangeDialog" class="layer_manage"
 								style="display: none">
-								<p class="txt_desc">프로필 이미지를 변경하려면 ‘수정’ 버튼을 누르고, 기본 이미지로
-									변경하려면 ‘삭제’를 누르세요.</p>
-								<button id="profileImageDelete" class="btn_comm btn_disagree"
-									data-tiara-action-name="profileImageDelete">
-									<span class="inner">삭제</span>
-								</button>
-								<div class="inputButtonWrap">
-									<label id="profileImageChange" for="profileImageChangeInput">수정</label>
-									<input type="file" id="profileImageChangeInput" name="name"
-										accept="image/*" />
-								</div>
-
-								<button onclick="hideElement('profileImageChangeDialog')"
-									class="btn_comm btn_close" data-tiara-action-name="닫기_02">닫기</button>
 							</div>
 						</div>
 						<div id="profileImageEditor"
@@ -228,57 +209,10 @@
 						<div class="section_info section_activity">
 							<h4 class="txt_comm txt_activity">내 활동 내역</h4>
 							<ul class="list_activity">
-								<li><span class="ico_comm ico_dot"></span> <span
-									class="txt_desc"> <span class="desc_activity"> <em
-											class="emph_info">2617일 전</em>에 비밀번호 변경함. <span
-											class="wrap_tip">
-												<button type="button" id="helpBtn" class="ico_comm btn_help"
-													data-tiara-action-name="도움말_열기_닫기">
-													<span class="screen_out">도움말 열기, 닫기</span>
-												</button> <span class="layer_certify" style="display: none"> <!-- 활성화시 display:block, 비활성화시 display:none 으로 변경 -->
-													비밀번호 변경일자 표시 방법이<br>궁금하다면? <a
-													href="https://cs.daum.net/faq/59/5218.html?faqId=31023"
-													target="_blank" class="link_layer"
-													data-tiara-action-name="도움말_보기">도움말 보기</a>
-													<button id="closeHelpBtn" type="button"
-														class="btn_comm btn_close" data-tiara-action-name="닫기_03">닫기</button>
-											</span>
-										</span>
-									</span> <a href="https://member.daum.net/change/password.daum"
-										class="ico_comm link_service"
-										data-tiara-action-name="비밀번호_변경하기">비밀번호 변경하기</a>
-								</span></li>
-								<li><span class="ico_comm ico_dot"></span> <span
-									class="txt_desc"> <strong>2020.07.01</strong> 13:10
-										대한민국에서 로그인 성공 <a
-										href="https://member.daum.net/login/history.daum"
-										class="ico_comm link_service"
-										data-tiara-action-name="내_로그인_기록보기">내 로그인 기록보기</a>
-								</span></li>
-								<li class="lst">
-									<!-- 마지막 li에 class 'lst' 추가 --> <span class="ico_comm ico_dot"></span>
-									<span class="txt_desc"> 현재 <strong>2대</strong>의 브라우저 또는
-										기기에서 접속 중 <a href="https://member.daum.net/login/now.daum"
-										class="ico_comm link_service"
-										data-tiara-action-name="현재_로그인_정보보기">현재 로그인 정보보기</a>
-								</span>
-								</li>
+								
 							</ul>
 						</div>
-						<div class="section_info section_faq">
-							<h2 class="">최근본 게시물</h2>
-							<ul class="list_faq">
-								<br>
-								<li><span class="ico_comm ico_dot"></span> <a><img
-										src="../../images/blog.png" style="width: 60px;"></a> <a><img
-										src="../../images/blog.png" style="width: 60px;"></a> <a><img
-										src="../../images/blog.png" style="width: 60px;"></a></li>
-
-
-							</ul>
-							<a href="https://cs.daum.net/faq/59.html" target="_blank"
-								class="ico_comm link_more" data-tiara-action-name="더보기">더보기</a>
-						</div>
+						
 					</div>
 				</div>
 				<!--// mAside -->

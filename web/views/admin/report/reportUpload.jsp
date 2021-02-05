@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YUMEET 관리자페이지</title>
+<link rel="shortcut icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/semiproject/images/favicon.ico" type="image/x-icon">
 <style>
 	table{
 		border-collapse: collapse;
@@ -36,7 +38,7 @@
 		border-radius: 0;
 		border: 1px solid gray;
 		outline-style: none;
-		height: 20px;
+		height: 25px;
 	}
 
 	.outer{
@@ -73,8 +75,8 @@
  		color: #FFFFFF;
 		border: 0;
 		outline: 0;
-		height: 25px;
-		font-size: 14px;
+		height: 30px;
+		font-size: 16px;
 		margin-top: 20px;
 		
 	}
@@ -90,10 +92,10 @@
 </style>
 </head>
 <body style="background: lightgray;">
-	<%@ include file="../common/sidebar.jsp"%>
+	<%@ include file="/views/admin/common/sidebar.jsp"%>
 	<div class="outer" align="center">
 		<div class="header" align="left">
-			<h1>회원 환불 내역</h1><br>
+			<h1>회원 신고 내역</h1><br>
 		</div>
 		<div class="inner">
 			
@@ -145,8 +147,8 @@
 					<td colspan="3"><textarea cols="100" rows="7"></textarea></td>
 				</tr>
 				<tr>
-					<td colspan="2" style="text-align: right;"><button class="btn"style="background: #E07370; margin-right: 100px;">답변 전송 및 처리</button></td>
-					<td colspan="2"><button class="btn" style="background: gray">취소</button></td>
+					<td colspan="2" style="text-align: right;"><button class="btn"style="background: #E07370; margin-right: 100px; width: 150px;">답변 전송 및 처리</button></td>
+					<td colspan="2"><button class="btn" style="background: gray; width: 80px;">취소</button></td>
 				</tr>
 			</table>
 			

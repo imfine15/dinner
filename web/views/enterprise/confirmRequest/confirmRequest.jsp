@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<title>사장님 페이지</title>
+<title>YUMEET 사장님페이지</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -11,22 +11,51 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/semiproject/views/enterprise/sidebar/css/style.css">
 <style>
-	.payBtn{
+	.reservateBtn{
 		width:50px;
 		height:25px;
-		background: pink;
+		background: #EB7673;
+		border:0;
+		color:white;
+		font-weight: bold;
 	}
-
+	.moreInfoBtn{
+		width:50px;
+		height:25px;
+		background: #EB7673;
+		border:0;
+		color:white;
+		font-weight: bold;
+	}
+	.userInfoBtn{
+		width:50px;
+		height:25px;
+		background: #EB7673;
+		border:0;
+		color:white;
+		font-weight: bold;
+	}
+	.cancelBtn{
+		width:50px;
+		height:25px;
+		background: #EB7673;
+		border:0;
+		color:white;
+		font-weight: bold;
+	}
+ tr{
+   		width:120px;
+      height:30px;
+   }
    th, td{
+     width:100px;
       border-bottom: 1px solid black;
    }
    a{
       text-decoration: none;
       color:black;
    }
-   tr{
-      height:30px;
-   }
+  
    .hide{
       background-color: white;
       border: 0px;
@@ -82,14 +111,14 @@
             <table style="text-align: center;" align="center">
             <thead>
                <th style="width:30px;">&nbsp;</th>
-               <th style="width:150px;">NO</th>
-               <th style="width:150px;">예약자</th>
-               <th style="width:150px;">시간</th>
-               <th style="width:150px;">인원</th>
-               <th style="width:150px;">요청 일자</th>
-               <th style="width:150px;">상세 정보</th>
-               <th style="width:150px;">고객 정보 확인</th>
-               <th style="width:150px;">예약 접수</th>
+               <th style="width:130px;">NO</th>
+               <th style="width:130px;">예약자</th>
+               <th style="width:130px;">시간</th>
+               <th style="width:130px;">인원</th>
+               <th style="width:130px;">요청 일자</th>
+               <th style="width:130px;">상세 정보</th>
+               <th style="width:130px;">고객 정보 확인</th>
+               <th style="width:130px;">예약 접수</th>
                 
             </thead>
             <tbody align="center">
@@ -100,9 +129,9 @@
                   <td>13:30</td>
                   <td>3</td>
                   <td>2020/06/22</td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
+                  <td><button class="moreInfoBtn">확인</button></td>
+                  <td><button class="userInfoBtn">확인</button></td>
+                  <td><button class="reservateBtn">확인</button> <button class="cancelBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
                <tr>
@@ -112,9 +141,9 @@
                   <td>13:30</td>
                   <td>3</td>
                   <td>2020/06/22</td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
+                  <td><button class="moreInfoBtn">확인</button></td>
+                  <td><button class="userInfoBtn">확인</button></td>
+                  <td><button class="reservateBtn">확인</button> <button class="cancelBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
                <tr>
@@ -124,9 +153,9 @@
                   <td>13:30</td>
                   <td>3</td>
                   <td>2020/06/22</td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
+                  <td><button class="moreInfoBtn">확인</button></td>
+                  <td><button class="userInfoBtn">확인</button></td>
+                  <td><button class="reservateBtn">확인</button> <button class="cancelBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
                <tr>
@@ -136,9 +165,9 @@
                   <td>13:30</td>
                   <td>3</td>
                   <td>2020/06/22</td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
+                  <td><button class="moreInfoBtn">확인</button></td>
+                  <td><button class="userInfoBtn">확인</button></td>
+                  <td><button class="reservateBtn">확인</button> <button class="cancelBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
                <tr>
@@ -148,9 +177,9 @@
                   <td>13:30</td>
                   <td>3</td>
                   <td>2020/06/22</td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
+                  <td><button class="moreInfoBtn">확인</button></td>
+                  <td><button class="userInfoBtn">확인</button></td>
+                  <td><button class="reservateBtn">확인</button> <button class="cancelBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
                <tr>
@@ -160,9 +189,9 @@
                   <td>13:30</td>
                   <td>3</td>
                   <td>2020/06/22</td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button></td>
-                  <td><button class="payBtn">확인</button> <button class="payBtn" style="background-color: gray;">취소</button></td>
+                  <td><button class="moreInfoBtn">확인</button></td>
+                  <td><button class="userInfoBtn">확인</button></td>
+                  <td><button class="reservateBtn">확인</button> <button class="cancelBtn" style="background-color: gray;">취소</button></td>
                  
                </tr>
             </tbody>
@@ -237,7 +266,9 @@
 			</div>
 		</div>
 	</div>
-	
+	<br>
+	<br>
+	<br>
 	
 	<%@include file="../../common/enterpriseFooter.jsp" %>
 <br>
@@ -251,11 +282,22 @@
 	});
 	
 	$(function () {
-		$("button").click(function () {
+		$(".userInfoBtn").click(function () {
 			console.log("asd");
 			$('#testModal').modal("show");
 		});
 	});
+	$(function () {
+		$(".reservateBtn").click(function () {
+			$(this).parent().parent().children().children().eq(0).css("background","#5EB8B4");
+		});
+	});
+	$(function () {
+		$(".cancelBtn").click(function () {
+			
+			$(this).parent().parent().children().empty();
+		});
+	})
 </script>
 <!-- <script src="/semiproject/views/enterprise/sidebar/js/jquery.min.js"></script>
 <script src="/semiproject/views/enterprise/sidebar/js/popper.js"></script>

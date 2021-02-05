@@ -32,7 +32,7 @@ p {
 </style>
 </head>
 <body>
-	<%@ include file="../common/header.jsp"%>
+	<%@ include file="/views/common/header.jsp" %>
 	<div class="wrapper" align="center">
 		<img src="/semiproject/images/YUMEET LOGO WITH REST.png" id="logo"
 			alt="yumeet logo">
@@ -42,6 +42,6 @@ p {
 		<button id="sub_click" type="submit" style="color: white;">홈으로</button>
 	</div>
 	<div style="height:300px;"></div>
-	<%@ include file="../common/footer.jsp"%>
+	<%@ include file="/views/common/footer.jsp" %>
 </body>
 </html>
