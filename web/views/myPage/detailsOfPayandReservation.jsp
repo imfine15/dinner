@@ -38,7 +38,6 @@
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
-	line-height: 18px;
 	color: #343434;
 }
 .text2 {
@@ -154,13 +153,47 @@ ul li a span:hover{
 					<h1 style="color: #DA817F;">예약 및 결제내역</h1>
 					<div style="width:400px; display: inline-block;!important">
 					<button class="text3">1개월</button><button class="text3">2개월</button><button class="text4">3개월이상</button>
-					<button class="text6">예약</button><button class="text6">결제</button>
+					<button class="text6" id="reservation">예약</button><button class="text6" id="payment">결제</button>
 					</div>
 					<div style="width:295px; display: inline-block;!important;" align="right">
 					<button class="text5">전체</button><button class="text5">결제완료</button><button class="text5" style="margin-right:5px;">결제취소</button>
 					</div>
+					<div id="paymentArea">
 					<br><br>
+					<div style="width: 100%; background-color: pink; height: 30px; margin-top:-20px; vertical-align: middle;'">
+						<label style="margin-left: 30px;"class="text">번호</label>
+						<label style="margin-left: 20px;"class="text">가게명</label>
+						<label style="margin-left: 50px;"class="text">방문예정일자</label>
+						<label style="margin-left: 80px;"class="text">상태</label>
+						<label style="margin-left: 100px;"class="text">결제일자</label>
+					</div>
+					<table style="border-bottom: 1px solid pink; table-layout: fixed; " id="listArea" >
+						<tr> 
+							<td width="100px" nowrap><div style="width:30px; margin-left:0px; !important"><label class="text2">3</label></div></td>
+							<td><div style="width:90px; margin-left:0px;"><label class="text2">돼지되지</label></div></td>
+							<td><div style="width:130px; margin-left:0px;"><label class="text2">2020-05-11 11:01</label></div></td>
+							<td><div style="width:80px; margin-left:50px;"><label class="text2">결제취소</label></div></td>
+							<td><div style="width:130px; margin-left:30px;"><label class="text2">20/09/18 12:00</label></div></td>
+						</tr>
+						<tr>
+							<td><div style="width:72px; margin-left:40px;"><label class="text2">2</label></div></td>
+							<td><div style="width:60px; margin-left:0px;"><label class="text2">갈비천왕</label></div></td>
+							<td><div style="width:130px; margin-left:40px;"><label class="text2">2020-05-10 14:09</label></div></td>
+							<td><div style="width:80px; margin-left:50px;"><label class="text2">결제완료</label></div></td>
+							<td><div style="width:130px; margin-left:30px;"><label class="text2">20/09/18 12:00</label></div></td>
+						</tr>
+						<tr>
+							<td><div style="width:72px; margin-left:40px;"><label class="text2">1</label></div></td>
+							<td><div style="width:60px; margin-left:0px;"><label class="text2">숯불갈비</label></div></td>
+							<td><div style="width:130px; margin-left:40px;"><label class="text2">2020-05-11</label></div></td>
+							<td><div style="width:80px; margin-left:50px;"><label class="text2">결제완료</label></div></td>
+							<td><div style="width:130px; margin-left:30px;"><label class="text2">20/09/18 12:00</label></div></td>
+						</tr>
+					</table>
+					</div>
 					
+					<div id="reservationArea">
+					<br><br>
 					<div style="width: 100%; background-color: pink; height: 30px; margin-top:-10px">
 						<label style="margin-left: 30px;"class="text">번호</label>
 						<label style="margin-left: 50px;"class="text">가게명</label>
@@ -191,7 +224,7 @@ ul li a span:hover{
 							<td><div style="width:130px; margin-left:30px;"><label class="text2">20/09/18 12:00</label></div></td>
 						</tr>
 					</table>
-
+					</div>
 				</div>
 
 
@@ -240,138 +273,29 @@ ul li a span:hover{
 			<!-- // cMain -->
 
 		</div>
+		</div>
 		<!-- // daumContent -->
 		<%@include file="../common/footer.jsp"%>
 		<!-- // daumFoot -->
 
 		<div id="wrapMinidaum"></div>
 	</div>
-
-	<script type="text/javascript">
-    var minidaum_options = {
-
-        enableLogoutRetun: false,
-        returnUrl: '',
-        disableHotissue: false,
-        disableLogo: false,
-        disableTracker: false,
-        enableShield: false
-    }
-</script>
-
-	<script type="text/javascript">
-    $(document).ready(function(){
-        Home.init();
-        initProfileImage();
-    });
-
-    function hideElement(id) {
-        $("#"+id).hide();
-    }
-
-    var Home= {
-        init: function() {
-            if(!false) {
-                $("#recommnendContents").addClass("info_set")
-                $("#recommnendContents").text("로그인시, 이중 보안되는 2단계 인증을 사용해보세요!")
-            } else if(!true) {
-                $("#recommnendContents").addClass("info_allow")
-                $("#recommnendContents").text("로그인 허용 국가가 올바른지 확인해 보세요!")
-            } else if(!false) {
-                $("#recommnendContents").addClass("info_noticepw")
-                $("#recommnendContents").text("비밀번호 변경알림을 이메일로 받아보세요!")
-            } else if (2617 > 180){
-                $("#recommnendContents").addClass("info_modifypw")
-                $("#recommnendContents").text("6개월마다 새로운 비밀번호로 안전하게 관리해 주세요!")
-            } else {
-                $("#recommnendContents").addClass("info_safe")
-                $("#recommnendContents").text("내정보 보호설정으로 안전하게 관리되고 있습니다!")
-            }
-
-            $(".link_user").on("focus", function(){
-                $(".profile_edit").css({'display': 'none'});
-            });
-
-            $("#contactLink").on("focus", function(){
-                $(".profile_edit").css({'display': 'none'});
-            });
-            $("#helpBtn").on("click", function(){
-                $(".layer_certify").toggle();
-            });
-            $("#closeHelpBtn").on("click", function(){
-                $(".layer_certify").css({'display': 'none'});
-            })
-        }
-    }
-
-    function initProfileImage() {
-        $("#profileImageContainer").click(function () {
-            profileImageHandler.hasProfileImageAlready('98f9',
-                    function exist() {
-                        $("#profileImageChangeDialog").show();
-                        $("#profileImageAgreeDialog").hide();
-                    },
-                    function notExist() {
-                        $("#profileImageChangeDialog").hide();
-                        $("#profileImageAgreeDialog").show();
-                    }
-            );
-        });
-
-        profileImageHandler.initProfileImageUpload('98f9',
-                'profileImageAgreeInput',
-                function() {
-                    $('#profileImageAgreeDialog').hide();
-                },
-                function(url) {
-                    $('#profileImage').attr('src', url);
-                }
-        );
-        profileImageHandler.initProfileImageUpload('98f9',
-                'profileImageChangeInput',
-                function() {
-                    $('#profileImageChangeDialog').hide();
-                },
-                function(url) {
-                    $('#profileImage').attr('src', url);
-                }
-        );
-
-        $("#profileImageDisagree").click(function () {
-            $("#profileImageAgreeDialog").hide();
-        });
-
-        $("#profileImageDelete").click(function () {
-            $("#profileImageChangeDialog").hide();
-            profileImageHandler.deleteProfileImage('98f9');
-        });
-    }
-</script>
-
-
-
-	<script type="text/javascript"
-		src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script>
-	<script type='text/javascript'>
-
-    var profile = "";
-    var isDevMode = "false";
-    var customProps = { profile: profile, isDev: isDevMode };
-    var deployment = "production"
-    if (isDevMode === "true") {
-        deployment = "dev";
-    }
-    TiaraTracker.getInstance()
-            .setSvcDomain("member.daum.net")
-            .setDeployment(deployment)
-            .trackPage("Home")
-            .setSection("member.web.home")
-            .setPage("내정보_홈")
-            .setReferrer(document.referrer)
-            .setEnableHash(true)
-            .customProps(customProps)
-            .setAutoClick(true)
-            .track();
+<script>
+	$("#paymentArea").show();
+	$("#reservationArea").hide();
+	$("#reservation").click(function(){
+		$("#paymentArea").hide();
+		$(".text5").hide();
+		
+		$("#reservationArea").show();
+	});
+	
+	$("#payment").click(function(){
+		$("#paymentArea").show();
+		$(".text5").show();
+		
+		$("#reservationArea").hide();
+	});
 </script>
 
 </body>
